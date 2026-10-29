@@ -61,14 +61,17 @@ Lean declaration mirrors.
   the machine check?
 - **Limits.** Where does the loop fail: a wrong translation, reliance on the model, claims no checker can decide?
 
-## Baseline candidates
+## The baseline, named by the grey review
 
-Named before the review, from memory; the review confirms or replaces each.
+The grey pass of the review, [autoformalization](../evidence/autoformalization/), named one baseline:
 
-- A Lean blueprint project: informal statements, each linked to its Lean declaration, with a dependency graph built
-  in CI.
-- A controlled natural language that a machine checks directly.
-- Plain Lean, with a model assisting in the editor.
+- **B1, the audited blueprint**: a blueprint of small lemmas, each copied from its source. A model may write proofs
+  and decides nothing. Lean checks every submission in CI, and comparator checks that the proof proves the stated
+  claim. A person audits each statement against its source.
+- It confirms the first candidate named before the review, a blueprint project built in CI. Neither side found
+  practice naming the other two, a controlled natural language or plain Lean with a model, as a baseline.
+- The formal pass and an audit of every number come next; the [baseline](../evidence/autoformalization/baseline.md)
+  says how a comparison with the loop would be measured.
 
 ## Where it sits
 

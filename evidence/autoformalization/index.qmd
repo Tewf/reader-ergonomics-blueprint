@@ -1,0 +1,5 @@
+---
+title: "Autoformalization: how practice joins a person's reasoning, a model and Lean, and catches the wrong statement"
+---
+
+{{< include README.md >}}
