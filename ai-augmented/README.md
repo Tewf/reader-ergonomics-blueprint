@@ -3,8 +3,9 @@
 The topic as the one format a person, a language model and a checking program all work on. The person writes the
 reasoning; programs check the writing and, where the reasoning is formal, the logic; the model helps between them.
 
-> **Status:** branch `ai-augmented-topic`, opened 2026-10-29. Scope only, and a grey literature review begun; nothing
-> here is on master. It is this repository's extension, and joins master once its review names a baseline.
+> **Status:** moved out of reader-ergonomics-topic on 2026-10-29, with its history, into a repository of its own; its
+> name and scope are being settled. The review of autoformalization is done, grey and formal, and names baseline B1;
+> nothing of the loop is built yet.
 
 ## The loop
 
@@ -40,7 +41,7 @@ The figure reads from the person downward; what comes back, errors and goals to 
 | Part | Role | Decides |
 |---|---|---|
 | **person** | owns the reasoning; writes each step as a topic | what is claimed |
-| **checks** | programs: the [topic check](../checks/local/topic.py) and the reader-ergonomics checks | whether the form is clear |
+| **checks** | programs: the [topic check](https://github.com/Tewf/reader-ergonomics-topic/blob/3ce8ec139fc08c2852f77e893b8bc38f073f668e/checks/local/topic.py) and the reader-ergonomics checks | whether the form is clear |
 | **model** | a language model: explains, proposes, translates | nothing: its output is always checked |
 | **proof assistant** | Lean, for what is formalized | whether the reasoning is valid |
 
@@ -84,11 +85,11 @@ The grey pass of the review, [autoformalization](../evidence/autoformalization/)
 
 ## Where it sits
 
-- It builds on the [topic](../shapes/topic.md) and its check. A node template drafted earlier, unpublished, already
+- It builds on the [topic](https://github.com/Tewf/reader-ergonomics-topic/blob/3ce8ec139fc08c2852f77e893b8bc38f073f668e/shapes/topic.md) and its check. A node template drafted earlier, unpublished, already
   gave each claim a Lean file; it is the starting point, not the baseline.
 - Structured proofs are reviewed in reader-ergonomics-academic, `evidence/mathematical-writing`; this extension links
   that review and does not repeat it.
 
 ## See also
 
-The [repository's front page](../README.md), the parent of this folder.
+The [repository's front page](https://github.com/Tewf/reader-ergonomics-topic/blob/3ce8ec139fc08c2852f77e893b8bc38f073f668e/README.md), the parent of this folder.
