@@ -9,17 +9,29 @@ The human side names the PNT+ workflow.
 Drawn as two sets, they share their core and differ only at the edges:
 
 ```text
-   formal side's proposal                                           human side's proposal
- ┌──────────────────────────────┬──────────────────────────────────┬──────────────────────────────────┐
- │ challenge file, short and    │ a blueprint: one node per        │ statements copy the paper and    │
- │ read by a person             │ statement, tied to its Lean name │ keep its citation                │
- │ comparator in CI: the same   │ a model may write the proofs     │ bite-sized lemmas, each claimed  │
- │ statement, permitted axioms  │ Lean decides them, in CI         │ as a task                        │
- │ formalization.yaml table     │ a person audits each statement   │ AI use disclosed, labelled in CI │
- │ model judge as a filter only │ against its source               │ a cap on open AI pull requests   │
- └──────────────────────────────┴──────────────────────────────────┴──────────────────────────────────┘
-        program checks of the          the shared core                 rules of a running project
-        statement                                                      for the person's side
+ ┌─ formal side's proposal ─────────────────────┐
+ │ program checks of the statement              │
+ │ · challenge file, short and read by a person │
+ │ · comparator in CI: the same statement,      │
+ │   permitted axioms                           │
+ │ · formalization.yaml table                   │
+ │ · model judge as a filter only               │
+ ├─ the shared core: in both ───────────────────┤
+ │ · a blueprint: one node per statement, tied  │
+ │   to its Lean name                           │
+ │ · a model may write the proofs               │
+ │ · Lean decides them, in CI                   │
+ │ · a person audits each statement against its │
+ │   source                                     │
+ ├─ human side's proposal ──────────────────────┤
+ │ rules of a running project for the person's  │
+ │ side                                         │
+ │ · statements copy the paper and keep its     │
+ │   citation                                   │
+ │ · bite-sized lemmas, each claimed as a task  │
+ │ · AI use disclosed, labelled in CI           │
+ │ · a cap on open AI pull requests             │
+ └──────────────────────────────────────────────┘
 ```
 
 - They are one baseline, not two: both are a blueprint project in which a model may write proofs, Lean decides them in CI, and a person audits each statement against its source.

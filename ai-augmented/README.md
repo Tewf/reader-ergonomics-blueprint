@@ -9,24 +9,34 @@ reasoning; programs check the writing and, where the reasoning is formal, the lo
 ## The loop
 
 ```text
-     ┌─ person ──────────────────────────────────────────────────────────────┐
-     │ writes the idea as topics: one claim each, its summary, its parts     │
-     └──────┬───────────────────────────────────────────────────▲───────────┘
-            │ topics                                             │ guidance: what to split, what is unclear,
-            ▼                                                    │ what the proof assistant rejected, and why
-     ┌─ checks, in CI ──────────────┐   findings   ┌─ model ─────┴────────────────────────┐
-     │ the form: title, summary,    │─────────────▶│ explains findings, proposes clearer  │
-     │ one claim per topic, every   │              │ wording; translates a formal topic   │
-     │ part listed                  │              │ into Lean                            │
-     └──────────────────────────────┘              └──────┬──────────────────▲────────────┘
-                                                          │ Lean             │ errors, goals left open
-                                                          ▼                  │
-                                                   ┌─ proof assistant ───────┴──┐
-                                                   │ Lean checks the reasoning  │
-                                                   └────────────────────────────┘
+ ┌─ person ───────────────────────────────┐
+ │ writes the idea as topics: one claim   │
+ │ each, its summary, its parts           │◀──┐
+ └──┬─────────────────────────────────────┘   │
+    │ topics                                  │
+    ▼                                         │
+ ┌─ checks, in CI ────────────────────────┐   │
+ │ the form: title, summary, one claim    │   │
+ │ per topic, every part listed           │   │
+ └──┬─────────────────────────────────────┘   │
+    │ findings                                │
+    ▼                                         │
+ ┌─ model ────────────────────────────────┐   │
+ │ explains findings, proposes clearer    │   │
+ │ wording; translates a formal topic     ├───┘
+ │ into Lean                              │ guidance
+ └──┬─────────────────────────────────▲───┘
+    │ Lean                            │
+    ▼                                 │ errors, goals
+ ┌─ proof assistant ──────────────────┴───┐ left open
+ │ Lean checks the reasoning              │
+ └────────────────────────────────────────┘
+
+ guidance: what to split, what is unclear, what the
+ proof assistant rejected, and why
 ```
 
-The figure reads from the person, clockwise. Each part has one role:
+The figure reads from the person downward, and what comes back rises on the right. Each part has one role:
 
 | Part | Role | Decides |
 |---|---|---|

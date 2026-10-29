@@ -18,20 +18,32 @@ Grade for all of it: practice, convention, untested, unless a line says measured
 The figure maps each part of the scope's loop to the practice read; the sections below give the sources.
 
 ```text
- person ── topic: claim, summary, parts ──▶ blueprint node (\uses, \lean, or @[blueprint])
-                                                   │
-                                                   ▼
- model ── translates ──▶ challenge file: statements only, short, read by a person
-   ▲                        │                             │
-   │ errors, goals          │ proofs                      │ fidelity: same meaning as the topic?
-   │ (LSP, refinement)      ▼                             ▼
-   └────────────────── solution module            human audit; model judge as filter;
-                            │                     match to a vetted statement; tests
-                            ▼
-              comparator / lake check: same statement, permitted axioms, kernel accepts
-                            │
-                            ▼
- person ◀── guidance: named errors, Try this, help tactic, hints, checked suggestions
+ person
+   │  topic: claim, summary, parts
+   ▼
+ blueprint node: \uses, \lean, or @[blueprint]
+   │
+   ▼
+ challenge file ◀── translates ── model
+   │  statements only, short,       ▲
+   │  read by a person              │
+   │                                │
+   ├─▶ fidelity: same meaning as    │
+   │   the topic? human audit;      │
+   │   model judge as filter;       │
+   │   match to a vetted statement; │
+   │   tests                        │
+   │                                │ errors, goals
+   ▼  proofs                        │ (LSP, refinement)
+ solution module ───────────────────┘
+   │
+   ▼
+ comparator / lake check
+   │  same statement, permitted axioms,
+   │  kernel accepts
+   ▼
+ person ◀── guidance: named errors, Try this,
+            help tactic, hints, checked suggestions
 ```
 
 ## Q1. Prior art: who joins informal writing to Lean, and what each way asks
@@ -104,23 +116,32 @@ The figure maps each part of the scope's loop to the practice read; the sections
 
 ### Wrong statements caught in practice
 
-The figure follows a claim from its source to the kernel; each column is a failure and what caught it in practice.
+The figure follows a claim from its source to the kernel; each step names a failure and what caught it in practice.
 
 ```text
- informal source ────▶ formal statement ────▶ proof ──────────────▶ kernel accepts
- (paper, problem)      (person or model)      (model)
-       │                     │                      │                      │
- vague or wrong source  misformalization       added axiom, changed   soundness bug
-                        (typo, missing          meaning (a local
-                         hypothesis, wrong      instance, a hidden
-                         definition)            placeholder)
-       │                     │                      │                      │
- caught by formalizing  caught by a person      caught by comparator,  caught by other
- or a counterexample    rereading the source,   the axiom check,       kernels and a
-                        a model audit, a        a sandbox              verified checker
-                        trivial-proof test
- Buzzard 2024, 2026d    Alexeev 2025,           Lean FRO 2026a,        Hales 2026
-                        Adamczewski 2026        LZ 2025a
+ informal source (paper, problem)
+ │  fails: vague or wrong source
+ │  caught by: formalizing, or a counterexample
+ │  Buzzard 2024, 2026d
+ ▼
+ formal statement (person or model)
+ │  fails: misformalization (typo, missing
+ │  hypothesis, wrong definition)
+ │  caught by: a person rereading the source, a
+ │  model audit, a trivial-proof test
+ │  Alexeev 2025, Adamczewski 2026
+ ▼
+ proof (model)
+ │  fails: added axiom, changed meaning (a local
+ │  instance, a hidden placeholder)
+ │  caught by: comparator, the axiom check, a
+ │  sandbox
+ │  Lean FRO 2026a, LZ 2025a
+ ▼
+ kernel accepts
+    fails: soundness bug
+    caught by: other kernels and a verified checker
+    Hales 2026
 ```
 
 | Case | What was wrong | Caught by | Source |
