@@ -24,7 +24,8 @@ Drawn as two sets, they share their core and differ only at the edges:
 
 - They are one baseline, not two: both are a blueprint project in which a model may write proofs, Lean decides them in CI, and a person audits each statement against its source.
 - The formal side's edge checks by program that the statement proved is the statement claimed; the human side's edge sets what the person does around it. Neither excludes the other.
-- PNT+ already enforces LeanArchitect's `@[blueprint]` attribute (PNT-plus 2026, sections 6 and 12). Whether it runs comparator or keeps a formalization.yaml was not read by either side.
+- PNT+ already enforces LeanArchitect's `@[blueprint]` attribute (PNT-plus 2026, sections 6 and 12).
+- PNT+ runs no comparator and keeps no formalization.yaml: its CI builds the blueprint and requires `checkdecls`, which checks that each named declaration exists, not what it states (GitHub 2026i). The Palomar minimum is what B1 adds to it.
 
 ## The named baseline
 
