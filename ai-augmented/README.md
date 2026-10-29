@@ -4,7 +4,7 @@ The topic as the one format a person, a language model and a checking program al
 reasoning; programs check the writing and, where the reasoning is formal, the logic; the model helps between them.
 
 > **Status:** branch `ai-augmented-topic`, opened 2026-10-29. Scope only, and a grey literature review begun; nothing
-> here is on master. If it grows into a problem of its own, it becomes its own repository.
+> here is on master. It is this repository's extension, and joins master once its review names a baseline.
 
 ## The loop
 
