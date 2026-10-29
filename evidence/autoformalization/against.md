@@ -89,6 +89,7 @@ This file gathers the evidence against the claims of [review](review.md) and [st
 | the gain from repair is small on PISA: 1.5 points at 16 samples (8b model) | First 2023, Table 4 |
 | Lean Copilot's assistance numbers come from replaying textbook proofs, not from users | Song 2024, section 5 |
 | the Draft, Sketch, and Prove ablation holds on miniF2F in Isabelle only, and the human informal proofs beat the best model's by 0.4 points on the test set | Jiang 2023c, Table 1 |
+| in Lean, a correct informal proof did not help: one model's one-shot pass@128 on Lean-IMO-Bench stayed at 20.0% and 3.3%, basic and advanced sets | Kung 2026, Table 1 |
 | Xu 2025's gain is for fine-tuned models on PISA, not for human readers | Xu 2025, abstract |
 | LeanTutor is evaluated on its authors' own benchmark of 371 proofs | Patel 2025, abstract (secondary) |
 
@@ -152,6 +153,7 @@ This file gathers the evidence against the claims of [review](review.md) and [st
 - Optimising a Mizar proof's order for readability is NP-complete (Pąk 2014, abstract).
 - In definition-heavy projects, tooling saves only 27.3% of semantic review (Yanahama 2026, abstract, secondary), so the person's audit of definitions remains.
 - Several large results are their owners' accounts: a textbook formalized by agents in a week (Gloeckle 2026) and a crowd platform (Chen 2026b).
+- Also 26 textbooks formalized by agents and graded by the owners' model judges, checked by experts on one book only, with no agreement rate (Rammal 2026, section 5.1; Appendix G).
 
 ## Limits of the practice evidence
 
@@ -159,6 +161,6 @@ This file gathers the evidence against the claims of [review](review.md) and [st
 |---|---|
 | prover and translator scores in practice are their owners' claims; one result was checked by someone else | review Q2; Buzzard 2026a |
 | the time saved is the practitioners' own estimate, with no control | Tao 2026i; Tao 2025c; Kirov 2026a |
-| model feedback on writing is measured only by its owner's satisfaction survey, with no false-positive rate | Google 2025; STOC 2026 |
+| in practice, model feedback on writing is measured only by its owner's satisfaction survey, with no false-positive rate; research measures it against the reviews of submitted papers, not by whether a draft improved: by overlap with the reviewers, and in one owner's case study judged by a model | Google 2025; STOC 2026; Liang 2024c; Wu 2026 |
 | counts of stars, downloads and labels measure interest or activity, not use or correctness | GitHub 2026e; PyPI 2026; GitHub 2026f |
 | the grey pass met no controlled study of the loop on either side | review Q4 |

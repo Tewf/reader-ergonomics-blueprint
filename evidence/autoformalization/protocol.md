@@ -34,11 +34,17 @@ The scope's five questions, Q1 to Q5 of [frame](frame.md): prior art, translatio
 The formal pass ran on 2026-10-29 in three strands, one reviewer each: A, translation (Q2); B, prior art and feedback (Q1, Q3); C, form and limits (Q4, Q5). Their sub-questions are in [frame](frame.md).
 
 - The grey pass's formal leads went to the strands. Each lead a strand screened is named in its section below, kept or set aside with its reason.
-- These leads have no record of screening in any strand and stay leads, unread: Urban (2026) on formal topology; Meta's ATLAS; Bloom and Mehta (2022); the LeanDojo paper (Yang and others, 2023).
-- Also: the Waterproof Editor (arXiv 2606.01875); Nipkow's Isar/HOL tutorial, given at TYPES in 2002 and Wenzel's Isabelle/Isar framework; ProofAug (arXiv 2501.18310).
+- The lead screen: on 2026-10-29, after the merge, one reviewer screened the sixteen leads that no strand had screened, by the rule of section 8. Each lead was identified on arXiv, Crossref or OpenAlex without a key or account. Its abstract was read, and its full text where open and needed. Every kept number was then checked against its source; Liang 2024c, met in a kept work, was read in full.
+- Its decisions on the leads first listed here as unread: LEAP kept, as Kung 2026; Meta's ATLAS kept, as Rammal 2026, with its namesake Liu 2025d. Urban (2026) on formal topology, Bloom and Mehta (2022) and the LeanDojo paper (Yang and others, 2023) set aside, each with its reason in [sources](sources.md).
+- These leads have no record of screening, in a strand or at the lead screen, and stay leads, unread.
+- They are the Waterproof Editor (arXiv 2606.01875); Nipkow's Isar/HOL tutorial, given at TYPES in 2002 and Wenzel's Isabelle/Isar framework; ProofAug (arXiv 2501.18310).
 - Also: OEIS Open (arXiv 2608.11941); Alexeev and Mixon (2025, arXiv 2510.19804); the Erdős 728 write-up (arXiv 2601.07421); arXiv 2601.22401, 2603.28636 and 2604.18869; Aristotle (arXiv 2510.01346) and its API report (arXiv 2605.20120).
-- Also: BFS-Prover and BFS-Prover-V2 (arXiv 2502.03438, 2509.06493); the DeepSeek-Prover-V2 report; DeepSeekMath-V2; ProofBridge (arXiv 2510.15681); FormL4 (arXiv 2406.01940); MathAdv, LEAP, LeanFlow, Numina-Lean-Agent and MathCoPilot.
+- Also: BFS-Prover and BFS-Prover-V2 (arXiv 2502.03438, 2509.06493); the DeepSeek-Prover-V2 report; DeepSeekMath-V2; ProofBridge (arXiv 2510.15681); FormL4 (arXiv 2406.01940); MathAdv, LeanFlow, Numina-Lean-Agent and MathCoPilot.
 - Also: Avigad's essay of 2026 on AI and formalization; a survey of AI for mathematics met in Kirov 2026b; Thurston (1994) and Jaffe and Quinn (1993); the benchmarks VERINA, MathOlympiadBench and FLTEval.
+- Also: Jayaram, Tyler, Woodruff and others (2026), Google's Paper Assistant Tool (arXiv 2606.28277), a grey lead (W7) that strand B did not pursue.
+- Also: Biswas, Schoepp, Vasan and others (2026), the AAAI-26 AI review pilot (arXiv 2604.13940), met at the lead screen in Wu 2026, section 2.5.
+- Also, met at the lead screen in the search for Urban (2026): Bryant, Huerta y Munive, Kaliszyk and Urban (2026), Munkres' general topology autoformalized in Isabelle/HOL (arXiv 2604.07455).
+- Also, met in the same search: Brown, Kaliszyk and Urban (2026), Agent Hunt (arXiv 2603.06737).
 - Also most of the authors the grey pass listed to search by name.
 - Each strand searched for existing reviews first, then ran its strings, then snowballed; each was then audited line by line against its sources (section 10).
 - Databases: the Semantic Scholar bulk search, without a key (title and abstract; `+` is AND, `|` is OR; stemmed words, so noisy upper bounds); the arXiv search API, without a key (`abs:` field).
@@ -202,8 +208,9 @@ Author strings, on arXiv. The first form, with initials (for example `au:Ringer_
 - Leads of the grey pass, checked and included: the ETP paper (Bolan 2025), and LeanArchitect, which is the ITP (2026) paper 25 the grey pass could not name (Zhu 2026b).
 - Also Lean Atlas, Prove2Me, Lean Copilot, Verbose Lean's ITP paper, two Diproche papers, the Isabelle/Naproche paper.
 - Also the error-message papers 2501.05706, 2308.11873 and 2409.18661 (Salmon 2025; Taylor 2024b; Santos 2024). The grey pass's unchecked numbers for the last two are confirmed: 2,565 students and 106 participants.
-- Leads not pursued, out of time or out of strand: Astrolabe; the proof-minimization works met in the equational project; Lurch; two further Diproche papers; Koepke's preprints and Cramer's dissertation.
-- Also not pursued: two papers on model review of research papers, which concern prose, not a checker.
+- Leads the strand did not pursue, out of time or out of strand, then screened at the lead screen (section 4, above). Astrolabe set aside; of the proof-minimization works met in the equational project, Kondylidou 2026 kept, Kinyon's method and the Vampire to Dedukti export set aside.
+- Of Lurch's papers, Carter 2013 kept, two set aside and one not found. Of two further Diproche papers, Carl 2020b kept and the other set aside; Koepke's preprints set aside; Cramer's dissertation kept, as Cramer 2013.
+- Also not pursued by the strand: two papers on model review of research papers, which concern prose, not a checker. At the lead screen Wu 2026 was kept; the other, Google's Paper Assistant Tool, stays a lead, unread (section 4, above).
 - Recalled by the reviewer and verified before use: Commelin 2024, Marceau 2011, Prather 2017, Eremondi 2019, Hentschel 2016, Ringer 2020, Coscoy 1995, Lu 2024, Thakur 2024, and Ganesalingam 2017 (also found by A8).
 - Unsupported, as the audit found: 82 titles were recorded as screened for the author strings, where the stated rule gives 72, so 1,023 screened in all where the rule gives 1,013. Per-string counts for A1 to A10 were not recorded.
 

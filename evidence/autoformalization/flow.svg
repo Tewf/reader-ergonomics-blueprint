@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392 564" role="img" aria-labelledby="t d"><title id="t">Autoformalization: how the pool of sources was built</title>
-<desc id="d">Returned by the strings: Count 32,944; then Screened: Count 2,162; then Included as new: Count 173; plus Carried from the grey pass: Count 80; plus Linked from the family: Count 11; equals In the review: 264.</desc>
+<desc id="d">Returned by the strings: Count 32,944; then Screened: Count 2,162; then Included as new: Count 182; plus Carried from the grey pass: Count 80; plus Linked from the family: Count 11; equals In the review: 273.</desc>
 <style>
   .box { fill: #FFFFFF; stroke: #6A6D77; stroke-width: 1.5; }
   .total { fill: #EFEFF3; stroke: #101014; stroke-width: 1.5; }
@@ -31,7 +31,7 @@
 <path class="arrow" d="M281.0,182 v26"/>
 <text class="label" x="16" y="243.0">Included as new</text>
 <rect class="box" x="186" y="212" width="190" height="54" rx="12"/>
-<text class="n" x="281.0" y="246.0" text-anchor="middle">173</text>
+<text class="n" x="281.0" y="246.0" text-anchor="middle">182</text>
 <text class="head" x="281.0" y="286.0" text-anchor="middle">+</text>
 <text class="label" x="16" y="327.0">Carried from the grey pass</text>
 <rect class="box" x="186" y="296" width="190" height="54" rx="12"/>
@@ -43,5 +43,5 @@
 <text class="head" x="281.0" y="454.0" text-anchor="middle">=</text>
 <text class="label" x="16" y="495.0">In the review</text>
 <rect class="total" x="186" y="464" width="190" height="54" rx="12"/>
-<text class="n" x="281.0" y="498.0" text-anchor="middle">264</text>
+<text class="n" x="281.0" y="498.0" text-anchor="middle">273</text>
 </svg>

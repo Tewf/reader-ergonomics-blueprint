@@ -11,9 +11,9 @@ The findings of both passes, read on 2026-10-29 and merged by the questions Q1 t
 
 | Id | Question | Answer from practice (grey pass) | Answer from research (formal pass) |
 |---|---|---|---|
-| Q1 | Prior art | Blueprint projects join informal statements to Lean declarations, checked in CI; the closest to the loop keeps its statements in a short challenge file checked by comparator, with a formalization.yaml mapping each source statement to its Lean name (Tao 2026f; Lean FRO 2026a; Mathlib Initiative 2026); the person's work moves from writing proofs to scoping tasks, checking statements and digesting output. | Declarative proof languages (Mizar from 1973, Isar from 1999) and the mathematical controlled languages (ForTheL from 2000, Naproche from 2010) are well described, but no study found here measured their effect on a writer or reader; blueprints are studied as tools and case reports, and the only controlled numbers on structure come from machines (Jiang 2023c; Xu 2025). |
+| Q1 | Prior art | Blueprint projects join informal statements to Lean declarations, checked in CI; the closest to the loop keeps its statements in a short challenge file checked by comparator, with a formalization.yaml mapping each source statement to its Lean name (Tao 2026f; Lean FRO 2026a; Mathlib Initiative 2026); the person's work moves from writing proofs to scoping tasks, checking statements and digesting output. | Declarative proof languages (Mizar from 1973, Isar from 1999) and the mathematical controlled languages (ForTheL from 2000, Naproche from 2010) are well described, but no study found here measured their effect on a writer or reader; blueprints are studied as tools and case reports, and the only controlled numbers on structure come from machines (Jiang 2023c; Xu 2025; Kung 2026), where two comparisons disagree on whether an informal proof helps. |
 | Q2 | Translation | Lean decides the proof, and no program decides whether the statement means what the person meant; wrong statements are common, pass Lean, and are caught by a person rereading the source, by a counterexample, or by a model audit whose claim Lean then checks. | Faithfulness is measured by people on small samples, by provable equivalence to a reference, and by model judges; none is both complete and automatic. Judged by people, the best system per benchmark is right on 13.4% to 90.6% of statements, and 16.4% to 38.5% of two benchmarks' human-written statements are wrong. |
-| Q3 | Feedback | Guidance reaches models in full (errors, goals) and people through mechanisms written ahead of time; model feedback on informal writing is measured only by satisfaction surveys. | For people, better error messages help in some controlled studies and not in others; model-written explanations help in one large trial (Wang 2024b) and not in two timed ones (Santos 2024; Moraru 2026). For models, the checker's error message is what makes repair work (First 2023; Lin 2025b). One study measured the whole loop on students (Guo 2026b). |
+| Q3 | Feedback | Guidance reaches models in full (errors, goals) and people through mechanisms written ahead of time; model feedback on informal writing is measured only by satisfaction surveys. | For people, better error messages help in some controlled studies and not in others; model-written explanations help in one large trial (Wang 2024b) and not in two timed ones (Santos 2024; Moraru 2026). For models, the checker's error message is what makes repair work (First 2023; Lin 2025b). One study measured the whole loop on students (Guo 2026b). Model feedback on research papers is measured against human reviews, by overlap with them (Liang 2024c) and in one owner's case study judged by a model (Wu 2026); neither measures whether a draft improved. |
 | Q4 | Form | Splitting into small claims is reported to help checking and sharing every time, and to help thinking only where a person did or followed the splitting. | Self-selected students who used a proof assistant scored higher or wrote more explicit proofs; the one quasi-experiment with a control found no significant grade effect, and no randomised trial was found. In one study of 7 people, model access raised correct formalizations. |
 | Q5 | Limits | A misformalized statement passes Lean, a model judge is not repeatable, kernels have bugs, and model output is long enough that review becomes the bottleneck. | Belief in a checked proof rests on the kernel, the printed statement and the person, each with known failures; people read the statement they expect; over-reliance on automation is robust in experts; formal text is several times longer than the informal one. |
 
@@ -131,13 +131,14 @@ digraph answer_first {
 | Verbose Lean | fixed English or French phrasings, which are Lean tactics; the teacher configures them | Lean checks; a help tactic and a suggestion widget | 162 | Massot 2026b |
 | Waterproof (Rocq) | a declarative style that reads like mathematical text | Rocq checks; its team calls the feedback hard to interpret | 44 | PASE 2022; TUe 2026 |
 | Isar (Isabelle) | a structured proof text, which the owner calls understandable by people and machines; explicit premises and locales, a guard against false context | continuous checking; Sledgehammer calls external provers | not counted | Isabelle 2026; Paulson 2026 |
-| Lurch | the meaningful parts of the text marked | checks the marked claims | not counted | Lurch 2026 (example only) |
+| Lurch | the meaningful parts of the text marked | checks the marked claims | not counted | Lurch 2026 (example only); Carter 2013 |
 
 - Naproche's own tutorial warns that complete, unambiguous text in a readable language is subtle and needs ample exercise (Naproche 2026, introduction).
 - Verbose Lean's stated aim is Lean code easier to transfer to a paper proof, not easier to write (owner; Massot 2026b, README, first paragraph, read again at the merge). The human side gave the contrast as not teaching Lean, citing LZ 2025f as well.
 - A controlled language without editor support was dropped: Coq's declarative mode was removed, and the accepted answer calls its exact phrasing almost impossible to remember (PASE 2022).
 - Two families appear (the formal side's synthesis): prover-backed languages let the writer skip obvious steps and ask for more only where the prover fails; tactic-backed ones ask for every step in fixed words.
-- Grade: convention, untested; effects on writers are reported only by owners, and the formal pass found no study that measured them (below).
+- Lurch's owners report that marking the meaningful parts taught proof structure, and felt a burden once learned (Carter 2013, section 2); it misgraded work twice in their last semester (section 3, footnote 6). Their classroom survey is in Q4, C2.
+- Grade: convention, untested; effects on writers are reported only by owners, and the formal pass found no study that measured them (below). One owner's report is a survey with no sample size and no comparison (Carter 2013).
 
 ### Controlled natural languages, in research
 
@@ -145,14 +146,17 @@ digraph answer_first {
 |---|---|---|---|---|
 | Verchinine 2007 | a text in ForTheL: axioms, definitions, theorems, proofs | SAD checks the text with a first-order prover; the authors place it beside Mizar, as declarative (section 1) | system description | convention |
 | Cramer 2010 | Naproche CNL, close to textbook prose | proof checking of the text | title and venue only | not graded |
+| Cramer 2013 | Naproche CNL, in its full account, a dissertation; indefinite noun phrases get only an existential reading, and "thus" is reserved for retracting assumptions | proof checking of the text | coverage never evaluated quantitatively: two texts were adapted, Landau's Grundlagen chapter 1 and Euclid's first five theorems, and the language was extended to fit them (section 7.7, pp. 248-249; chapter 8; appendix B) | convention |
 | De Lon 2021 | ForTheL, also as a LaTeX dialect | automatic provers fill implicit or obvious steps; checking runs in the editor, with a cache (section 1) | system description; no user measure | convention |
 | Massot 2024 | fixed English or French phrasings, a CNL layer the author calls slightly harder to write than plain tactics (introduction) | Lean checks; a help tactic offers suggestions the student can click (section on levels of assistance) | design paper from five years of work; no measured evaluation found in the text | convention |
 | Carl 2020 | exercises in a controlled German fragment | an "anti-ATP" applies common fallacies to diagnose a mistake (abstract) | method | convention |
+| Carl 2020b | a formula the student writes for a sentence, in formalization exercises | a tableau prover checks it against reference formalizations in both directions, universal instantiations capped at 3; the feedback names the direction that fails (section 2) | method, with no evaluation with students; the author calls equivalence alone a weak test of adequacy (section 2) | convention |
 | Carl 2022 | the same, in a first-semester lecture of 228 participants | immediate feedback on each attempt | number theory: 184 attempts by teams of two, 104 (57%) judged correct, 29 (16%) flagged as minor mistakes; set theory: 86 attempts, 44 (51%) correct; 127 of 228 (56%) answered the questionnaire (sections 5.1, 5.2) | measured, descriptive |
 | Carl 2024 | free text instead of the fixed fragment | a language model formalizes into the CNL; "encouraging first results" (abstract) | preliminary | supported with caveat |
 
 - Kuhn's entry for Naproche reports its authors' claim that most textbook text can be rewritten in it so as to resemble the original (appendix, secondary).
 - No study read here measured whether writing in a CNL changes the writer's reasoning or a reader's understanding.
+- Coverage itself is argued, not measured: the wider a CNL's coverage, the harder it is for an author to know the system reads the text as meant (Cramer 2013, section 7.7, pp. 255-256).
 
 ### Declarative proof languages, in research
 
@@ -189,10 +193,13 @@ digraph answer_first {
 | Jiang 2023c | **Draft, Sketch, and Prove**: an informal proof becomes a formal sketch whose gaps a prover fills | Isabelle, miniF2F test, success rate within 100 autoformalization attempts per problem: 20.9% for the prover with heuristics, 39.3% with human informal proofs, 38.9% with the best model's; without informal proofs, 34.0% (Table 1) | measured |
 | Hu 2025 | sentence-level verification of informal proofs; small manual edits to the proofs improved it (abstract) | benchmark | supported with caveat |
 | Varambally 2025; Chung 2026 | recursive decomposition into subgoals, or a generated blueprint refined on failure | miniF2F test 99.2%: Chung 2026 at pass@1; Varambally 2025 as an agentic pass rate on its 244 problems under a budget of thousands of calls, no pass@k. PutnamBench: 462 of 660 (Varambally 2025, Table 1); 597 of 672 (88.8%) with a seeding informal proof (Chung 2026, abstract, secondary) | measured, on saturated benchmarks |
+| Kung 2026 | LEAP: a direct proof is tried first, with compiler feedback; on failure, an informal blueprint of lemmas becomes a Lean sketch, accepted only if it compiles with placeholders in the new lemmas alone, the lemmas kept in a shared graph (section 2.2) | Putnam (2025): 12 of 12 with two rollouts, where its model alone (Gemini 3.1 Pro) and Goedel-Prover-V2 solved none at one-shot pass@128, Hilbert 4 and Aristotle 9 (Table 2). Lean-IMO-Bench, 60 problems whose statements Lean experts formalized: 83.3% basic, 56.7% advanced (section 3.1; Table 4); without the shared lemma memory, 73.3% and 40.0% (Table 6). A correct informal proof left one-shot pass@128 unchanged, 20.0% basic and 3.3% advanced (Table 1) | measured, on 12 and 60 problems, the authors' own model family, at unequal budgets |
 | Poiroux 2025b | RLMEval: 613 theorems from 6 real blueprint projects | best model 10.3% pass@128 on proof autoformalization and 8.8% on theorem proving, normal mode (section 4, Figure 1) | measured |
 | Gloeckle 2026 | a 500-page textbook formalized by agents in one week: 130K lines, 5900 declarations, a side-by-side blueprint (abstract, secondary) | owners' account | convention |
+| Rammal 2026 | ATLAS, Gloeckle 2026's successor: 26 textbooks formalized by agents, each target judged by a model for faithfulness, proof integrity and code quality, passing at 3 of 5 on all three (section 3; Appendix D) | 2,855 of 4,007 target statements (71.3%), 483,918 lines (Table 1); on one book of 39 targets, 77% of targets done at 600M tokens, 51% without the target-level supervisor (section 5.2, Figure 6); the expert check of one book is in Q2, A1 | measured, descriptive: the owners' model judges, one book checked by experts, no agreement rate |
 
-- Human structure helps machines in the one ablation read: removing the informal proof costs 5.3 points on miniF2F test, within 100 attempts (Jiang 2023c, Table 1).
+- Two comparisons read disagree on the informal proof. Removing it costs 5.3 points on miniF2F test in Isabelle, within 100 attempts, where a prover fills the sketch (Jiang 2023c, Table 1). Adding a correct one left one-shot pass@128 in Lean unchanged on Lean-IMO-Bench, 20.0% and 3.3%, for one model (Kung 2026, Table 1).
+- Decomposition into checked lemmas helped in one framework: on Putnam (2025), its model alone solved none at one-shot pass@128, and the framework 12 of 12 with two rollouts (Kung 2026, Table 2). The budgets differ.
 - The gap between saturated benchmarks and blueprint projects is wide: the same 7B prover scores over 75% on MiniF2F and 10.3% pass@128 on RLMEval (Poiroux 2025b, section 4).
 
 ## Q2. Translation: how faithful, and how a wrong statement is caught
@@ -282,6 +289,8 @@ digraph faithfulness {
 | Dai 2026 | elaborator crossed with a semantic judge | ProofNet# and miniF2F-test | of 186 outputs, the two signals disagree on 77, 41.4% (section 5.1) |
 | Han 2026 | SA-Pass: the statement must imply, and be implied by, auxiliary shadow theorems | 178 postgraduate- to research-level problems (13 at research level), two expert labellers | ranks six systems exactly as the experts (rho 1.00), against 0.76 for BEq+ and 0.72 for a model judge (appendix F) |
 | Mei 2026 | model review plus numerical and vacuity checks | three labelled sets | accepted-error rate 4.8%, 1.9% and 9.2%, against 4.0% to 35.2% for model judges and LeanScorer, while flagging more (section 5.2) |
+| Liu 2025d | compile, back-translation and a model check of entailment, in turn | human experts, on the ProofNet outputs that passed; how many experts, and how the outputs were sampled, not stated | of what passed, people found correct 99 of 151 for the ATLAS Translator, 79 of 134 for Herald, 43 of 82 for the Llama 3.1 initialization: 66%, 59% and 52%, shares computed here (Appendix B, Table 5) |
+| Rammal 2026 | three model judges, of faithfulness, proof integrity and code quality; a target passes at 3 of 5 on all three (section 3; Appendix D) | experts, on one book of the 26 | 37 of 39 targets passed; the experts marked 2 results not ok, both resting on 2 added axioms, and noted content changes in others, such as a corollary stated more generally; they found that the formalization had corrected a false theorem of the book (Appendix G; Table 1); no agreement rate is given |
 | Liu 2025c | GTED, a tree edit distance between statements | abstract only | |
 
 - Grade: measured, each on its own benchmark; most validations use fewer than 1,000 labelled items, and several judges are validated only by their authors.
@@ -301,6 +310,7 @@ digraph faithfulness {
 | Ospanov 2025 | Kimina autoformalizer (Wang 2025, appendix C.2.3), same set | the same | 98.4% by the judge, 90.6% by people (Table 2) |
 | Zhang 2026 | eight systems, 227 textbook statements | the two-judge criterion | compile minus accepted: 1.3 to 29.5 points; the best agent compiles 87.2%, accepted 57.7%, and people confirm 23.8 of its 29.5 points as errors (section 1) |
 | Han 2026 | public challenge, 126 problems | SA-Pass | compile 61.6% on average, SA-Pass soft 11.1% (appendix G) |
+| Liu 2025d | ATLAS Translator against Herald, ProofNet, 371 statements | a model judge, then people on what it passed | pass@1 by the model-judged pipeline, 39.46% against Herald's 31.43%, mean of 5 seeds (section 4.2.1; Table 2); people then found 66% and 59% of the passed outputs correct (Appendix B, Table 5) |
 
 Benchmarks written by people are wrong too:
 
@@ -313,6 +323,7 @@ Benchmarks written by people are wrong too:
 | Browning 2026 | 50 Annals theorems, written and reviewed by experts | a model audit then found mistakes in 11 formalizations, and in 7 papers missing, mostly trivial, assumptions without which the published theorem is false (section 2.5) |
 
 - A count of fixes is not a rate: 511 misformalization fixes were merged in Formal Conjectures by 2026-10-02, for 3,604 statements (Browning 2026, section 2.5).
+- A second case of a model judge passing what people reject: of the ProofNet outputs that back-translation and an entailment check passed, people found 52% to 66% correct (Liu 2025d, Appendix B, Table 5). The first case is Ospanov 2025's 97.5% against 62.7%.
 - Grade: measured, descriptive, on each benchmark; the self-reported accuracies of pipelines with model judges (Gao 2025: 96.7% on miniF2F-test, section 1) are not comparable with human-judged ones.
 
 ### Wrong statements caught in practice
@@ -403,6 +414,7 @@ digraph wrong_statements {
 - Project level: a repository can compile while its central theorem is weakened or depends on a placeholder, so LeanTrail audits each paper item against the Lean code (Venturim 2026, abstract).
 - MechAlign reviews a main theorem through its extracted dependencies (Shen 2026, abstract); Min 2026 argues for theory-level translation.
 - A formalization with no placeholder left still failed an expert review of its definitions and generality (Ilin 2026, abstract).
+- At the scale of 26 textbooks, agents' statements failed in three recurring ways: hidden axioms, weakened hypotheses, and oversimplified definitions that contaminate the statements depending on them (Rammal 2026, section 5.3).
 - An impossibility argument: resolving ambiguity in mathematical text is placed above the halting problem in a computability hierarchy (Bastounis 2026, abstract).
 - On students' proofs, after a model formalized them, experts judged unfaithful 18 of 1,038 correct steps (2%) and 22 of 117 incorrect ones (18%) (Guo 2026b, section 7.1).
 - In 12 of those cases, the loop that makes a step compile had corrected the student's small mistake (Guo 2026b, section 7.1).
@@ -498,11 +510,14 @@ digraph feedback {
 | Coscoy 1995 | text extracted from Coq proofs | title and venue only | not graded |
 | Ganesalingam 2017 | a prover writing human-style proofs, judged by blog readers | nobody suspected a program in the first post; in the vote, roughly half guessed the program, with at least 300 votes per problem; several readers wanted the new target stated once the initial one had been expanded (section 3 of the preprint) | measured, informal |
 | Hattori 2025; Ranta 2026 | informalization of Lean proofs by a model along the proof structure; symbolic informalization by grammar | compared with textbook proofs (Hattori 2025, abstract); a position (Ranta 2026) | supported with caveat; convention |
+| Kondylidou 2026 | Krympa shortens an automated prover's equational proofs, the formal answer to the thread LZ 2025c | the 62-step Vampire proof of 650 => 448 becomes 20 steps (abstract; section 6); on 1,431 ETP problems, 6.6 to 4.5 steps on average, 31.5% shorter (section 7); on the 117 with 15 steps or more, 26.3 to 11.4 at best (Table 1); a 151-step proof becomes 10 (abstract); readability is argued, not measured on readers (section 9) | measured, on proof length only |
+| Carl 2020b | a student's formalization checked by a tableau prover against reference ones, in both directions | the feedback says which direction fails, sufficient but not necessary or necessary but not sufficient (section 2); Game of Def colours the set the student defined against the target (section 3); no evaluation with students | convention, a method |
 | Song 2024 | Lean Copilot suggestions, replayed on a textbook | 2.08 manual steps per theorem against 3.86 for aesop; 74.2% of steps automated against 40.1%; a replay, not users (section 5) | measured, on a replay |
 | Patel 2025 | LeanTutor: autoformalizer, next step, feedback | evaluated on PeanoBench, 371 proofs (abstract, secondary) | measured, on its own benchmark |
 | Guo 2026b | LeanSide: students' prose formalized into Lean, the verdict informalized back; 23 two-hour sessions in a linear algebra course | experts judged that 61 of 97 (63%) step error messages reflected the mistake, 3 of 13 (23%) continuation errors, 11 of 13 (85%) next-step hints; of 87 iterations, 52 (58%) progressed and 25 (29%) stalled or diverted, counts the source does not reconcile (52 + 25 + 11 = 88, and its Figure 7's 58.6% is 51 of 87); students matched experts on 91% of accurate and 99% of inaccurate feedback (sections 7.2.2, 8, 8.1) | measured, descriptive |
 
 - In Guo 2026b, the step messages failed mainly by granularity: Lean's error sat below the student's step (section 7.2.2).
+- Carl 2020b's verdict is at the person's grain, by this review's reading: it names how what the student wrote relates to what was meant, not a step of the prover.
 - The 63%, 23% and 85% are experts' judgments of model renderings of Lean errors, written by a model that saw only the Lean error and the lemma (section 7.2.2). They do not say students understood the messages.
 - The repair loop also changed meaning: 22 of 117 (18%) incorrect steps were formalized unfaithfully, 12 of them because the compiler-guided loop silently corrected the student's small error (section 7.1).
 
@@ -517,11 +532,13 @@ digraph feedback {
 | Xin 2024b | reinforcement learning from proof assistant feedback | miniF2F test 63.5% with tree search, 32 x 6400 samples; ProofNet test 25.3%, 4 x 6400 (Tables 1 and 2) | measured |
 | Ospanov 2025b | agents isolate failing sub-lemmas from Lean's errors | miniF2F 84.9% under 100 samples, among models under 8B parameters; general models from 3-7% to over 40% (abstract, secondary) | measured |
 | Lin 2025b | self-correction from Lean's errors, two rounds | pass@32 on MiniF2F 88.1% to 90.4% (abstract); about 2 points, and removing the error messages significantly lowers it (section 3.5, Figure 7) | measured |
+| Kung 2026 | up to 20 compiler-feedback revision steps after one attempt, against one-shot sampling, Lean-IMO-Bench basic set (30 problems) | Gemini 3.1 Pro from 20.0% (one-shot pass@128) to 36.6% (iterative pass@1); Goedel-Prover-V2-32B from 10.0% to 6.6% (section 5.1, Table 5) | measured, at unequal budgets |
 | Wang 2026 | 260,000 tuples of failure, diagnostic, repair and explanation | a fine-tuned 4B model beats the strongest open baseline at single-shot repair (abstract, secondary) | measured |
 | Deng 2026 | step-level repair from Lean's message, 1,990 LeanDojo theorems | 82 more theorems, up to 32% relative gain; the first attempt gives 84-96% of the gain; gains come from shallow failures, not type mismatches (abstract, secondary) | measured |
 | Ilin 2026 | expert review of an agent's sorry-free formalization | serious problems in definitions, generality and API; agents fixed local checkable feedback, not design (abstract) | supported with caveat, one expert review |
 
 - Across these works, the error message is the active ingredient for a model (First 2023; Lin 2025b), and its value is concentrated in shallow errors (Deng 2026).
+- It helped a general model and not a specialized prover in one comparison, at unequal budgets (Kung 2026, Table 5).
 - Lean feedback repaired form more than meaning in two preprints of strand A: Dai 2026 (Q2, A3), and Zhang 2026. In Zhang 2026, nearly half of an agent's compile gain from it failed the semantic criterion (section 1; ablation in section 5).
 
 ### Checks of form in CI, and model feedback on writing
@@ -539,6 +556,19 @@ digraph feedback {
 - No grey source measured whether a person fixes a Lean error better with any of these mechanisms, or whether a CI check of clarity changes what a person writes.
 - Studies on C and Python, then leads of the grey pass, are read in the formal pass above: the programming error-message tables.
 - Grade for this table: convention, untested; the survey is its owner's.
+
+The lead screen of the formal pass read two studies of model feedback on research papers, both measured against the human reviews the papers received:
+
+| Work | Design | Result, with where | Grade |
+|---|---|---|---|
+| Liang 2024c | GPT-4 given each paper's text, up to its first 6,500 tokens, in one pass; its comments compared with the published human reviews of 3,096 accepted papers of 15 Nature-family journals and of 1,709 ICLR papers, accepted and rejected. GPT-4 extracts and matches the comments; three co-authors checked the matching on 12,035 comment pairs, F1 0.824 (Methods) | of GPT-4's comments, 30.85% (Nature family) and 39.23% (ICLR) overlapped with an individual reviewer's, against 28.58% and 35.25% between two reviewers, the number of comments controlled; shuffled across papers, 0.43% and 3.91% (Results; Fig. 2a, 2b). A comment raised by more reviewers was matched more often: 11.39% for one, 31.67% for three or more, Nature family (Fig. 2e) | measured, against a human baseline, by authors who built the pipeline on a model they do not own |
+| Liang 2024c, its user study | 308 researchers from 110 US institutions, who opted in, given the feedback on their own papers, then a survey (Methods) | 57.4% found it helpful or very helpful; 82.4% found it more beneficial than at least some human reviewers (Results; Fig. 4a, 4c); the authors name self-selection as a limit (Discussion) | measured, descriptive: a survey of self-selected users |
+| Wu 2026 | a tool its author built: N model reviewers drawn from 200 generated personas, their comments clustered and ranked (sections 3.3, 3.4, 4.3); run on 20 of the author's own submissions, against the human reviews they received, verbatim for 19 (sections 4.1, 4.4); a model rates every pair of human and AI comments, same or partial counting as a hit (sections 3.5.1, 3.5.2) | recall, the share of human comments matched: median 0.85 for Opus 4.7 with 10 reviewers, severity-weighted 0.90 (section 5.3.1, Figure 8); precision 0.63 to 0.69 across three review models, 29 extra AI comments per paper on average (section 5.1.1, Figure 2; section 5.3.4); major concerns recovered 139 of 145 (section 5.3.3); the four metrics do not separate accepted from rejected papers (section 5.3.1); the panel's weighted recommendation is negative on 19 of 20 papers, -0.23 for accepted against -0.43 for rejected, with no test (section 5.3.5, Figure 11) | supported with caveat: one owner's case study on his own papers, matches judged by a model, with no human check of the matching reported (section 3.5.2) |
+
+- Neither study measures whether a draft, or its writer, improved after the model's feedback. Liang 2024c compares feedback with the reviews of submitted papers; Wu 2026's drafts are past submissions, already revised under human reviews (sections 1, 3.1 and 4.1, by this review's reading).
+- Wu 2026 does follow drafts: across a project's successive submissions, the model's recall of human concerns rose where the first draft was weakest, from 0.65 to 0.85 over four submissions (section 5.3.6). The revisions answered human reviews, so this tracks the drafts, not an effect of the model's feedback.
+- Wu 2026 calls its four metrics statistically indistinguishable between accepted and rejected papers, without naming a test (section 5.3.1).
+- Wu 2026 quotes 92.1% helpful and 87.3% clearer for the STOC 2026 and ICML (2026) pilots together (section 2.5, secondary); they differ from Google 2025's STOC figures above, and are not used.
 - Not measured in either pass: whether a person reasons better, not only fixes faster, after a proof assistant's or a model's feedback.
 - Nor the effect of Lean's named errors, hints or `Try this` suggestions on any user.
 
@@ -548,7 +578,7 @@ digraph feedback {
 |---|---|---|
 | thinking | Lean showed Scholze one goal at a time, and the proof assistant helped him understand his own proof; he learned what made it work, a reduction from a non-convex problem over the reals to a convex one over the integers; the blueprint came after formalization, about 2.5 times longer than the notes, and he puts the de Bruijn factor around 20 | Scholze 2021 |
 | thinking | Lean pushed Tao to plan ahead and abstract many small lemmas, more than he would by hand | Tao 2023m, post of 2023-11-05 |
-| thinking | writing a prover's output as named lemmas made it readable and led to fixing steps in the Lean proof | LZ 2025c, the human write-up of 650 => 448 |
+| thinking | writing a prover's output as named lemmas made it readable and led to fixing steps in the Lean proof; the formal answer to the thread shortened the 62-step proof to 20 steps, its readability argued and not measured on readers (Q3) | LZ 2025c, the human write-up of 650 => 448; Kondylidou 2026, sections 6 and 9 |
 | thinking | formalization changed the mathematics: it exposed a false lemma in a standard source on divided powers, and isolated a simpler construction that replaced a hard one in the Liquid Tensor Experiment | Buzzard 2024; PASE 2022b, top answer |
 | checking, sharing | the split lets a person prove without the whole: contributors prove one lemma without the global picture; Tao formalized a one-page proof in 33 minutes with no high-level idea of it | Tao 2023m, post of 2023-11-19; Tao 2025a |
 | checking | when someone else decides the lemmas, Kirov gets no practice at decomposing a theorem, the hardest part | Kirov 2026a, section Is there a problem |
@@ -618,6 +648,7 @@ digraph form_limits {
 | Iannone 2023 | 99 questionnaires, 37 interviews: many students did not engage, finding the syntax hard and programming disconnected from proving, not worth the time (abstract, secondary) | measured, descriptive |
 | Carl 2022 | 127 of 228 students answered; of 49 likes, 58% named immediate feedback and 9% an effect on proof strategies; of 57 dislikes, 67% found mistakes hard to locate from the messages and 28% found it too time-consuming (questionnaire section) | measured, descriptive |
 | Otte 2026 | users may not perceive the assistant's errors as feedback (section 4.2) | supported with caveat |
+| Carter 2013 | the owners' classroom tests of Lurch, use optional, in fall 2008 and spring 2013: mean agreement that a proof can be done in Lurch by clicking without thinking was 3.2 with the 2008 version and 1.6 with the 2013 one, scale and sample sizes not given, no test (section 3) | measured, descriptive: the owners' survey |
 | Kerjean 2022; Bartzia 2026 | a tunnel effect, students seeing only the local proof state and losing the global goal (Kerjean 2022); back on paper, hypotheses and goals confused (Bartzia 2026; Kerjean 2022); all through Ouvrier-Buffet 2026, sections 3.2 and 3.3, secondary | measured, qualitative (Kerjean, secondary); convention (Bartzia, an a priori analysis) |
 | Guo 2026b | 23 students wrote prose that a model formalized into Lean; of 87 iterations, 52 (58%) made progress and 25 (29%) were stuck or not useful (section 8, Figure 7); the main block was accurate feedback too fine-grained to understand, 16 cases (section 8.3.1) | measured, descriptive |
 
@@ -710,6 +741,7 @@ The formal pass's strand C answered four sub-questions on limits:
 | Matichuk 2015 | 15,018 lemmas, about 215,000 lines of Isabelle proof: proof size grows with the square of statement size (abstract, secondary) | measured, descriptive, software proofs |
 | Hubert 2025 | about 100,000 TPU days for autoformalization and about 80,000 for the main training loop (Methods, compute paragraph) | measured, descriptive |
 | Mei 2026 | a checked library of about 10% of the NIST Digital Library of Mathematical Functions, around 1,000 entries, in 2 person-months (section 4.4) | measured, descriptive |
+| Rammal 2026 | 26 textbooks in 483,918 lines, 2,855 of their 4,007 target statements done (Table 1); on one book of 39 targets, 600M tokens took the full pipeline to 77% of targets (section 5.2, Figure 6) | measured, descriptive, the owners' account |
 
 - No source measured the cost of the person's audit of a model's formal statements; the grey rows above name review as the bottleneck.
 
@@ -725,7 +757,7 @@ Each line states both passes, with their sources; none is resolved here.
 | PutnamBench's size | 658 problems (DeepSeek 2025) | 640 theorems in 1,692 formalizations (Tsoukalas 2024, abstract, secondary); 660 (Varambally 2025, Table 1); 672 (Chung 2026, abstract, secondary): versions differ |
 | the Annals statements | typos made theorems trivially false, four in papers by Fields Medallists, caught by writing the formal statement (Buzzard 2026b) | after expert review, a model audit found mistakes in 11 of 50 formalizations, and missing assumptions in 7 papers (Browning 2026, section 2.5) |
 | how many misformalizations Formal Conjectures holds | 787 items labelled misformalization, 533 pull requests and 254 issues (GitHub 2026f) | 291 misformalizations fixed (Firsching 2026, section 3.3); 511 fixes merged by 2026-10-02, for 3,604 statements (Browning 2026, section 2.5); counts of different things, none a rate |
-| model feedback on writing | 97% of consenting respondents found it helpful (Google 2025; STOC 2026; owner's survey) | preference parts from performance: students preferred model explanations while not fixing faster (Santos 2024, section 1); rewrites were rated clearer with no objective gain (Moraru 2026, abstract, secondary) |
+| model feedback on writing | 97% of consenting respondents found it helpful (Google 2025; STOC 2026; owner's survey) | measured against human reviews, not by whether a draft improved: GPT-4's comments overlapped an individual reviewer's at 30.85% and 39.23%, against 28.58% and 35.25% between two reviewers, and 57.4% of 308 self-selected researchers found it helpful (Liang 2024c, Fig. 2a, 2b, 4a); one owner's case study matched 85% of reviewers' comments at best, at precision 0.63 to 0.69, judged by a model (Wu 2026, sections 5.3.1, 5.1.1). On error messages, preference parts from performance: students preferred model explanations while not fixing faster (Santos 2024, section 1); rewrites were rated clearer with no objective gain (Moraru 2026, abstract, secondary) |
 | a model judge of fidelity | one registry's judge scored one commit 5, then 4 (Palomar 2026; owner) | the best judge errs on 14.2% of a binary task (Chen 2025, section 4.5); two judges of different families agree with people on 54 of 59 cases (Zhang 2026, section 1) |
 
 ## Where practice runs ahead of the evidence

@@ -68,6 +68,7 @@ digraph conditions {
 
 - Whether a loop of this kind catches misformalizations that B1 lets through: no comparison against B1 was found.
 - Whether guidance from the loop helps a person reason, not only fix: no study measured it on proofs.
+- Whether model feedback on a draft improves the draft or its writer: the studies found compare it with reviews of submitted papers (Liang 2024c; Wu 2026).
 - Whether Lean's named errors, hints or suggestions help any user: no study was found.
 - Whether writing reasoning as topics transfers to proofs on paper: no randomised trial was found.
 - How often a registry's model judge agrees with people: Palomar publishes no rate.
@@ -84,7 +85,7 @@ digraph conditions {
 ## Where evidence is ignored by practice
 
 - Owners report prover scores on miniF2F and PutnamBench (review Q2); research finds those benchmarks wrong in part and exploitable (Chen 2025; Ammanamanchi 2026).
-- Practice reports satisfaction with model feedback on writing (Google 2025); research finds preference and performance apart (Santos 2024; Moraru 2026).
+- Practice reports satisfaction with model feedback on writing (Google 2025). Research measures such feedback against human reviews, not by whether a draft improved (Liang 2024c; Wu 2026), and finds preference and performance apart on error messages (Santos 2024; Moraru 2026).
 - Practice limits the volume of model output, by labels and caps (PNT-plus 2026); research finds over-reliance resists training and yields to designs that force engagement (Parasuraman 2010; Buçinca 2021).
 
 ## What this repository adds

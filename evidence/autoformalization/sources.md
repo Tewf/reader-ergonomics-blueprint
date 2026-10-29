@@ -6,23 +6,23 @@ Searches are in [protocol](protocol.md); terms in [frame](frame.md). Below 10 of
 
 ## Flow
 
-| Stage | Grey pass: formal side; human side | Strand A | Strand B | Strand C | Formal pass, all strands |
-|---|---|---|---|---|---|
-| Strings run | 65: 46; 19 (web 24 and 9; Q/A 22 and 10) | 24 on Semantic Scholar, 20 on arXiv; 23 counted on OpenAlex | 36 on Semantic Scholar (one failed), arXiv and OpenAlex; 6 on arXiv only; 10 author strings | 24 on three databases; 5 on arXiv only | 110 distinct strings: A 29, B 52, C 29 |
-| Visits, and citation lists followed | 17 producer visits: 11; 6 | 4 forward seeds; backward from 3 works | 3 forward lists; backward from 3 works | 4 forward lists; backward from 3 reference lists | 11 forward; 9 backward |
-| Records returned, in the databases screened | 709 string results seen: 457; 252. Of them, web results 503 (323; 180) and Q/A threads 206 (134; 72). Producer listings in other units, not summed | 3,075 | 20,257 | 9,612 | 32,944, with repeats |
-| Screened by title | 709: 457; 252 | 565 recorded; the rule allows up to 584 | 1,013 by the stated rule; 1,023 recorded | 584 by the stated rule; about 350 accounted for by what was recorded | 2,162, with repeats |
-| Opened and read | about 40 producer pages, 4 forum threads, 5 Q/A threads; 62, and 2 failed | the sections named per source | the sections named per source | of the 57 new: 16 in full or in the sections cited, 34 by abstract, 2 through another work, 5 located only | |
-| Included as new | 80 sources in 86 rows: 43; 43, 6 scored by both | 47 | 80 | 57 | 173 works in 184 rows: 10 works are in two or three strands |
-| Below 10 of 20, examples only | 9: 3; 6 | | | | |
-| Linked from a family review, not screened again | 3 | 0 | 5 | 9 | 11 works in all, with the grey pass's |
-| Counts read, not scored | 7: 4; 3 | | | | |
-| Read, not scored | 1 (LZ 2026b): 1; none | | | | |
-| In the review | | | | | 264: 173 formal, 80 grey, 11 linked |
+| Stage | Grey pass: formal side; human side | Strand A | Strand B | Strand C | Lead screen, after the merge | Formal pass, all strands |
+|---|---|---|---|---|---|---|
+| Strings run | 65: 46; 19 (web 24 and 9; Q/A 22 and 10) | 24 on Semantic Scholar, 20 on arXiv; 23 counted on OpenAlex | 36 on Semantic Scholar (one failed), arXiv and OpenAlex; 6 on arXiv only; 10 author strings | 24 on three databases; 5 on arXiv only | none: 16 leads no strand had screened | 110 distinct strings: A 29, B 52, C 29 |
+| Visits, and citation lists followed | 17 producer visits: 11; 6 | 4 forward seeds; backward from 3 works | 3 forward lists; backward from 3 works | 4 forward lists; backward from 3 reference lists | 1 work met in a kept one (Liang 2024c, in Wu 2026) | 11 forward; 9 backward |
+| Records returned, in the databases screened | 709 string results seen: 457; 252. Of them, web results 503 (323; 180) and Q/A threads 206 (134; 72). Producer listings in other units, not summed | 3,075 | 20,257 | 9,612 | | 32,944, with repeats |
+| Screened by title | 709: 457; 252 | 565 recorded; the rule allows up to 584 | 1,013 by the stated rule; 1,023 recorded | 584 by the stated rule; about 350 accounted for by what was recorded | | 2,162, with repeats |
+| Opened and read | about 40 producer pages, 4 forum threads, 5 Q/A threads; 62, and 2 failed | the sections named per source | the sections named per source | of the 57 new: 16 in full or in the sections cited, 34 by abstract, 2 through another work, 5 located only | the 16 leads, as 21 rows, one not found, and Liang 2024c: the sections named per work | |
+| Included as new | 80 sources in 86 rows: 43; 43, 6 scored by both | 47 | 80 | 57 | 9: 8 from the leads, and Liang 2024c; 13 rows set aside | 173 works in 184 rows: 10 works are in two or three strands; 182 with the lead screen's 9 |
+| Below 10 of 20, examples only | 9: 3; 6 | | | | | |
+| Linked from a family review, not screened again | 3 | 0 | 5 | 9 | | 11 works in all, with the grey pass's |
+| Counts read, not scored | 7: 4; 3 | | | | | |
+| Read, not scored | 1 (LZ 2026b): 1; none | | | | | |
+| In the review | | | | | | 273: 182 formal (173 by the strands, 9 by the lead screen), 80 grey, 11 linked |
 
-The figure draws the formal pass's stages, then adds the sources that joined without passing through its screening.
+The figure draws the formal pass's stages, then adds the sources that joined without passing through its screening. Its included count holds the lead screen's 9, as it holds the strands' leads and recalled works.
 
-![32,944 formal records were returned and 2,162 screened by title; 173 formal works were included as new; with 80 grey sources carried from the grey pass and 11 works linked from the family, the review holds 264.](flow.svg)
+![32,944 formal records were returned and 2,162 screened by title; 182 formal works were included as new, 9 of them by the lead screen after the merge; with 80 grey sources carried from the grey pass and 11 works linked from the family, the review holds 273.](flow.svg)
 
 ### Formal pass
 
@@ -46,6 +46,14 @@ The figure draws the formal pass's stages, then adds the sources that joined wit
 - Strand C, excluded by title, rounded to tens: off topic (materials science for Waterproof, medicine, security audits, finance) about 190; systems with no person studied about 60; repeats across strings about 40.
 - Existing reviews found: strand A 6, and two benchmark audits acting as reviews; strand B 7, two of them held; strand C 6 on the person's side, plus 2 held. All are in [review](review.md), section 0.
 
+### Lead screen, after the merge
+
+- Sixteen grey leads had no screening decision in any strand. They were screened on 2026-10-29, after the merge, by the rule of [protocol](protocol.md), section 8; section 4 there says how.
+- Identified, the 16 leads make 21 rows, since Lurch's papers make four and Koepke's preprints three. The sixteenth lead is the namesake met while identifying Meta's ATLAS.
+- Kept, 8: Kung 2026, Wu 2026, Kondylidou 2026, Carter 2013, Carl 2020b, Cramer 2013, Rammal 2026 and Liu 2025d. Set aside, 13 rows, one of them not found: the section below, Leads screened after the merge, set aside.
+- One more work was met in a kept one and read in full: Liang 2024c, in Wu 2026, section 2.2. The formal works number 182: 173 by the strands and 9 by the lead screen.
+- Every kept number was then checked against its source text by the maintainer.
+
 ### Grey pass
 
 - Formal side, excluded after reading: 2 forum threads (opinion, no practice) and 1 forum thread passed to the human side (LZ 2026b). Also 1 Q/A thread with no answer, and 1 blog post with no loop content (a Lean companion to a textbook).
@@ -57,7 +65,7 @@ The figure draws the formal pass's stages, then adds the sources that joined wit
 
 ## Formal sources, graded
 
-"Strand" names the strands that included the work. "Found via" gives each strand's route, by the string ids of [protocol](protocol.md), section 4. There, "lead" means named by the grey pass, and "memory" or "recalled" means named by the reviewer and verified before use. A work in two strands keeps the grade of the strand that read more of it, named in its row.
+"Strand" names the strands that included the work. "Found via" gives each strand's route, by the string ids of [protocol](protocol.md), section 4. There, "lead" means named by the grey pass, and "memory" or "recalled" means named by the reviewer and verified before use. A work in two strands keeps the grade of the strand that read more of it, named in its row. The strand "lead screen" marks the nine works included by the screen after the merge; their "Found via" says where the lead was met.
 
 | Key | Strand | Kind | Found via | Grade, and what was read | Used in |
 |---|---|---|---|---|---|
@@ -85,9 +93,11 @@ The figure draws the formal pass's stages, then adds the sources that joined wit
 | Buçinca 2021 | C | controlled experiment, N = 199 | memory | measured; abstract (secondary) | review Q5; state-of-the-art; position |
 | Böhne 2018 | C | method paper | backward from Tran Minh 2025; C1 | convention; abstract | protocol; review Q4 |
 | Carl 2020 | B | method, preprint | F3, F10; A7 | convention; abstract | review Q1 |
+| Carl 2020b | lead screen | method, preprint | a grey lead (Q1) | convention: a method, unevaluated; full text read | protocol; review Q1; review Q3 |
 | Carl 2022 | B, C | classroom deployment, questionnaire, workshop | B: F10; grey lead. C: C6; lead | measured, descriptive; full text read (strand C; strand B read section 5) | review Q1; review Q4; review Q5; state-of-the-art; position; against |
 | Carl 2024 | B | method, workshop | F4, F10 | supported with caveat; abstract | review Q1 |
 | Carneiro 2024 | C | preprint, independent checker | lead | measured, the owner's run; abstract (secondary) | protocol; review Q5; state-of-the-art |
+| Carter 2013 | lead screen | owners' classroom tests, workshop | a grey lead (Q1), Lurch's papers | measured, descriptive: the owners' survey, sample sizes not given; sections 2 and 3 read | protocol; review Q1; review Q4 |
 | Chen 2025 | A | paper, ICLR (2026) | F4, A-F7, A-F15 | measured, 859 expert-annotated items; sections 1, 4.5 | protocol; review Q2; review disagreements; state-of-the-art; position; against; baseline |
 | Chen 2026b | B | platform, preprint | F12; grey lead | convention, owners' account; abstract | review Q1; against |
 | Chung 2026 | B | method with benchmark, preprint | F1; forward citations of Jiang 2023c | measured; abstract (secondary) | protocol; review Q1; review disagreements; state-of-the-art; against |
@@ -98,6 +108,7 @@ The figure draws the formal pass's stages, then adds the sources that joined wit
 | Corbineau 2008 | B | system paper, conference | F8 | not graded; title and venue only | review Q1; against |
 | Coscoy 1995 | B | method, conference | recalled lead | not graded; title and venue only | protocol; review Q3 |
 | Cramer 2010 | B | system paper, workshop | F3, F4, F10 | not graded; title and venue only | protocol; review Q1 |
+| Cramer 2013 | lead screen | doctoral dissertation | a grey lead (Q1) | convention: system and theory, argued; section 7.7 read, full text searched | protocol; review Q1 |
 | Dai 2026 | A | preprint | F2, F5, A-F17 | measured on ProofNet# and miniF2F-test; sections 1, 2, 5.1 | review Q2; review Q3; state-of-the-art; position; against |
 | De Lon 2021 | B | system paper, conference | F2, F3 | convention; section 1 | review Q1; state-of-the-art |
 | De Toffoli 2024 | C | essay | C8 | convention; abstract | review Q4 |
@@ -139,18 +150,22 @@ The figure draws the formal pass's stages, then adds the sources that joined wit
 | Kim 2026b | A | paper, VerifAI-2 workshop at ICLR (2026) | F8 | measured, 303 logic problems; abstract | against |
 | Klowden 2026 | C | preprint, essay | lead | convention; abstract | protocol; review Q4 |
 | Knobelsdorf 2017 | C | qualitative classroom study | memory | measured, qualitative; abstract; paywalled | protocol; review Q4 |
+| Kondylidou 2026 | lead screen | tool with measurements, IJCAR (2026) | a lead met in LZ 2025c | measured, on proof length only (1,431 ETP problems); the technical report read | protocol; review Q3; review Q4 |
 | Kosmyna 2025 | C | preprint, experiment | memory | measured, not peer reviewed; abstract (secondary) | review Q5; against |
 | Koutsoukou-Argyraki 2020 | C | experience report | C8 | convention; abstract | review Q4 |
 | Krishnamurthi 2026 | B | controlled ablation with an agent, preprint | F25 | measured, for agents; abstract | review Q3; against |
 | Kuhn 2014 | B | survey, journal | R2 | survey; abstract and appendix entries | frame; protocol; review 0 |
+| Kung 2026 | lead screen | agentic framework with benchmark and ablations, preprint | a grey lead (Q2) | measured, on the 12 problems of Putnam (2025) and the authors' Lean-IMO-Bench of 60, with the authors' own model family; sections 3 to 5 read | protocol; review answer; review Q1; review Q3; state-of-the-art; against |
 | Lee 2025 | C | survey of 319 workers | memory | measured, descriptive; abstract (secondary) | review Q5 |
 | Leinonen 2023 | B | expert rating, conference | F23, F24 | measured; section 4, Table 1 | protocol; review Q3; state-of-the-art; position; against |
 | Li 2024b | A, B, C | survey, preprint | A: R1, R2. B: R6. C: R4; arXiv-only A1 | review, no pooling; sections 3.1 and 5 (strand A; B searched the full text, C read the abstract) | protocol; review 0; position; against |
 | Li 2024c | A | paper, NeurIPS (2024) | F1, F2, F7 | measured on MATH and miniF2F; section 1 | review Q2 |
+| Liang 2024c | lead screen | retrospective comparison with human reviews, and a user study, NEJM AI (2024) | met in Wu 2026, section 2.2 | measured: overlap with human reviewers' comments on 3,096 Nature-family and 1,709 ICLR papers, against the overlap between two reviewers; the user study measured, descriptive, its participants self-selected; full text read (arXiv v1) | protocol; review answer; review Q3; review disagreements; state-of-the-art; position; against |
 | Lin 2025 | A | preprint | F9, F11 | method with counts; sections 1, 3.1 | protocol; review Q2 |
 | Lin 2025b | B | method with benchmark and ablation, preprint | F27; forward citations of First 2023 | measured; abstract and section 3.5 | protocol; review answer; review Q2; review Q3; review disagreements; state-of-the-art; position |
 | Liu 2025b | A | paper, ICLR (2025) | backward, Poiroux 2025 | measured, 200 samples; numbers read in Poiroux 2025, appendix A.5 (secondary) | frame; protocol; review Q2 |
 | Liu 2025c | A | paper, AI4Math@ICML (2025) | F2, F4 | method; abstract | review Q2 |
+| Liu 2025d | lead screen | translator with a human check, NeurIPS (2025) | met while identifying Meta's ATLAS, its namesake | measured, on ProofNet: people checked outputs a model judge passed; section 4.2.1 and appendix B read | protocol; review Q2 |
 | Lu 2024 | B | error study and method, conference | recalled lead | measured; abstract (secondary) | protocol; review Q3; against |
 | Lu 2025 | A | paper, ICLR (2025) | F6, F7, forward | measured, synthetic misaligned pairs and a human comparison; sections 1, 4.2 to 4.4 | protocol; review Q2; against; baseline |
 | Marceau 2011 | B | human-factors study, conference | recalled lead | measured, descriptive; abstract | protocol; review Q3 |
@@ -185,6 +200,7 @@ The figure draws the formal pass's stages, then adds the sources that joined wit
 | Prather 2017 | B | mixed methods, 31 students, conference | recalled lead | measured; abstract (secondary) | protocol; review Q3; against |
 | Pąk 2014 | B | method and proof, journal | X1 | convention; abstract | review Q1; against |
 | Raiyan 2026 | A, C | integrated survey, preprint | A: R1, R4. C: arXiv-only A1; C8 | review; abstract | protocol; review 0; position |
+| Rammal 2026 | lead screen | formalization at scale with model judges and one book reviewed by experts, preprint | a grey lead (Meta's ATLAS) | measured, descriptive: the owners' model judges, one book checked by experts, no agreement rate; sections 3 and 5, appendices D and G read | protocol; review Q1; review Q2; review Q5; against |
 | Ranta 2026 | B | position, preprint | F11 | convention; abstract | review Q3 |
 | Rav 1999 | C | philosophy | memory | convention, argued; abstract; paywalled | protocol; review Q5; state-of-the-art; against |
 | Ringer 2019 | B | survey, journal | R5; A1 | survey; sections 5.1.2, 7.1, 7.2 in full | frame; protocol; review 0; review Q1; review Q3; state-of-the-art; position; against |
@@ -220,6 +236,7 @@ The figure draws the formal pass's stages, then adds the sources that joined wit
 | Wiedijk 2012b | B | method, journal | F4, F5, F14; A6 | convention; abstract | frame; review Q1 |
 | Wu 2022 | A | paper, NeurIPS (2022) | F1, F9, U1, U3 | measured, 150 statements judged by the authors; sections 1, 4.3, 4.4 | frame; protocol; review Q2; against |
 | Wu 2025b | A | paper, AAAI (2026) | F12, F19 | measured with BEq; section 1 | protocol; review Q2 |
+| Wu 2026 | lead screen | case study of the author's own tool, preprint | a grey lead (Q3, W7) | supported with caveat: one owner's case study on 20 of his own papers, matches judged by a model; full text read (arXiv v2) | protocol; review answer; review Q3; review disagreements; state-of-the-art; position; against |
 | Xin 2024 | A | preprint | F9, F14, F18 | method with counts; sections 1, 3.2 | review Q2 |
 | Xin 2024b | B | method with benchmark, preprint | F27 | measured; abstract (secondary) by the strand; Tables 1 and 2 by its audit | review Q3 |
 | Xu 2025 | B | language design with benchmark, conference | F6 | measured, for models; abstract (secondary) | review answer; review Q1; state-of-the-art; against |
@@ -274,6 +291,26 @@ Works one strand met and handed to another, which did not include them; what was
 | Beginners' quest to formalize mathematics, arXiv 2106.12351; Tutte's theorem as an educational project, arXiv 2504.18146; From lecture notes to Lean, arXiv 2607.27298 | strand B, for C | not read |
 
 - LeanTutor (Patel 2025) also has the arXiv id 2601.17473, the same paper.
+
+## Leads screened after the merge, set aside
+
+The 13 rows the lead screen of 2026-10-29 set aside, after the merge ([protocol](protocol.md), section 4): each work as identified, where its lead was met, and the reason with what was read. Nothing here supports a claim.
+
+| Work | Met in | Reason, and what was read |
+|---|---|---|
+| Li (2026), Astrolabe: a content-addressable hypergraph for semantic knowledge management, arXiv 2604.10435 | the grey pass, Q1 | a tool with no evaluation: a data model and a prototype plugin linking LaTeX and Lean atoms by typed edges; its section 4 leaves its use for autoformalization as an open empirical question. Dependency graphs are held by Massot 2026 and Zhu 2026b |
+| Kinyon (2019), Proof simplification and automated theorem proving, Philosophical Transactions of the Royal Society A 377(2140), 20180034; arXiv 1808.04251 | LZ 2025c | off the loop: a method for shortening Prover9 proofs by hints, measured by step count and shown on one worked example from loop theory, with no evaluation and no proof assistant or person (sections 1 and 4). His answer to Tao's challenge, a 24-step Prover9 proof, is known here only through Kondylidou 2026 (section 8, secondary) |
+| Petković Komel, Rawson, Suda (2025), Case study: verified Vampire proofs in the LambdaPi-calculus modulo, arXiv 2503.15541 (v2) | LZ 2025c | off topic: it certifies a first-order prover's output (8,178 TPTP problems, all proofs checked by Dedukti v2.7, section 6); trust in the proof assistant, the printed statement and the person is untouched. Independent re-checking is held by Carneiro 2024 and Blanchette 2016 |
+| Carter, Monks (2013), Lurch: a word processor built on OpenMath that can check mathematical reasoning, OpenMath Workshop (2013), CEUR-WS 1010, paper 23 | the grey pass, Q1, Lurch's papers | a tool with no evaluation: goals, OpenMath implementation and validation engine (abstract) |
+| Carter, Monks (2017), A web-based toolkit for mathematical word processing applications with semantics, CICM (2017), LNCS, 272-291, doi 10.1007/978-3-319-62075-6_19 | the same | title and venue only: a toolkit paper, with no abstract on Crossref or OpenAlex |
+| From formal to expository (Carter, Monks), the paper the grey pass named | the same | not found: two phrasings on Crossref, three on OpenAlex, and an author search on arXiv |
+| Carl (2020), Number theory and axiomatic geometry in the Diproche system, ThEdu'20, EPTCS 328, 56-78, doi 10.4204/EPTCS.328.4; arXiv 2006.01794 | the grey pass, Q1 | covered by Carl 2020, 2022 and 2024: the system's architecture and its number theory and geometry, with no evaluation with students (full text searched) |
+| Cramer, Koepke, Kühlwein, Schröder (2010), Premise selection in the Naproche system, IJCAR (2010), LNCS, 434-440, doi 10.1007/978-3-642-14203-1_37 | the grey pass, Q1, Koepke's preprints | off topic: axiom selection for the provers inside the checker (abstract, truncated on the publisher's page) |
+| "The Naproche system", not uniquely identified. Nearest: Cramer, Koepke, Schröder (2011), Parsing and disambiguation of symbolic mathematics in the Naproche system, CICM (2011), doi 10.1007/978-3-642-22673-1_13; and Cramer, The Naproche system: proof-checking mathematical texts in controlled natural language (OpenAlex, dated 2016, volume 2014) | the same | covered by Cramer 2013, the full account of the same system. The Cramer article was not opened: its repository failed a certificate check, which was not bypassed |
+| Frerix, Koepke (2018), CEUR-WS 2307; Koepke (2019), CEUR-WS 2634; De Lon, Koepke, Lorenzen (2020), CICM (2020); De Lon and others (2021), Beautiful formalizations in Isabelle/Naproche, CICM (2021); De Lon, Koepke, Lorenzen (2021), the mutilated checkerboard, ITP (2021); Koepke (2025), perfectoid rings, ITP (2025) | the same, the rest on natural proof checking | system descriptions and formalization showcases with no measure on a writer or reader. Full text searched for the two CEUR papers, of which Frerix and Koepke's paper only plans a usability study with students; abstracts read for the two ITP papers; title and venue only for the two CICM chapters. Held: De Lon 2021, Naproche 2026 |
+| Urban (2026), 130k lines of formal topology in two weeks: simple and cheap autoformalization for everyone? arXiv 2601.03298 (v1); Munkres in Megalodon | Hales 2026 | a long-horizon case study with no measure of faithfulness, which strand A excludes ([protocol](protocol.md), section 8). Its kind is held by Gloeckle 2026; its failure mode, agents writing stub or special-case statements (section 6, item 1), is measured better by Rammal 2026. Read at the screen and not verified: the Megalodon statement shown for Tietze part (a) has no bound on the extension, weaker than Munkres 35.1(a) (section 11) |
+| Bloom (2021), On a density conjecture about unit fractions, with Appendix B by Bloom and Mehta on the Lean formalization; arXiv 2112.03726 (v2); Journal of the European Mathematical Society 27(11), 4563-4589, doi 10.4171/jems/1456 | the grey pass | the formalization of a single theorem, which strand B excludes ([protocol](protocol.md), section 8). Its practice is held: a blueprint written before Lean (Appendix B.3) by Massot 2026 and Becker 2024; the coercion trap in 1/n (Appendix B.1) by Alexeev 2025 and Paulson 2026 |
+| Yang, Swope, Gu, Chalamala, Song, Yu, Godil, Prenger, Anandkumar (2023), LeanDojo: theorem proving with retrieval-augmented language models, NeurIPS (2023) Datasets and Benchmarks; arXiv 2306.15626 | Tao 2023m | set aside as evidence: a prover on supplied statements, which strand A excludes. The key LeanDojo 2026 is the Lean Copilot README of the same organisation, not this paper; the "1,990 LeanDojo theorems" of Deng 2026's rows name its benchmark |
 
 ## Cited, not in the pool
 
@@ -397,6 +434,7 @@ Read by the reviewers on 2026-10-29 through public interfaces; descriptive, and 
 - Also StepFun 2025 and Wu 2025b; Numina 2025 and Wang 2025.
 - Also Zhu 2026 and Zhu 2026b; LeanDojo 2026 and Song 2024; Massot 2026b and Massot 2024; Goedel-LM 2025 and Lin 2025b.
 - The cards of DeepSeek 2025 and Goedel-LM 2025 describe later versions than Xin 2024 and Lin 2025, so these stay separate works.
+- At the lead screen, three keys took the next free letter, since the family holds the earlier ones for other works: Carl 2020b, Liang 2024c and Liu 2025d.
 
 ## Kinds of claim
 
@@ -410,9 +448,11 @@ Read by the reviewers on 2026-10-29 through public interfaces; descriptive, and 
 
 ## Result of the grading and the scoring
 
-- Formal, the 173 works by their grade: measured 64, controlled studies and benchmarks with a stated protocol; measured, descriptive or qualitative 31; supported with caveat 15.
-- Also convention, argument or review 52; not graded or located only 11.
-- The grades come from what each strand read, and were checked against it by the audits ([protocol](protocol.md), section 10).
+- Formal, the 182 works by their grade: measured 68, controlled studies and benchmarks with a stated protocol; measured, descriptive or qualitative 33; supported with caveat 16.
+- Also convention, argument or review 54; not graded or located only 11.
+- The lead screen's nine are among them. Measured, 4: Kondylidou 2026, Kung 2026, Liang 2024c and Liu 2025d; measured, descriptive, 2: Carter 2013 and Rammal 2026.
+- Of the nine also: supported with caveat, 1: Wu 2026; convention, 2: Carl 2020b and Cramer 2013.
+- The grades come from what each strand read, and were checked against it by the audits ([protocol](protocol.md), section 10). The lead screen's come from what it read, and its numbers were checked against their sources.
 
 - 80 grey sources: tier 1, 0; tier 2, 44; tier 3, 36. No book, standard or thesis on the loop was found.
 - Per side, before the merge: formal, 43 (tier 2, 35; tier 3, 8); human, 43 (27 tier 3 blogs, posts and threads above 10; 10 tier 2 documents above 10; 6 below 10).
