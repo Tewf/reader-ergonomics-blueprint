@@ -1,0 +1,15 @@
+// The measures of faithfulness, ordered from cheap and automatic to costly and human: a figure of review.md, Q2 (A1).
+// Colours, as in every figure of this review: a program blue, a model green, a person orange.
+digraph faithfulness {
+  graph [rankdir=TB, nodesep=0.3, ranksep=0.3, bgcolor="white", pad=0.2, fontname="Inter"];
+  node  [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, margin="0.15,0.1", penwidth=1.5, fontcolor="#1F2328"];
+  edge  [fontname="Inter", fontsize=11, color="#3D434B", fontcolor="#55575F", penwidth=1.3, arrowsize=0.8];
+  LO [label=<<b>cheap, automatic</b>>, shape=plaintext, style="", fillcolor="#FFFFFF"];
+  C  [label=<<b>compiles</b><br/><font point-size="11" color="#55575F">(Lean elaborator accepts)</font><br/><font point-size="11" color="#55575F">well formed only</font><br/><font point-size="11" color="#55575F">Poiroux 2025</font><br/><font point-size="11" color="#55575F">Dai 2026</font>>, fillcolor="#E8EEF8", color="#2F5DA8"];
+  B  [label=<<b>BLEU,</b><br/><b>embedding distance</b><br/><font point-size="11" color="#55575F">similar text</font><br/><font point-size="11" color="#55575F">Yang 2024</font><br/><font point-size="11" color="#55575F">Li 2024b</font>>, fillcolor="#E8EEF8", color="#2F5DA8"];
+  J  [label=<<b>model judge,</b><br/><b>back-translation</b><br/><font point-size="11" color="#55575F">likely same meaning</font><br/><font point-size="11" color="#55575F">Chen 2025</font><br/><font point-size="11" color="#55575F">Han 2026</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  E  [label=<<b>provable equivalence</b><br/><b>to reference</b><br/><font point-size="11" color="#55575F">(BEq, BEq+)</font><br/><font point-size="11" color="#55575F">same as a vetted statement</font><br/><font point-size="11" color="#55575F">Poiroux 2025</font><br/><font point-size="11" color="#55575F">Liu 2025b</font>>, fillcolor="#E8EEF8", color="#2F5DA8"];
+  H  [label=<<b>person reads statement</b><br/><b>against source</b><br/><font point-size="11" color="#55575F">same as meant (the reference)</font><br/><font point-size="11" color="#55575F">Wu 2022</font><br/><font point-size="11" color="#55575F">Azerbayev 2023</font>>, fillcolor="#FBEDE4", color="#B4541A"];
+  HI [label=<<b>costly, human</b>>, shape=plaintext, style="", fillcolor="#FFFFFF"];
+  LO -> C -> B -> J -> E -> H -> HI;
+}

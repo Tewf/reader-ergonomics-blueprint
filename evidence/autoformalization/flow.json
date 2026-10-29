@@ -1,0 +1,34 @@
+{
+  "title": "Autoformalization: how the pool of sources was built",
+  "columns": [
+    "Count"
+  ],
+  "rows": [
+    [
+      "Returned by the strings",
+      32944
+    ],
+    [
+      "Screened",
+      2162
+    ],
+    [
+      "Included as new",
+      173
+    ]
+  ],
+  "added": [
+    [
+      "Carried from the grey pass",
+      80
+    ],
+    [
+      "Linked from the family",
+      11
+    ]
+  ],
+  "total": [
+    "In the review",
+    264
+  ]
+}

@@ -1,0 +1,19 @@
+// The two sides' proposals for the baseline, as sets: each holds the shared core and its own edge. A figure of baseline.md.
+// Colours, as in every figure of this review: a program blue for the formal side's checks, a person orange for the
+// human side's rules, white for the core both hold; an arrow means "holds".
+digraph two_proposals {
+  graph [rankdir=TB, nodesep=0.5, ranksep=0.55, bgcolor="white", pad=0.2, fontname="Inter"];
+  node  [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, margin="0.2,0.1", penwidth=1.5, fontcolor="#1F2328"];
+  edge  [fontname="Inter", fontsize=11, color="#3D434B", fontcolor="#55575F", penwidth=1.3, arrowsize=0.8];
+  FP [label=<<b>formal side's proposal</b>>, fillcolor="#FFFFFF", color="#3D434B"];
+  HP [label=<<b>human side's proposal</b>>, fillcolor="#FFFFFF", color="#3D434B"];
+  FE [label=<<b>program checks of the statement</b><br/><font point-size="11" color="#55575F">challenge file, short and read by a person</font><br/><font point-size="11" color="#55575F">comparator in CI: the same statement,</font><br/><font point-size="11" color="#55575F">permitted axioms</font><br/><font point-size="11" color="#55575F">formalization.yaml table</font><br/><font point-size="11" color="#55575F">model judge as a filter only</font>>, fillcolor="#E8EEF8", color="#2F5DA8"];
+  SC [label=<<b>the shared core: in both</b><br/><font point-size="11" color="#55575F">a blueprint: one node per statement, tied</font><br/><font point-size="11" color="#55575F">to its Lean name</font><br/><font point-size="11" color="#55575F">a model may write the proofs</font><br/><font point-size="11" color="#55575F">Lean decides them, in CI</font><br/><font point-size="11" color="#55575F">a person audits each statement against its</font><br/><font point-size="11" color="#55575F">source</font>>, fillcolor="#FFFFFF", color="#3D434B", penwidth=2.6];
+  HE [label=<<b>rules of a running project for the</b><br/><b>person's side</b><br/><font point-size="11" color="#55575F">statements copy the paper and keep its</font><br/><font point-size="11" color="#55575F">citation</font><br/><font point-size="11" color="#55575F">bite-sized lemmas, each claimed as a task</font><br/><font point-size="11" color="#55575F">AI use disclosed, labelled in CI</font><br/><font point-size="11" color="#55575F">a cap on open AI pull requests</font>>, fillcolor="#FBEDE4", color="#B4541A"];
+  FP -> FE [label=" holds"];
+  FP -> SC [label=" holds"];
+  HP -> SC [label=" holds"];
+  HP -> HE [label=" holds"];
+  {rank=same; FP; HP}
+  {rank=same; FE; SC; HE}
+}

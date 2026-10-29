@@ -1,0 +1,26 @@
+// The scope's loop mapped onto the practice the grey pass read: the first figure of review.md.
+// Colours, as in every figure of this review: person orange, model green, program blue, a file or a check white;
+// a dashed box is a note on the node it joins.
+digraph answer_first {
+  graph [rankdir=TB, nodesep=0.5, ranksep=0.5, bgcolor="white", pad=0.2, fontname="Inter"];
+  node  [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, margin="0.2,0.1", penwidth=1.5, fontcolor="#1F2328"];
+  edge  [fontname="Inter", fontsize=11, color="#3D434B", fontcolor="#55575F", penwidth=1.3, arrowsize=0.8];
+  P  [label=<<b>person</b>>, fillcolor="#FBEDE4", color="#B4541A", penwidth=2.6];
+  BN [label=<<b>blueprint node</b><br/><font point-size="11" color="#55575F">\uses, \lean, or @[blueprint]</font>>, fillcolor="#FFFFFF", color="#3D434B"];
+  M  [label=<<b>model</b>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  CF [label=<<b>challenge file</b><br/><font point-size="11" color="#55575F">statements only, short,</font><br/><font point-size="11" color="#55575F">read by a person</font>>, fillcolor="#FFFFFF", color="#3D434B"];
+  FI [label=<<b>fidelity</b><br/><font point-size="11" color="#55575F">same meaning as the topic?</font><br/><font point-size="11" color="#55575F">human audit; model judge as filter;</font><br/><font point-size="11" color="#55575F">match to a vetted statement; tests</font>>, fillcolor="#FFFFFF", color="#6A6D77", style="rounded,filled,dashed"];
+  SM [label=<<b>solution module</b>>, fillcolor="#FFFFFF", color="#3D434B"];
+  CO [label=<<b>comparator / lake check</b><br/><font point-size="11" color="#55575F">same statement, permitted axioms,</font><br/><font point-size="11" color="#55575F">kernel accepts</font>>, fillcolor="#E8EEF8", color="#2F5DA8"];
+  GU [label=<<b>guidance</b><br/><font point-size="11" color="#55575F">named errors, Try this, help tactic,</font><br/><font point-size="11" color="#55575F">hints, checked suggestions</font>>, fillcolor="#FFFFFF", color="#3D434B"];
+  P  -> BN [label=" topic: claim,\l summary, parts\l"];
+  BN -> CF;
+  M  -> CF [label=" translates"];
+  CF -> FI;
+  CF -> SM [label=" proofs"];
+  SM -> M  [label=" errors, goals\l (LSP, refinement)\l"];
+  SM -> CO;
+  CO -> P;
+  GU -> P;
+  {rank=same; BN; M}
+}

@@ -1,0 +1,18 @@
+// The four conditions under which the topic can be the loop's interface, placed on the loop: the figure of position.md.
+// Colours, as in every figure of this review: person orange, model green, program blue, a file white.
+digraph conditions {
+  graph [rankdir=TB, nodesep=0.5, ranksep=0.5, bgcolor="white", pad=0.2, fontname="Inter"];
+  node  [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, margin="0.2,0.1", penwidth=1.5, fontcolor="#1F2328"];
+  edge  [fontname="Inter", fontsize=11, color="#3D434B", fontcolor="#55575F", penwidth=1.3, arrowsize=0.8];
+  P [label=<<b>person</b><br/><font point-size="11" color="#55575F">condition 4: does the splitting</font><br/><font point-size="11" color="#55575F">into claims</font>>, fillcolor="#FBEDE4", color="#B4541A", penwidth=2.6];
+  M [label=<<b>model</b><br/><font point-size="11" color="#55575F">condition 2: translates each claim;</font><br/><font point-size="11" color="#55575F">decides nothing</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  S [label=<<b>statement</b><br/><font point-size="11" color="#55575F">condition 1: short, apart from its proof,</font><br/><font point-size="11" color="#55575F">checked against a vetted statement</font>>, fillcolor="#FFFFFF", color="#3D434B"];
+  L [label=<<b>Lean</b><br/><font point-size="11" color="#55575F">checks the proof</font>>, fillcolor="#E8EEF8", color="#2F5DA8"];
+  G [label=<<b>guidance</b><br/><font point-size="11" color="#55575F">condition 3: at the grain of</font><br/><font point-size="11" color="#55575F">the person's claim</font>>, fillcolor="#FFFFFF", color="#3D434B"];
+  P -> M [label=" claims"];
+  M -> S [label=" translation"];
+  S -> L [label=" with its proof"];
+  L -> G [label=" verdict"];
+  G -> P;
+  S -> P [label=" condition 2: the statement\l checked, not a repaired one\l", style=dashed, color="#6A6D77"];
+}

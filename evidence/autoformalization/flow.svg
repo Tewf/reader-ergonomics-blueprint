@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392 564" role="img" aria-labelledby="t d"><title id="t">Autoformalization: how the pool of sources was built</title>
+<desc id="d">Returned by the strings: Count 32,944; then Screened: Count 2,162; then Included as new: Count 173; plus Carried from the grey pass: Count 80; plus Linked from the family: Count 11; equals In the review: 264.</desc>
+<style>
+  .box { fill: #FFFFFF; stroke: #6A6D77; stroke-width: 1.5; }
+  .total { fill: #EFEFF3; stroke: #101014; stroke-width: 1.5; }
+  .n { font: 600 20px 'JetBrains Mono', ui-monospace, monospace; fill: #101014; }
+  .label { font: 400 13px Archivo, system-ui, sans-serif; fill: #55575F; }
+  .na { font: italic 400 13px Archivo, system-ui, sans-serif; fill: #6A6D77; }
+  .head { font: 600 14px Archivo, system-ui, sans-serif; fill: #101014; }
+  .arrow { stroke: #55575F; stroke-width: 1.5; fill: none; marker-end: url(#tip); }
+  #tip path { fill: #55575F; }
+  @media (prefers-color-scheme: dark) {
+    .box { fill: #1A1A20; stroke: #9A9CA4; }
+    .total { fill: #26262E; stroke: #F7F7F9; }
+    .n, .head { fill: #F7F7F9; }
+    .label { fill: #B8BAC2; }
+    .na { fill: #9A9CA4; }
+    .arrow { stroke: #B8BAC2; }
+    #tip path { fill: #B8BAC2; }
+  }
+</style>
+<defs><marker id="tip" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<text class="head" x="281.0" y="30" text-anchor="middle">Count</text>
+<text class="label" x="16" y="75.0">Returned by the strings</text>
+<rect class="box" x="186" y="44" width="190" height="54" rx="12"/>
+<text class="n" x="281.0" y="78.0" text-anchor="middle">32,944</text>
+<path class="arrow" d="M281.0,98 v26"/>
+<text class="label" x="16" y="159.0">Screened</text>
+<rect class="box" x="186" y="128" width="190" height="54" rx="12"/>
+<text class="n" x="281.0" y="162.0" text-anchor="middle">2,162</text>
+<path class="arrow" d="M281.0,182 v26"/>
+<text class="label" x="16" y="243.0">Included as new</text>
+<rect class="box" x="186" y="212" width="190" height="54" rx="12"/>
+<text class="n" x="281.0" y="246.0" text-anchor="middle">173</text>
+<text class="head" x="281.0" y="286.0" text-anchor="middle">+</text>
+<text class="label" x="16" y="327.0">Carried from the grey pass</text>
+<rect class="box" x="186" y="296" width="190" height="54" rx="12"/>
+<text class="n" x="281.0" y="330.0" text-anchor="middle">80</text>
+<text class="head" x="281.0" y="370.0" text-anchor="middle">+</text>
+<text class="label" x="16" y="411.0">Linked from the family</text>
+<rect class="box" x="186" y="380" width="190" height="54" rx="12"/>
+<text class="n" x="281.0" y="414.0" text-anchor="middle">11</text>
+<text class="head" x="281.0" y="454.0" text-anchor="middle">=</text>
+<text class="label" x="16" y="495.0">In the review</text>
+<rect class="total" x="186" y="464" width="190" height="54" rx="12"/>
+<text class="n" x="281.0" y="498.0" text-anchor="middle">264</text>
+</svg>

@@ -8,35 +8,34 @@ reasoning; programs check the writing and, where the reasoning is formal, the lo
 
 ## The loop
 
-```text
- ┌─ person ───────────────────────────────┐
- │ writes the idea as topics: one claim   │
- │ each, its summary, its parts           │◀──┐
- └──┬─────────────────────────────────────┘   │
-    │ topics                                  │
-    ▼                                         │
- ┌─ checks, in CI ────────────────────────┐   │
- │ the form: title, summary, one claim    │   │
- │ per topic, every part listed           │   │
- └──┬─────────────────────────────────────┘   │
-    │ findings                                │
-    ▼                                         │
- ┌─ model ────────────────────────────────┐   │
- │ explains findings, proposes clearer    │   │
- │ wording; translates a formal topic     ├───┘
- │ into Lean                              │ guidance
- └──┬─────────────────────────────────▲───┘
-    │ Lean                            │
-    ▼                                 │ errors, goals
- ┌─ proof assistant ──────────────────┴───┐ left open
- │ Lean checks the reasoning              │
- └────────────────────────────────────────┘
+![The person writes topics; checks in CI return findings to the model; the model translates a formal topic into Lean, which returns errors and goals left open; the model returns guidance to the person: what to split, what is unclear, what the proof assistant rejected, and why.](readme-loop.svg)
 
- guidance: what to split, what is unclear, what the
- proof assistant rejected, and why
+<details>
+<summary>Graphviz source</summary>
+
+```dot
+// The loop of the AI-augmented topic: the figure of ai-augmented/README.md.
+// Colours: one per kind of part, the same in every figure of this extension; each kind is also named in its box.
+// person orange, program blue, model green, proof assistant blue (a program); a back edge returns to its sender.
+digraph loop {
+  graph [rankdir=TB, nodesep=0.5, ranksep=0.55, bgcolor="white", pad=0.2, fontname="Inter"];
+  node  [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, margin="0.2,0.1", penwidth=1.5, fontcolor="#1F2328"];
+  edge  [fontname="Inter", fontsize=11, color="#3D434B", fontcolor="#55575F", penwidth=1.3, arrowsize=0.8];
+  P [label=<<b>person</b><br/><font point-size="11" color="#55575F">writes the idea as topics: one claim</font><br/><font point-size="11" color="#55575F">each, its summary, its parts</font>>, fillcolor="#FBEDE4", color="#B4541A", penwidth=2.6];
+  C [label=<<b>checks, in CI</b><br/><font point-size="11" color="#55575F">the form: title, summary, one claim</font><br/><font point-size="11" color="#55575F">per topic, every part listed</font>>, fillcolor="#E8EEF8", color="#2F5DA8"];
+  M [label=<<b>model</b><br/><font point-size="11" color="#55575F">explains findings, proposes clearer</font><br/><font point-size="11" color="#55575F">wording; translates a formal topic</font><br/><font point-size="11" color="#55575F">into Lean</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  L [label=<<b>proof assistant</b><br/><font point-size="11" color="#55575F">Lean checks the reasoning</font>>, fillcolor="#E8EEF8", color="#2F5DA8"];
+  P -> C [label=" topics"];
+  C -> M [label=" findings"];
+  M -> L [label=" Lean"];
+  L -> M [label=" errors, goals\l left open\l"];
+  M -> P [label=" guidance: what to split, what is\l unclear, what the proof assistant\l rejected, and why\l"];
+}
 ```
 
-The figure reads from the person downward, and what comes back rises on the right. Each part has one role:
+</details>
+
+The figure reads from the person downward; what comes back, errors and goals to the model and guidance to the person, runs upward. Each part has one role:
 
 | Part | Role | Decides |
 |---|---|---|
