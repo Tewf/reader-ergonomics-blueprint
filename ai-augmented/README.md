@@ -51,7 +51,7 @@ Lean declaration mirrors.
 
 | | What | Why |
 |---|---|---|
-| in | the topic as the interface between a person, a model and a checker | the one problem of this branch |
+| in | the topic as the interface between a person, a model and a checker | the one problem of this extension |
 | in | proofs written as topics and checked in Lean, as the first instance | a checker whose verdict is exact exists |
 | in | what the model may do (explain, propose, translate) and what it may not (decide) | a model's output is checked, never trusted |
 | in | the evidence, grey literature first: how practice joins informal writing, models and proof assistants | the tools move faster than papers |
@@ -86,7 +86,7 @@ The grey pass of the review, [autoformalization](../evidence/autoformalization/)
 
 - It builds on the [topic](../shapes/topic.md) and its check. A node template drafted earlier, unpublished, already
   gave each claim a Lean file; it is the starting point, not the baseline.
-- Structured proofs are reviewed in reader-ergonomics-academic, `evidence/mathematical-writing`; this branch links
+- Structured proofs are reviewed in reader-ergonomics-academic, `evidence/mathematical-writing`; this extension links
   that review and does not repeat it.
 
 ## See also
