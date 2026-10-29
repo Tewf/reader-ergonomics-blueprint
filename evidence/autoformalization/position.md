@@ -1,6 +1,6 @@
 # Position
 
-Step 4 of the review: where the AI-augmented topic stands against the existing reviews and the state of the art, what the evidence allows it to claim, and what this repository would add. Each "not found" below is a statement about these searches, not about the world. Terms are defined in [frame](frame.md).
+Step 4 of the review: where this repository's blueprint stands against the existing reviews and the state of the art, what the evidence allows it to claim, and what this repository would add. Each "not found" below is a statement about these searches, not about the world. Terms are defined in [frame](frame.md).
 
 ## Against the existing reviews
 

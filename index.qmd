@@ -1,5 +1,5 @@
 ---
-title: "AI-augmented topic"
+title: "Blueprint"
 ---
 
 {{< include README.md >}}

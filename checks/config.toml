@@ -1,0 +1,42 @@
+# Merged onto reader-ergonomics' own config, table by table; a value here wins (extending.md, the interface).
+extends = "reader-ergonomics"
+
+# The topic check, copied from reader-ergonomics-topic v0.6.0 into checks/local/topic.py: which files form this
+# repository's tree of topics, and its bounds.
+[topic]
+files = ["README.md", "evidence/", "decisions/"]
+root = "README.md"
+exempt = []
+summary_words = 60   # PROVISIONAL: the longest summary that still stands for a folded topic; no study sets it
+listing_words = 3    # PROVISIONAL: fewer words beside a link, and the listing is a bare link, not a summary
+summary_labels = ["summary", "abstract", "short description", "decision"]   # the accepted names of the summary (shapes/topic.md)
+summary_within = 4   # PROVISIONAL: how many blocks of metadata may stand before a labelled summary
+typed = []           # children listed by type name alone; this repository lists every child with its summary
+shapes = { decision-record = ["decisions/0*.md"], topic = ["decisions/README.md"] }   # files that follow a shape and must link it
+
+# The standard's three, and the answers file: it changes with every file it answers for, so it co-changes by construction.
+[co_change]
+exempt = ["standard.md", "llms.txt", "evidence/bibliography.md", "checks/judgments.toml"]
+
+# The site loads the standard's own stylesheet (_standard/site.css, checked out in pages.yml), so there is none here
+# to measure; reader-ergonomics extending.md asks such an extension to list none.
+[readable_measure]
+stylesheets = []
+
+[sufficient_contrast]
+stylesheets = []
+
+# The headings the standard's decision-record shape requires (reader-ergonomics v1.13.0, shapes/decision-record.md).
+[shape_conformance]
+shapes = [{ name = "decision record", files = ["decisions/0*.md"], required = ["Context", "Decision", "Consequences", "See also"] }]
+
+# The standard's judgment-quotes check (v1.2.0) makes path questions optional by default; this repository's path
+# answers already quote their paths, so it stays strict.
+[judgment_quotes]
+optional = []
+
+[bibliography_keys]
+# A key names one work across the family (reader-ergonomics decision 0003); CI clones each name beside this repository.
+family = ["reader-ergonomics", "reader-ergonomics-academic", "reader-ergonomics-learning",
+          "reader-ergonomics-presentations", "reader-ergonomics-software-design", "reader-ergonomics-topic"]
+shared_links = []

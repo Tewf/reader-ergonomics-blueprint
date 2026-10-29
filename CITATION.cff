@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: >-
+  If this repository helps you, you may cite it as below. It is an informal,
+  work-in-progress synthesis of published research, written with Claude, an AI
+  assistant by Anthropic. It is not an official standard, not peer-reviewed,
+  and not a new result.
+title: "reader-ergonomics-blueprint (work in progress)"
+abstract: >-
+  A person's reasoning written as a tree of topics, with a checker on each
+  part, Lean for logic first, and a language model that interprets the
+  checkers' verdicts and guides. Its review of autoformalization is done and
+  names its baseline; the loop itself is not built yet.
+type: software
+authors:
+  - name: "Tewf"
+repository-code: "https://github.com/Tewf/reader-ergonomics-blueprint"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+keywords:
+  - autoformalization
+  - blueprint
+  - proof assistant
+  - Lean
+  - documentation
+  - literature review

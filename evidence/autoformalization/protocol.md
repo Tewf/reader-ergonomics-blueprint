@@ -467,7 +467,7 @@ All on 2026-10-29. No login, no key, no identity sent; public interfaces only.
 
 ## 9. Quality of sources
 
-- The 20 criteria and the threshold: [evidence README](https://github.com/Tewf/reader-ergonomics-topic/blob/3ce8ec139fc08c2852f77e893b8bc38f073f668e/evidence/README.md#method).
+- The 20 criteria and the threshold: [evidence README](https://github.com/Tewf/reader-ergonomics-topic/blob/092ae2fc2e07226b695e219e3eb14b40286faa25/evidence/README.md#method).
 - A count read from a public listing (stars, downloads, registry totals) is the reviewer's measurement, not a source, and is not scored.
 - Formal side, outlet tier: project documentation, company pages, model cards, forum and Q/A pages, tier 2 (0.5); blogs and gists, tier 3 (0); no tier 1 source was found.
 - Formal side: a company page scores low on objectivity, as it reports its own success. Q/A authority is 0.5 for the site, plus 1 for an answerer at or above 20,000 reputation, 0.5 at or above 5,000.

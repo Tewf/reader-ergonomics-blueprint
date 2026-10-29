@@ -1,0 +1,146 @@
+[[answer]]
+check = "tree-shape"
+path = "checks"
+question = "2 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
+file = ""
+answer = "It stays: `checks` is the folder the extension contract names (reader-ergonomics extending.md, the layout table) for the config and the answers, and the standard's runner reads it there."
+
+[[answer]]
+check = "tree-shape"
+path = "checks/local"
+question = "1 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
+file = ""
+answer = "It stays: it holds `topic.py`, the topic check copied from its release, in the folder where the extension contract puts an extension's own checks and the standard's runner loads them."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/against.md"
+question = "116 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "6f78aaae4d94"
+answer = "One role: the case against this review's claims, from `Failed replications: accuracy re-judged by people` to `Limits of the practice evidence`, each kind of evidence under its heading; the lead screen's lines extend `Limits of the benchmarks themselves` and `Limits of the prior art`. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/frame.md"
+question = "88 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "160c86d69ec1"
+answer = "One role: step 1, which fixes the words the other files use: one row per term under `Names`, where `every file of this folder uses these names`, with the five questions mapped to each side and strand under `Questions`. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/protocol.md"
+question = "540 lines, past the ceiling of 500. Review it: split it only into pieces that change separately and each stay whole, or state why it stays one file."
+file = "0166535f8c1d"
+answer = "It stays one file: it is the record a reviewer reruns, and its parts change together, since a string of `4. Formal search` is screened under `7. Stopping rule`, selected under `8. Selection` and limited under `11. Limits`. The lead screen's decisions sit in `4. Formal search` and answer the leads that `Strand B: prior art and feedback` did not pursue. The lines past the ceiling are the strands' string tables, kept whole as each strand ran them."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/protocol.md"
+question = "430 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "0166535f8c1d"
+answer = "It stays one file: it is the record a reviewer reruns, and its parts change together, since a string of `4. Formal search` is screened under `7. Stopping rule`, selected under `8. Selection` and limited under `11. Limits`. The lead screen's decisions sit in `4. Formal search` and answer the leads that `Strand B: prior art and feedback` did not pursue. The lines past the ceiling are the strands' string tables, kept whole as each strand ran them."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/review.md"
+question = "767 lines, past the ceiling of 500. Review it: split it only into pieces that change separately and each stay whole, or state why it stays one file."
+file = "325e497638c7"
+answer = "It stays one file: it reads one question at a time, from `Answer first` to `Where practice runs ahead of the evidence`, with the grey and formal findings on each question side by side, which `Where the two passes disagree` compares. The lead screen's works joined the questions they answer, such as `Checks of form in CI, and model feedback on writing`; split by pass, each question would be read in two places."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/review.md"
+question = "468 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "325e497638c7"
+answer = "It stays one file: it reads one question at a time, from `Answer first` to `Where practice runs ahead of the evidence`, with the grey and formal findings on each question side by side, which `Where the two passes disagree` compares. The lead screen's works joined the questions they answer, such as `Checks of form in CI, and model feedback on writing`; split by pass, each question would be read in two places."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/sources.md"
+question = "406 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "d3d5c3c0866f"
+answer = "One role: this review's pool, from its `Flow` to `Result of the grading and the scoring`, one row per work, formal under `Formal sources, graded`, grey under `Grey sources, scored`, the leads set aside under `Leads screened after the merge, set aside`. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/state-of-the-art.md"
+question = "110 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "03582a12ad7a"
+answer = "One role: step 3, the best evidence on each question, from `Best evidence per question` through `Upper bounds: what has been achieved` and `Lower bounds: what is shown impossible, or not yet shown` to the practice `Most adopted in practice, beside the best evidence`. It stays whole."
+
+[[answer]]
+check = "document-mode"
+path = "README.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "0397217d5759"
+answer = "Reference: the front page, read for `The loop`, the `Scope`, `What the review found` and `The baseline`. Its one task, `Check it`, is two commands for whoever wants to run the checks."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/autoformalization/frame.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "160c86d69ec1"
+answer = "Reference: a glossary looked up by term under `Names`, and a map of the sub-questions under `Questions`; it sets the reader no task."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/autoformalization/position.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "93e5d1131699"
+answer = "Explanation: it argues what the evidence allows, under `The repository's question: the topic as the interface`, between `Known` and `Not known`; its four conditions are `candidate rules`, not steps for the reader."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/autoformalization/review.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "325e497638c7"
+answer = "Reference: findings looked up by question, from `Answer first` to `Where practice runs ahead of the evidence`, grey and formal side by side; it sets the reader no task."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/autoformalization/sources.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "d3d5c3c0866f"
+answer = "Reference: the pool looked up by work, one row per key under `Formal sources, graded` and `Grey sources, scored`, beside its `Flow` and its `Keys`; the rows under `Leads screened after the merge, set aside` are records of decisions, not steps, and it sets the reader no task."
+
+[[answer]]
+check = "name-content"
+path = "evidence/autoformalization/against.md"
+question = "the name 'against' and the opening are far apart in meaning (0.16): does the name predict the content?"
+file = "6f78aaae4d94"
+answer = "Yes: the step that holds the case against, as its opening says, it `gathers the evidence against the claims`; the measure compared the bare word with a long sentence."
+
+[[answer]]
+check = "name-content"
+path = "evidence/autoformalization/frame.md"
+question = "the name 'frame' and the opening are far apart in meaning (0.12): does the name predict the content?"
+file = "160c86d69ec1"
+answer = "Yes: the review's step 1, the frame, as it opens: `Step 1 of the review on autoformalization`, fixing the problem and the names before the search."
+
+[[answer]]
+check = "name-content"
+path = "evidence/autoformalization/position.md"
+question = "the name 'position' and the opening are far apart in meaning (0.18): does the name predict the content?"
+file = "93e5d1131699"
+answer = "Yes: the review's step 4, its position, as it opens: `Step 4 of the review`, where the blueprint `stands against the existing reviews and the state of the art`."
+
+[[answer]]
+check = "name-content"
+path = "evidence/autoformalization/protocol.md"
+question = "the name 'protocol' and the opening are far apart in meaning (0.10): does the name predict the content?"
+file = "0166535f8c1d"
+answer = "Yes: the protocol, as it opens: `Every search, count and rule of the review`, the record from which another reviewer reruns it."
+
+[[answer]]
+check = "name-content"
+path = "evidence/autoformalization/sources.md"
+question = "the name 'sources' and the opening are far apart in meaning (0.20): does the name predict the content?"
+file = "d3d5c3c0866f"
+answer = "Yes: the sources, as it opens: `The pool of the review`, one row per work after the flow from results to sources."
+
+[[answer]]
+check = "name-content"
+path = "evidence/autoformalization/state-of-the-art.md"
+question = "the name 'state' and the opening are far apart in meaning (0.07): does the name predict the content?"
+file = "03582a12ad7a"
+answer = "Yes: the review's step 3, the state of the art, as it opens: `Step 3 of the review`, who holds the best evidence `by what method, measured how`."

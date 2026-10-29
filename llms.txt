@@ -1,0 +1,22 @@
+# Blueprint
+
+> A person's reasoning written as a tree of topics, with a checker on each part, Lean for logic first, and a language model that interprets the verdicts and guides. Its review of autoformalization (273 sources) names the baseline, B1. It builds on reader-ergonomics-topic and obeys reader-ergonomics.
+
+Each page's markdown source is served at the same path with a .md extension. This index is written by hand; AGENTS.md says to keep it in step.
+
+## The repository
+
+- [Blueprint](https://tewf.github.io/reader-ergonomics-blueprint/README.md): the loop, the roles, the scope, what the review found and the baseline
+- [Decisions](https://tewf.github.io/reader-ergonomics-blueprint/decisions/README.md): one record per choice that shapes the repository
+
+## Evidence
+
+- [Evidence](https://tewf.github.io/reader-ergonomics-blueprint/evidence/README.md): the review behind the repository, and its bibliography
+- [Autoformalization](https://tewf.github.io/reader-ergonomics-blueprint/evidence/autoformalization/README.md): how practice and research join a person's reasoning, a model and Lean, and catch the wrong statement
+- [Bibliography](https://tewf.github.io/reader-ergonomics-blueprint/evidence/bibliography.md): every cited work, once
+
+## Contributing
+
+- [Contributing](https://tewf.github.io/reader-ergonomics-blueprint/AGENTS.md): rules for changing this repository
+- [Topic](https://tewf.github.io/reader-ergonomics-topic/shapes/topic.md): the shape every document here follows
+- [Standard](https://tewf.github.io/reader-ergonomics/standard.md): the reader-ergonomics card this repository obeys

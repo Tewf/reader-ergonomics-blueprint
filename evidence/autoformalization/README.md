@@ -1,6 +1,6 @@
 # Autoformalization: how practice joins a person's reasoning, a model and Lean, and catches the wrong statement
 
-The review of the AI-augmented topic, its grey and formal passes merged. It asks how practice and research join informal reasoning to Lean through a model, and catch a correct proof of the wrong statement. It asks how the verdict returns to a person as guidance, and what that does to the person's thinking.
+The review behind this repository, its grey and formal passes merged. It asks how practice and research join informal reasoning to Lean through a model, and catch a correct proof of the wrong statement. It asks how the verdict returns to a person as guidance, and what that does to the person's thinking.
 
 - It holds 273 sources: 80 grey, 182 formal (9 of them from the lead screen after the merge), and 11 works linked from sibling reviews.
 - Grey: 44 tier 2 and 36 tier 3, of which 9 score below the threshold and serve as examples only; no tier 1, and no
