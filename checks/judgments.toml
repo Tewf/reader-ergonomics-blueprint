@@ -144,3 +144,10 @@ path = "evidence/autoformalization/state-of-the-art.md"
 question = "the name 'state' and the opening are far apart in meaning (0.07): does the name predict the content?"
 file = "03582a12ad7a"
 answer = "Yes: the review's step 3, the state of the art, as it opens: `Step 3 of the review`, who holds the best evidence `by what method, measured how`."
+
+[[answer]]
+check = "document-mode"
+path = "design/first-build.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "bac9d84ac109"
+answer = "Yes: one mode, a proposal for a reviewer to decide, as `Decision asked` says; the `Design` section lists parts, it is not a lookup table."

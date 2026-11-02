@@ -1,0 +1,19 @@
+digraph first_build {
+  graph [rankdir=TB, nodesep=0.5, ranksep=0.5, bgcolor="white", pad=0.2, fontname="Inter"];
+  node  [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, margin="0.2,0.1", penwidth=1.5, fontcolor="#1F2328"];
+  edge  [fontname="Inter", fontsize=11, color="#3D434B", fontcolor="#55575F", penwidth=1.3, arrowsize=0.8];
+  T  [label=<<b>theorem</b><br/><font point-size="11" color="#55575F">for every n, a prime greater than n</font>>, fillcolor="#FBEDE4", color="#B4541A", penwidth=2.6];
+  C1 [label=<<b>claim 1</b><br/><font point-size="11" color="#55575F">a number at least 2 has a prime factor</font>>, fillcolor="#FBEDE4", color="#B4541A"];
+  C2 [label=<<b>claim 2</b><br/><font point-size="11" color="#55575F">n! + 1 has a prime factor p</font>>, fillcolor="#FBEDE4", color="#B4541A"];
+  C3 [label=<<b>claim 3</b><br/><font point-size="11" color="#55575F">p exceeds n</font>>, fillcolor="#FBEDE4", color="#B4541A"];
+  L  [label=<<b>Lean</b><br/><font point-size="11" color="#55575F">one declaration per topic</font>>, fillcolor="#E8EEF8", color="#2F5DA8"];
+  T -> C1 [label=" contains"];
+  T -> C2 [label=" contains"];
+  T -> C3 [label=" contains"];
+  C2 -> C1 [label=" uses", style=dashed];
+  C3 -> C2 [label=" uses", style=dashed];
+  C1 -> L [label=" names", style=dotted];
+  C2 -> L [style=dotted];
+  C3 -> L [style=dotted];
+  T -> L [style=dotted];
+}

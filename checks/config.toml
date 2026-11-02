@@ -4,7 +4,7 @@ extends = "reader-ergonomics"
 # The topic check, copied from reader-ergonomics-topic v0.6.0 into checks/local/topic.py: which files form this
 # repository's tree of topics, and its bounds.
 [topic]
-files = ["README.md", "evidence/", "decisions/"]
+files = ["README.md", "evidence/", "decisions/", "design/", "proofs/"]
 root = "README.md"
 exempt = []
 summary_words = 60   # PROVISIONAL: the longest summary that still stands for a folded topic; no study sets it
@@ -12,7 +12,7 @@ listing_words = 3    # PROVISIONAL: fewer words beside a link, and the listing i
 summary_labels = ["summary", "abstract", "short description", "decision"]   # the accepted names of the summary (shapes/topic.md)
 summary_within = 4   # PROVISIONAL: how many blocks of metadata may stand before a labelled summary
 typed = []           # children listed by type name alone; this repository lists every child with its summary
-shapes = { decision-record = ["decisions/0*.md"], topic = ["decisions/README.md"] }   # files that follow a shape and must link it
+shapes = { decision-record = ["decisions/0*.md"], design-document = ["design/first-build.md"], topic = ["decisions/README.md", "design/README.md", "proofs/*/README.md"] }   # files that follow a shape and must link it
 
 # The standard's three, and the answers file: it changes with every file it answers for, so it co-changes by construction.
 [co_change]
@@ -28,7 +28,10 @@ stylesheets = []
 
 # The headings the standard's decision-record shape requires (reader-ergonomics v1.13.0, shapes/decision-record.md).
 [shape_conformance]
-shapes = [{ name = "decision record", files = ["decisions/0*.md"], required = ["Context", "Decision", "Consequences", "See also"] }]
+shapes = [
+  { name = "decision record", files = ["decisions/0*.md"], required = ["Context", "Decision", "Consequences", "See also"] },
+  { name = "design document", files = ["design/first-build.md"], required = ["Motivation", "Goals and non-goals", "Design", "Alternatives", "Consequences", "Feasibility and plan", "Open questions"] },
+]
 
 # The standard's judgment-quotes check (v1.2.0) makes path questions optional by default; this repository's path
 # answers already quote their paths, so it stays strict.
