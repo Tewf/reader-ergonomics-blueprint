@@ -21,13 +21,6 @@ answer = "One role: the case against this review's claims, from `Failed replicat
 
 [[answer]]
 check = "logical-lines"
-path = "evidence/autoformalization/frame.md"
-question = "88 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "160c86d69ec1"
-answer = "One role: step 1, which fixes the words the other files use: one row per term under `Names`, where `every file of this folder uses these names`, with the five questions mapped to each side and strand under `Questions`. It stays whole."
-
-[[answer]]
-check = "logical-lines"
 path = "evidence/autoformalization/protocol.md"
 question = "540 lines, past the ceiling of 500. Review it: split it only into pieces that change separately and each stay whole, or state why it stays one file."
 file = "0166535f8c1d"
@@ -202,27 +195,6 @@ file = "dbaa44daa669"
 answer = "One mode, understanding why: the front page states the scope, the status and the baseline, and its `Contents` table only points to the parts; the how-to is in AGENTS.md."
 
 [[answer]]
-check = "logical-lines"
-path = "README.fr.md"
-question = "92 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "0ee3823829bd"
-answer = "The role is the French front page, kept in step with `README.md`; it stays whole. Its `Contenu` table and `L'adopter` block are the same parts as the English page."
-
-[[answer]]
-check = "logical-lines"
-path = "README.md"
-question = "89 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "cff1296957cd"
-answer = "The role is the front page: what the repository is, how to take it and what is open. It passes the one-sentence test without 'and' on its role; `Take it` and `Contents` are its parts."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/autoformalization/frame.md"
-question = "89 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "0978d4e1be02"
-answer = "The role is to name the problem and the field's words for it before the search. It stays whole: `The problem in one sentence`, `Names` and `Questions` are the frame's parts."
-
-[[answer]]
 check = "paraphrase"
 path = "README.fr.md"
 question = "says nearly what README.md (line 40) says, similarity 0.95: one fact in two places?"
@@ -354,3 +326,87 @@ path = "evidence/autoformalization/protocol.md"
 question = "reads about equally as how-to and explanation: one mode per document?"
 file = "cf14f8c3cbaf"
 answer = "Reference: the file follows its shape and is consulted part by part; its heading `Protocol: how the pool of both passes was built` names the one thing it holds."
+
+[[answer]]
+check = "logical-lines"
+path = "README.fr.md"
+question = "92 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "d751ca47c301"
+answer = "The role is the French front page, kept in step with `README.md`; it stays whole. Its `Contenu` table and `L'adopter` block are the same parts as the English page."
+
+[[answer]]
+check = "logical-lines"
+path = "README.md"
+question = "89 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "0986a7a48a92"
+answer = "The role is the front page: what the repository is, how to take it and what is open. It passes the one-sentence test without 'and' on its role; `Take it` and `Contents` are its parts."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/frame.md"
+question = "89 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "78859b58bbd9"
+answer = "The role is to name the problem and the field's words for it before the search. It stays whole: `The problem in one sentence`, `Names` and `Questions` are the frame's parts."
+
+[[answer]]
+check = "co-change"
+path = ".github/workflows/checks.yml"
+question = "changed together with AGENTS.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "af44dcb2d5e3"
+answer = "They stay apart: `.github/workflows/checks.yml` serves another role than the file it changes with, and they change together by construction, not by overlap."
+
+[[answer]]
+check = "co-change"
+path = ".github/workflows/checks.yml"
+question = "changed together with checks/config.toml in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "af44dcb2d5e3"
+answer = "They stay apart: `.github/workflows/checks.yml` serves another role than the file it changes with, and they change together by construction, not by overlap."
+
+[[answer]]
+check = "co-change"
+path = "AGENTS.md"
+question = "changed together with decisions/0008-which-findings-became-principles.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "ab1fd938f254"
+answer = "They stay apart: `AGENTS.md` serves another role than the file it changes with, and they change together by construction, not by overlap."
+
+[[answer]]
+check = "co-change"
+path = "README.fr.md"
+question = "changed together with decisions/0006-a-challenge-file-holds-the-audited-statements.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "d751ca47c301"
+answer = "They stay apart: `README.fr.md` serves another role than the file it changes with, and they change together by construction, not by overlap."
+
+[[answer]]
+check = "co-change"
+path = "README.fr.md"
+question = "changed together with decisions/0008-which-findings-became-principles.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "d751ca47c301"
+answer = "They stay apart: `README.fr.md` serves another role than the file it changes with, and they change together by construction, not by overlap."
+
+[[answer]]
+check = "co-change"
+path = "README.md"
+question = "changed together with decisions/0006-a-challenge-file-holds-the-audited-statements.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "0986a7a48a92"
+answer = "They stay apart: `README.md` serves another role than the file it changes with, and they change together by construction, not by overlap."
+
+[[answer]]
+check = "co-change"
+path = "README.md"
+question = "changed together with decisions/0008-which-findings-became-principles.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "0986a7a48a92"
+answer = "They stay apart: `README.md` serves another role than the file it changes with, and they change together by construction, not by overlap."
+
+[[answer]]
+check = "co-change"
+path = "checks/config.toml"
+question = "changed together with shapes/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "0bd9844118ea"
+answer = "They stay apart: `checks/config.toml` serves another role than the file it changes with, and they change together by construction, not by overlap."
+
+[[answer]]
+check = "co-change"
+path = "checks/config.toml"
+question = "changed together with shapes/claim.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "0bd9844118ea"
+answer = "They stay apart: `checks/config.toml` serves another role than the file it changes with, and they change together by construction, not by overlap."
