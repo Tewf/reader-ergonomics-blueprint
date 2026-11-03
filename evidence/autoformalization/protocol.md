@@ -575,3 +575,78 @@ Eight recent titles were read by abstract. Two were already in the pool: LeanTra
 - Limit: Semantic Scholar refused two title searches with HTTP 429, so `LeanSide` and `PNT+` were searched in OpenAlex only. Its citation endpoint answered for Guo 2026b.
 - Not searched: Google Scholar and arXiv's own listing search.
 - Keys: `Feng 2026`, `Li 2026b` and `Tan 2026` were checked against the six family bibliographies. `Li 2026` is taken there by another work, so the new Li key took the next free letter.
+
+### Second rater on the grey sources
+
+- **Rater.** A language model, Mistral's mistral-small-latest through its public API, one call per source, temperature 0.2. It saw no review score. Its prompt pasted Garousi 2019's twenty criteria in the eight groups the review uses, the outlet-tier rule, and the rule that a part not in the material scores 0. It returned the eight subtotals and a total.
+- **Material.** The first 16,000 characters of each page, as fetched on 2026-11-03, navigation and page chrome included. The rater saw less than the reviewers, who read each page in full. This is the main limit of the comparison.
+- **Read.** 63 of the 80 sources were readable by the rater. Sixteen were not readable, so their scores stand unchecked. Six were blocked (HTTP 403: Anthropic 2026c, MathOverflow 2026, PASE 2022, 2022b, 2024 and 2026). Two were dead links (HTTP 404: LZ 2025b and LZ 2025c). Eight were Mastodon posts of Tao rendered by script (Tao 2023m, 2025a, 2025b, 2025c, 2026g, 2026h, 2026i and 2026k).
+- **Re-run.** Isabelle 2026 (a connection reset on the first fetch) and LZ 2025d (an empty reply) were run again.
+
+Agreement, on the 63 sources readable by the rater, before any reread:
+
+| Measure | Value |
+|---|---|
+| Mean absolute difference, total | 5.34 of 20 |
+| Mean signed difference, rater minus review | -4.83: the rater lower on 56 sources, higher on 7 |
+| Agreement on the threshold of 10 | 43% (27 of 63) |
+| Cohen's kappa on the threshold | 0.12, slight |
+| Review at or above 10 | 55 of 63; rater at or above 10: 19 |
+| Mean absolute difference per group, A M O D P N I T | 1.39, 1.93, 1.42, 0.26, 0.41, 0.56, 0.52, 0.35 |
+| Sources over 3 points | 45 of 63 |
+
+The rater was lower on the authority and methodology groups, and it put blogs at tier 2. It gave 0.5 on T to 20 blogs, microblog posts and forum threads, where the rule gives 0. It read no bylines or dates on pages whose chrome filled its window, so it gave A and D low. It scored one company page higher on objectivity, not applying the rule that a company page about its own tool scores 0 on O3.
+
+- **Reread.** Each of the 45 sources over 3 points was reread: the cleaned text of the page, its first 700 to 900 characters of content, and its dates and bylines where shown. A subtotal changed only where the reread contradicted it, and the reason is written in the table below.
+- **Outcome.** 41 kept their score. Four changed, each on one criterion, with a stated date or tier. None crossed the threshold. The four are Dressler 2026 (D 0.5 to 1, total 11) and Gadgil 2026 (D 0.5 to 1, total 12). Lean FRO 2026a (D 0 to 1, total 15) and Isabelle 2026 (D 0 to 1, total 12.5) are the others.
+- **Consequence.** Agreement is poor, so the rater is not a second rater of the review's scores. It cannot settle a score alone. The reread is the check that counts, and it moved four scores by one point each. The scores stand as a first pass, not as agreement.
+
+Decisions, one row per source over 3 points:
+
+| Key | Review | Rater | Decision | Reason |
+|---|---|---|---|---|
+| Adamczewski 2026 | 15 | 3.5 | kept | the README states the method (a language model reviews each Lean file against the source it cites, fixes as diffs) and the run data; the rater read the navigation text, not the README |
+| Alexeev 2025 | 15 | 10 | kept | a dated guest post (2025-12-05) with a stated aim and cases; the gap is in M and N, which the post supports |
+| Avigad 2026 | 15.5 | 12 | kept | byline names seven Lean maintainers at their institutions (A1 to A4 hold); dated 2026-10-16 |
+| Buzzard 2024 | 15.5 | 6.5 | kept | a status post by a named professor: states its aim, its project and its open problem (the limit); the rater read no byline |
+| Buzzard 2026a | 16.5 | 9.5 | kept | dated (2026-09); checked by the author, who compiled the proof and ran the comparator, as the review's own marking says |
+| Buzzard 2026b | 15 | 10 | kept | dated (2026-10); the post states the dataset, its method and its two challenges |
+| Buzzard 2026c | 13.5 | 8.5 | kept | a dated (2026-10-01) essay that states its aim and its view of the positions; the rater's gap is on A and O, which the byline supports |
+| Buzzard 2026d | 15 | 7 | kept | dated (2026-07); a first-hand account with counts and dates; the rater read no date |
+| CMU L3 2025 | 12.5 | 6.5 | kept | a laboratory README with dated release entries (06/2025, 10/2025) and a stated method; A1 holds for an institution |
+| Dressler 2026 | 10.5 | 5.5 | D 0.5 to 1, total 11 | a date (2026-07-28) is printed on the page; the review gave D 0.5 for an undated page. Threshold unchanged |
+| Erdős DB 2026 | 16 | 5.5 | kept | the project's own statistics file, dated 2026-10-06, states its counts and the policy behind them |
+| Erdős-wiki 2026 | 16 | 7.5 | kept | the wiki states its data date (2026-06-30) and its limits (selection bias, stated problems); both score |
+| Gadgil 2026 | 11.5 | 8 | D 0.5 to 1, total 12 | the README states its dates ("as of early 2025-02, modified 2025-09"); the review gave D 0.5 for a date that is printed |
+| GasStationManager 2026 | 11 | 6 | kept | the README is undated in the material read; D stays 0.5; the gap is on M and O, which the README's stated aim supports |
+| Google 2025 | 12.5 | 16 | kept | a company blog about its own tool, with a user survey of its own: O3 scores 0 by the protocol's rule; the rater scored O higher and did not apply that rule |
+| Google DeepMind 2026 | 14.5 | 10.5 | kept | the README states its aim, its benchmark role and its contributing rules; undated in the material, so D stays 0.5 |
+| Kirov 2026b | 13.5 | 8.5 | kept | a dated post by a named mathematician; states its aim, method (a worked case) and its disclaimer (limits); M 5.5 holds |
+| Lean-community 2026 | 12 | 5 | kept | tool documentation by the Lean community, a stated procedure; A1 and A2 hold for the project |
+| Lean FRO 2025 | 14.5 | 8 | kept | release notes dated 2025-08-14 with counts of changes and a stated aim; the institution producer holds A |
+| Lean FRO 2026a | 14 | 9 | D 0 to 1, total 15 | the README states that the repository was archived by its owner on 2026-10-20; the review gave D 0, which the page contradicts |
+| Lean FRO 2026b | 15 | 6 | kept | release notes dated 2026-10-12, with stated changes; the rater gave A 1 without the institution's byline |
+| Lean FRO 2026c | 15 | 2.5 | kept | an institution's language reference: stated aim and a complete list of error names; undated in the material, D stays 0.5 |
+| Lean FRO 2026d | 14 | 3 | kept | an institution's tactic reference, a stated scope; undated in the material |
+| LeanDojo 2026 | 12.5 | 6.5 | kept | a repository README with a stated aim and a venue (NeuS); the gap is on A and M, which the README supports |
+| LZ 2025a | 15 | 6.5 | kept | a dated Zulip thread (2025) by a named participant; the aim and the proposal are stated; the rater read no date or author |
+| LZ 2025e | 13.5 | 6.5 | kept | a thread with a named template and a verification tool, stated aim and stated doubts (limits) |
+| LZ 2025f | 13.5 | 6 | kept | a thread with a stated course design and questions; M and A as the review scored them |
+| LZ 2025h | 7 | 1.5 | kept, example of practice | the review's score stands; the thread is below 10 and stays an example only |
+| LZ 2026a | 14 | 2.5 | kept | dated 2026-02-05 in the thread, so D 1 holds; a stated aim and a worked attempt |
+| Massot 2026b | 15.5 | 7 | kept | the README gives T 0.5 for tool documentation (tier 2), as the review scored it; A4 for a named expert; M and O hold |
+| Math Inc 2025 | 10.5 | 5.5 | kept | a company page about its own tool: O3 is 0 by the protocol, as the review scored; the rater gave A and M more than the page supports |
+| Mathlib Initiative 2026 | 15 | 6.5 | kept | the template's README states its purpose and required fields; undated in the material, D stays 0 |
+| Naproche 2026 | 13.5 | 6 | kept | a project site with a stated aim and dated news (2025-06 school); D 0.5 holds |
+| PNT-plus 2026 | 16 | 4.5 | kept | a maintainers' style guide with a stated aim, a status line that names its limits and a rule that CI enforces; M 5 holds |
+| Rivin 2026 | 9 | 5 | kept, example of practice | dated 2026-03-26; the gist is a tier 3 item below 10, so an example only, as the review said |
+| Scholze 2021 | 16.5 | 11.5 | kept | a dated (2021-06) first-hand report by a named mathematician with numbers; the rater read no byline |
+| StepFun 2025 | 10.5 | 15 | kept | a model card: an owner's claim with its own benchmark; the rater gave M and N more than the card supports (the review's O and M hold) |
+| Tao 2024 | 15.5 | 6.5 | kept | a dated (2024-10-12) blog post by a named mathematician, with an aim, a project and its method; the rater read no byline |
+| Tao 2026e | 16 | 12.5 | kept | a dated (2026-01-15) blog post; within 3.5 points |
+| Tao 2026f | 15.5 | 6 | kept | a dated (2026-08-18) post by the same author, which states the registry's aim and its checks |
+| TUe 2026 | 12 | 7 | kept | a university project page, an institution (A1 holds); the page states its aim and its evidence; no company rule applies |
+| Vergo 2026 | 11 | 5 | kept | a dated (2026-02) Zulip thread, with the aim stated; the rater read no date beyond the thread's top |
+| Zhu 2026 | 13 | 8 | kept | a repository README with a stated aim and a stated method; the gap is on O and A, which the README does not contradict |
+| LZ 2025d | 9.5 | 3.5 | kept, example of practice | a one-post tip sharing a tool: aim and particular case score, the method and references do not; the review's M 3 is the most the post supports |
+| Isabelle 2026 | 11.5 | 4 | D 0 to 1, total 12.5 | the page reads "Last updated: 2024-02-29", a stated date, which the review scored 0; the rater's T 1 is wrong (a project page is tier 2, T 0.5), and the rater's A 2 ignores that the producer is a university |

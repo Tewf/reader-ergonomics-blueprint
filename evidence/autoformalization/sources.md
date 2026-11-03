@@ -341,22 +341,22 @@ A source scored by both sides keeps the score of the side that read more of it, 
 | Buzzard 2026d | 3, blog | human: P1 | 15 (3 / 4.5 / 2.5 / 1 / 1 / 2 / 1 / 0) | review Q2 |
 | CMU L3 2025 | 2, repository README | formal: P | 12.5 (3.5 / 2.5 / 2.5 / 1 / 0.5 / 1.5 / 0.5 / 0.5) | frame; protocol; review Q3 |
 | DeepSeek 2025 | 2, model card | formal: P | 12 (3 / 3.5 / 1.5 / 0.5 / 1 / 1 / 1 / 0.5) | protocol; review Q2; review disagreements |
-| Dressler 2026 | 2, repository README | formal: G18 | 10.5 (1.5 / 2.5 / 2.5 / 0.5 / 0.5 / 1.5 / 1 / 0.5) | protocol; review Q3; state-of-the-art |
+| Dressler 2026 | 2, repository README | formal: G18 | 11 (1.5 / 2.5 / 2.5 / 1 / 0.5 / 1.5 / 1 / 0.5) | protocol; review Q3; state-of-the-art |
 | Erdős DB 2026 | 2, project documentation | human: P5; W5 | 16 (3 / 4.5 / 3.5 / 1 / 1 / 1.5 / 1 / 0.5) | frame; protocol; review Q1; review Q4 |
 | Erdős-wiki 2026 | 2, project wiki | human: P5 | 16 (2.5 / 5 / 3.5 / 1 / 1 / 1.5 / 1 / 0.5) | frame; review Q2 |
-| Gadgil 2026 | 2, repository README | formal: P | 11.5 (3 / 2.5 / 2.5 / 0.5 / 0.5 / 1.5 / 0.5 / 0.5) | protocol; review Q2 |
+| Gadgil 2026 | 2, repository README | formal: P | 12 (3 / 2.5 / 2.5 / 1 / 0.5 / 1.5 / 0.5 / 0.5) | protocol; review Q2 |
 | GasStationManager 2026 | 2, repository README | formal: P | 11 (1.5 / 3 / 2.5 / 0.5 / 1 / 1.5 / 0.5 / 0.5) | protocol; review Q3 |
 | Goedel-LM 2025 | 2, model card | formal: P | 12 (3 / 3.5 / 2 / 0.5 / 1 / 1 / 0.5 / 0.5) | frame; protocol; review Q2; review Q3; review disagreements |
 | Google 2025 | 2, company blog about its own tool | human: W7 | 12.5 (3.5 / 3.5 / 1.5 / 1 / 0.5 / 1.5 / 0.5 / 0.5) | frame; protocol; review Q3; review disagreements; position; against |
 | Google DeepMind 2026 | 2, project documentation | both; formal: G19; human: P5; W2 | 14.5 (3.5 / 3.5 / 3 / 0.5 / 1 / 1.5 / 1 / 0.5), formal side, kept: the formal side read the README and the contributing guide, the human side the README; human side 14 (3.5 / 4 / 2.5 / 0 / 1 / 1.5 / 1 / 0.5) | frame; protocol; review Q1; review Q2; state-of-the-art |
 | Hales 2026 | 3, guest blog post | both; formal: P, tag pages; human: P2 | 15 (4 / 3.5 / 3 / 1 / 1 / 1.5 / 1 / 0), formal side, kept: the formal side cites three of its sections, the human side one; human side 16 (3 / 5 / 3.5 / 1 / 1 / 1.5 / 1 / 0) | frame; protocol; review 0; review Q2; review Q5; baseline |
 | Harmonic 2024 | 2, company news page | formal: G10 | 12 (2.5 / 3 / 1.5 / 1 / 1 / 1.5 / 1 / 0.5) | protocol; review Q2 |
-| Isabelle 2026 | 2, project site | formal: P | 11.5 (4 / 2 / 2.5 / 0 / 0.5 / 1 / 1 / 0.5) | frame; protocol; review Q1; state-of-the-art |
+| Isabelle 2026 | 2, project site | formal: P | 12.5 (4 / 2 / 2.5 / 1 / 0.5 / 1 / 1 / 0.5) | frame; protocol; review Q1; state-of-the-art |
 | Kirov 2026a | 3, blog | human: P6, from Tao's Mathstodon | 13 (1 / 5.5 / 3 / 1 / 1 / 1.5 / 0 / 0) | review Q1; review Q4; review disagreements; position; against |
 | Kirov 2026b | 3, blog | human: P6 | 13.5 (1 / 5.5 / 3 / 1 / 1 / 2 / 0 / 0) | protocol; review Q1 |
 | Lean-community 2026 | 2, tool documentation | formal: P | 12 (3 / 3 / 3 / 0 / 0.5 / 1 / 1 / 0.5) | protocol; review Q3 |
 | Lean FRO 2025 | 2, release notes | formal: G4 | 14.5 (4 / 3 / 3.5 / 1 / 0.5 / 1.5 / 0.5 / 0.5) | frame; protocol; review Q3; state-of-the-art; baseline |
-| Lean FRO 2026a | 2, tool documentation | both; formal: P, link in Tao 2026f; human: P5; LZ 2025a | 14 (3.5 / 4.5 / 3 / 0 / 0.5 / 1.5 / 0.5 / 0.5), human side, kept: both read the README; the human side cites two of its sections (Deprecation, Definition Holes), the formal side one; formal side 17 (4 / 5 / 3.5 / 0.5 / 0.5 / 2 / 1 / 0.5) | frame; protocol; review answer; review Q1; review Q2; state-of-the-art; position; baseline |
+| Lean FRO 2026a | 2, tool documentation | both; formal: P, link in Tao 2026f; human: P5; LZ 2025a | 15 (3.5 / 4.5 / 3 / 1 / 0.5 / 1.5 / 0.5 / 0.5), human side, kept: both read the README; the human side cites two of its sections (Deprecation, Definition Holes), the formal side one; formal side 17 (4 / 5 / 3.5 / 0.5 / 0.5 / 2 / 1 / 0.5) | frame; protocol; review answer; review Q1; review Q2; state-of-the-art; position; baseline |
 | Lean FRO 2026b | 2, release notes | formal: P | 15 (4 / 3.5 / 3.5 / 1 / 0.5 / 1.5 / 0.5 / 0.5) | review Q1 |
 | Lean FRO 2026c | 2, language reference | formal: G4 | 15 (4 / 4 / 3.5 / 0.5 / 0.5 / 1.5 / 0.5 / 0.5) | review Q3; state-of-the-art |
 | Lean FRO 2026d | 2, language reference | formal: G15 | 14 (4 / 3 / 3.5 / 0.5 / 0.5 / 1 / 1 / 0.5) | frame; protocol; review Q3; baseline |
@@ -408,6 +408,10 @@ A source scored by both sides keeps the score of the side that read more of it, 
 | TUe 2026 | 2, university project page | formal: G13 | 12 (3 / 3.5 / 3.5 / 0 / 0.5 / 1 / 0 / 0.5) | protocol; review Q1; review Q3 |
 | Vergo 2026 | 2, forum thread | formal: P, forum archive | 11 (1.5 / 2.5 / 3 / 1 / 1 / 1.5 / 0 / 0.5) | frame; protocol; review Q1 |
 | Zhu 2026 | 2, repository README | formal: G12 | 13 (3 / 3 / 3 / 0.5 / 1 / 1.5 / 0.5 / 0.5) | frame; protocol; review Q1; baseline |
+
+Second rater, 2026-11-03 ([protocol](protocol.md), section 12). An independent language-model score on Garousi's criteria, read from the first 16,000 characters of each page. Of the 80 sources, 63 were readable by the rater, and 16 were not. Of the 63, 45 differed from the review by more than 3 points, and each was reread.
+
+Four scores changed, each with its reason in [protocol](protocol.md). Dressler 2026 and Gadgil 2026 moved D from 0.5 to 1. Lean FRO 2026a and Isabelle 2026 moved D from 0 to 1, on a stated date. The other 41 kept their score, and no change moves a source across the threshold of 10.
 
 ## Counts, not scored
 
