@@ -355,7 +355,8 @@ Five strings ran on arXiv only, through its API, sorted by relevance:
 | G21 | AxiomProver Putnam (2025) Lean formal proofs Axiom Math claims | 19 | 1 (Axiom 2026) |
 | G22 | tool translate Lean proof into natural language explanation informalization | 10 | 0 (papers to leads) |
 | G23 | blueprint LLM agents formalization workflow informal blueprint written by mathematicians AI fills Lean | 28 | 0 (papers to leads) |
-| Total | 24 strings | 323 | 19 |
+
+Total: the 24 strings above showed 323 results in all, and 19 were included.
 
 - G8 returned only secondary coverage, so it was rephrased (G8b) and followed by the blog's tag pages (P).
 - G11 returned nothing on Lean in three phrasings (G11, G15, G22); Lean-specific guidance was found by producer visits.

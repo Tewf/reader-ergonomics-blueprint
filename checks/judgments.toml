@@ -326,3 +326,31 @@ path = "standard.md"
 question = "the name 'standard' and the opening are far apart in meaning (0.19): does the name predict the content?"
 file = "94c3e589d80a"
 answer = "The name predicts the content: the file opens with the heading `The blueprint standard`, which says what it holds."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/protocol.md"
+question = "655 lines, past the ceiling of 500. Review it: split it only into pieces that change separately and each stay whole, or state why it stays one file."
+file = "cf14f8c3cbaf"
+answer = "It stays one file: it is the record a reviewer reruns, and its parts change together. The strings of `4. Formal search` are screened under `7. Stopping rule`, selected under `8. Selection` and limited under `11. Limits`, and `12. Second pass, 2026-11-03` reads the same pool. The lines past the ceiling are the string tables and the decision table of `Decisions, one row per source over 3 points`, which a reader scans rather than reads. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/protocol.md"
+question = "530 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "cf14f8c3cbaf"
+answer = "One role: the record of how the pool was built and checked, from `1. Why grey literature` to `12. Second pass, 2026-11-03`; both passes are one record of the same pool. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/sources.md"
+question = "418 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "8bda9d875a4d"
+answer = "One role: the pool of both passes, its flow and its quality, from `Flow` to `Result of the grading and the scoring`; the tables of `Grey sources, scored` and `Formal sources, graded` are rows of one pool and change together. It stays whole."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/autoformalization/protocol.md"
+question = "reads about equally as how-to and explanation: one mode per document?"
+file = "cf14f8c3cbaf"
+answer = "Reference: the file follows its shape and is consulted part by part; its heading `Protocol: how the pool of both passes was built` names the one thing it holds."

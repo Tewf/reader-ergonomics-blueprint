@@ -56,7 +56,7 @@ The figure draws the formal pass's stages, then adds the sources that joined wit
 - One more work was met in a kept one and read in full: Liang 2024c, in Wu 2026, section 2.2. The formal works number 182: 173 by the strands and 9 by the lead screen.
 - Every kept number was then checked against its source text by the maintainer.
 
-### Grey pass
+### Grey search: what was left out
 
 - Formal side, excluded after reading: 2 forum threads (opinion, no practice) and 1 forum thread passed to the human side (LZ 2026b). Also 1 Q/A thread with no answer, and 1 blog post with no loop content (a Lean companion to a textbook).
 - Formal side, excluded by title: papers (to the formal leads), news coverage of readable primary pages, duplicates; not reachable: the Isar reference manual and the Isabelle programming tutorial (server timeout).
