@@ -9,6 +9,9 @@ mathematics calls such a graph of checked claims a **blueprint**.
 
 This page in French: [README.fr.md](README.fr.md).
 
+> **Audit (2026-11-03):** the three claims' prose was verified against Euclid IX.20 (Joyce 1996) and its factorial variant
+> (Wikipedia 2026 Euclid) by a model on the maintainer's order, not by a person; the Lean statements wait for a reader of Lean.
+>
 > **Status (2026-11-03):** the review of autoformalization is done, grey and formal, 273 sources, and names its
 > baseline, B1. B1 is built in miniature, except the audit: Euclid's theorem as a theorem topic and three claim
 > topics, each naming one Lean declaration ([design](design/first-build.md)), with a challenge file that holds the

@@ -5,7 +5,7 @@ For every natural number n there is a prime greater than n. Euclid's argument pr
 **Shape:** [topic](https://github.com/Tewf/reader-ergonomics-topic/blob/092ae2fc2e07226b695e219e3eb14b40286faa25/shapes/topic.md)
 **Lean:** `Blueprint.InfinitelyManyPrimes.exists_prime_gt`
 
-**Prose audited:** not yet
+**Prose audited:** 2026-11-03, the three claims against Euclid IX.20 (Joyce 1996) and its factorial variant (Wikipedia 2026 Euclid). By a model on the maintainer's order; not a person's audit.
 
 **Audited:** not yet
 

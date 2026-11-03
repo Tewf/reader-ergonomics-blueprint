@@ -6,7 +6,7 @@ For every n, the number n! + 1 has a prime factor p.
 
 **In words:** for every natural number n, there is a p such that p is prime and p divides n! + 1.
 
-**Prose audited:** not yet
+**Prose audited:** 2026-11-03, by a model on the maintainer's order, against the factorial variant of IX.20: N = n! + 1 has a prime divisor (Wikipedia 2026 Euclid, Variations); not a person's audit
 
 **Audited:** not yet
 

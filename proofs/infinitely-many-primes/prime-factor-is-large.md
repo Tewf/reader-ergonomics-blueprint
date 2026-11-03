@@ -6,7 +6,7 @@ A prime p that divides n! + 1 is greater than n.
 
 **In words:** for natural numbers n and p, if p is prime and p divides n! + 1, then n < p.
 
-**Prose audited:** not yet
+**Prose audited:** 2026-11-03, by a model on the maintainer's order, not a person's audit. Source: IX.20's step that the new prime cannot divide the unit (Joyce 1996), in the factorial variant where 2 to n leave remainder 1, so p > n (Wikipedia 2026 Euclid).
 
 **Audited:** not yet
 

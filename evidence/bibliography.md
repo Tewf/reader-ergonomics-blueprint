@@ -287,3 +287,5 @@ Every work this repository cites, once: Key, citation, and a stable link.
 | Zheng 2023 | Zheng, Wang, Xie, Liu, Sun, Xin, Shen, Li, Li (2023). Lyra: orchestrating dual correction in automated theorem proving. TMLR | arXiv:2309.15806 |
 | Zhu 2026 | Zhu (undated, read 2026). LeanArchitect: generating blueprint data directly from Lean. GitHub repository README | https://github.com/hanwenzhu/LeanArchitect |
 | Zhu 2026b | Zhu, Monticone, Welleck, Avigad (2026). LeanArchitect: automating blueprint generation for humans and AI. ITP 2026, LIPIcs 382, 25. DOI registered with DataCite; resolved through doi.org. Zhu 2026 is the tool's repository | https://doi.org/10.4230/LIPIcs.ITP.2026.25 (arXiv:2601.22554) |
+| Joyce 1996 | Joyce, D. E. (1996, from Heath's 1908 translation). Euclid's Elements, Book IX, Proposition 20, with VII.31. Clark University | https://mathcs.clarku.edu/~djoyce/java/elements/bookIX/propIX20.html |
+| Wikipedia 2026 Euclid | Wikipedia (read 2026-11-03). Euclid's theorem, section Euclid's proof, Variations: N = n! + 1. Grey, an example only | https://en.wikipedia.org/wiki/Euclid%27s_theorem |

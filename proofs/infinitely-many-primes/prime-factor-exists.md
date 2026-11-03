@@ -6,7 +6,7 @@ Every natural number n with n at least 2 has a prime factor.
 
 **In words:** for a natural number n with 2 ≤ n, there is a p such that p is prime and p divides n.
 
-**Prose audited:** not yet
+**Prose audited:** 2026-11-03, by a model on the maintainer's order, against Euclid VII.31 (every composite number is measured by some prime), as IX.20 uses it (Joyce 1996); not a person's audit
 
 **Audited:** not yet
 

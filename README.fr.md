@@ -10,6 +10,9 @@ raisonnement se transmette. Les mathématiques formelles appellent un tel graphe
 
 Cette page en anglais : [README.md](README.md). Les deux versions suivent le même état.
 
+> **Audit (2026-11-03) :** la prose des trois affirmations a été vérifiée contre Euclide IX.20 (Joyce 1996) et sa variante
+> factorielle (Wikipedia 2026 Euclid) par un modèle sur ordre du mainteneur, non par une personne ; les énoncés Lean attendent un lecteur de Lean.
+>
 > **État (2026-11-03) :** la revue de l'autoformalisation est faite, grise et formelle, 273 sources, et nomme sa
 > référence, B1. B1 est construit en miniature, sauf le contrôle : le théorème d'Euclide en un sujet théorème et trois
 > sujets d'énoncé, chacun nommant une déclaration Lean ([conception](design/first-build.md)), avec un fichier de défi
