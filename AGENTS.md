@@ -12,6 +12,7 @@ read its [standard.md](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86
    includes it, because the site generator skips README files.
 3. The scope is on the front page. A checker other than Lean waits for a review of assurance cases
    ([0002](decisions/0002-call-it-a-blueprint.md)).
+4. The briefs and start files written here are read by an agent: write them to its [reader style](https://github.com/Tewf/ai-augmented/blob/master/reader-styles/agent.md).
 
 ## Principles and shapes
 
