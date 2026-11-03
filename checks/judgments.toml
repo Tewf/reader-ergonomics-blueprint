@@ -154,7 +154,28 @@ answer = "Yes: one mode, a proposal for a reviewer to decide, as `Decision asked
 
 [[answer]]
 check = "tree-shape"
+path = "Blueprint"
+question = "1 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
+file = ""
+answer = "It stays: `Blueprint` is the library folder Lake expects for the `Blueprint` library in lakefile.toml, one Lean file per proof, so it grows with each proof."
+
+[[answer]]
+check = "tree-shape"
 path = "proofs"
 question = "1 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
 file = ""
 answer = "It stays: `proofs` is the collection of proofs, each one a folder of topics; it holds one proof so far and more are next."
+
+[[answer]]
+check = "tree-shape"
+path = "checks/local"
+question = "2 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
+file = ""
+answer = "It stays: it holds `topic.py` and `lean_link.py`, the two checks of this repository, in the folder where the extension contract puts an extension's own checks and the standard's runner loads them."
+
+[[answer]]
+check = "document-mode"
+path = "README.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "82628b1bd1cf"
+answer = "Reference: the front page, read for `The loop`, the `Scope`, `What the review found` and `The baseline`. Its one task, `Check it`, is two commands for whoever wants to run the checks."

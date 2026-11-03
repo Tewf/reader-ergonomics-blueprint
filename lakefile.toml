@@ -1,0 +1,14 @@
+name = "blueprint"
+defaultTargets = ["Blueprint"]
+
+[leanOptions]
+autoImplicit = false
+warningAsError = true   # a declaration that uses sorry is a warning, so the build fails on it
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.35.0"
+
+[[lean_lib]]
+name = "Blueprint"
