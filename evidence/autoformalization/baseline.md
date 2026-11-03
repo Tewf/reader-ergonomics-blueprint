@@ -2,6 +2,8 @@
 
 Step 5 of the review: the baseline the loop must beat, named from both sides of the grey pass and checked against the formal pass, and how fidelity and guidance would be measured. Terms are defined in [frame](frame.md); the findings behind each line are in [review](review.md).
 
+**Shape:** [baseline](https://github.com/Tewf/reader-ergonomics-review/blob/a7f405f26f14cd188291e2a86b630121c4302a94/shapes/baseline.md)
+
 ## Two proposals, one baseline
 
 The formal side names a blueprint project whose statements sit in a comparator challenge file with a formalization.yaml, checked in CI, with fidelity left to a human audit.

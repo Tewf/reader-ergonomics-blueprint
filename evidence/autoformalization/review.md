@@ -2,6 +2,8 @@
 
 The findings of both passes, read on 2026-10-29 and merged by the questions Q1 to Q5 of [frame](frame.md): practice from the grey pass, research from the formal pass in its three strands. Each finding keeps its key and where in the source a number is.
 
+**Shape:** [review](https://github.com/Tewf/reader-ergonomics-review/blob/a7f405f26f14cd188291e2a86b630121c4302a94/shapes/review.md)
+
 - Markings: owner, a claim a source makes about itself; **count**, the reviewer's count on a public record. Also: independent, a check by someone other than the owner; example only, a grey source below 10 of 20 ([sources](sources.md)).
 - Grade for practice: convention, untested, unless a line says measured. The formal grades are defined in [protocol](protocol.md), section 9.
 - A benchmark number holds on its benchmark, split, metric and budget only; a number read in an abstract or another work is marked "(secondary)".

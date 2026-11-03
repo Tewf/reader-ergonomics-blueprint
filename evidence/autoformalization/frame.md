@@ -3,6 +3,8 @@
 Step 1 of the review on autoformalization, read on 2026-10-29: a grey pass by two reviewers, one per side of the loop, then a formal pass in three strands, merged.
 It states the problem, defines each term once, maps the scope's five questions to each side's and strand's sub-questions, and links what is held elsewhere.
 
+**Shape:** [frame](https://github.com/Tewf/reader-ergonomics-review/blob/a7f405f26f14cd188291e2a86b630121c4302a94/shapes/frame.md)
+
 ## The problem in one sentence
 
 How a model turns a claim a person wrote as a topic into a Lean statement meaning what they meant, has Lean check it, and returns guidance that helps them think, not only get checked.

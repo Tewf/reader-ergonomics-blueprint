@@ -2,6 +2,8 @@
 
 Step 3 of the review: who holds the best evidence on each of the scope's five questions, by what method, measured how. What has been achieved is kept apart from what is shown impossible or not yet shown, with the practice most adopted beside it. Terms are defined in [frame](frame.md); sources are in [review](review.md).
 
+**Shape:** [state of the art](https://github.com/Tewf/reader-ergonomics-review/blob/a7f405f26f14cd188291e2a86b630121c4302a94/shapes/state-of-the-art.md)
+
 ## Answer first
 
 - The best evidence of faithfulness is still a person reading the statement: every automatic measure read was validated against people on 3,752 items or fewer, and none decides faithfulness.

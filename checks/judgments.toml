@@ -15,8 +15,8 @@ answer = "It stays: it holds `topic.py`, the topic check copied from its release
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/against.md"
-question = "116 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "6f78aaae4d94"
+question = "117 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "d9f8cb4f08ad"
 answer = "One role: the case against this review's claims, from `Failed replications: accuracy re-judged by people` to `Limits of the practice evidence`, each kind of evidence under its heading; the lead screen's lines extend `Limits of the benchmarks themselves` and `Limits of the prior art`. It stays whole."
 
 [[answer]]
@@ -64,8 +64,8 @@ answer = "One role: this review's pool, from its `Flow` to `Result of the gradin
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/state-of-the-art.md"
-question = "110 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "03582a12ad7a"
+question = "111 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "3b91be49fbe7"
 answer = "One role: step 3, the best evidence on each question, from `Best evidence per question` through `Upper bounds: what has been achieved` and `Lower bounds: what is shown impossible, or not yet shown` to the practice `Most adopted in practice, beside the best evidence`. It stays whole."
 
 [[answer]]
@@ -141,8 +141,8 @@ answer = "Yes: the sources, as it opens: `The pool of the review`, one row per w
 [[answer]]
 check = "name-content"
 path = "evidence/autoformalization/state-of-the-art.md"
-question = "the name 'state' and the opening are far apart in meaning (0.07): does the name predict the content?"
-file = "03582a12ad7a"
+question = "the name 'state' and the opening are far apart in meaning (0.14): does the name predict the content?"
+file = "3b91be49fbe7"
 answer = "Yes: the review's step 3, the state of the art, as it opens: `Step 3 of the review`, who holds the best evidence `by what method, measured how`."
 
 [[answer]]
@@ -205,35 +205,35 @@ answer = "One mode, understanding why: the front page states the scope, the stat
 check = "logical-lines"
 path = "README.fr.md"
 question = "92 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "c9dd2789c1f1"
+file = "0ee3823829bd"
 answer = "The role is the French front page, kept in step with `README.md`; it stays whole. Its `Contenu` table and `L'adopter` block are the same parts as the English page."
 
 [[answer]]
 check = "logical-lines"
 path = "README.md"
 question = "89 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "e7c65c6b0418"
+file = "cff1296957cd"
 answer = "The role is the front page: what the repository is, how to take it and what is open. It passes the one-sentence test without 'and' on its role; `Take it` and `Contents` are its parts."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/frame.md"
-question = "88 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "deac23442dc7"
+question = "89 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "0978d4e1be02"
 answer = "The role is to name the problem and the field's words for it before the search. It stays whole: `The problem in one sentence`, `Names` and `Questions` are the frame's parts."
 
 [[answer]]
 check = "paraphrase"
 path = "README.fr.md"
-question = "says nearly what README.md (line 40) says, similarity 0.94: one fact in two places?"
-file = "c9dd2789c1f1"
+question = "says nearly what README.md (line 40) says, similarity 0.95: one fact in two places?"
+file = "0ee3823829bd"
 answer = "Not duplication: the French page is the same page in French, kept in step on purpose (`Cette page en anglais`); the `L'adopter` block translates the English take-it block."
 
 [[answer]]
 check = "document-mode"
 path = "README.md"
 question = "reads about equally as reference and how-to: one mode per document?"
-file = "e7c65c6b0418"
+file = "cff1296957cd"
 answer = "One mode: understanding why. The page states the scope and the baseline under `Scope` and `The baseline`; `Take it` is the how-to for a reader who copies the blueprint, and `Check it` points to the command."
 
 [[answer]]
@@ -253,43 +253,43 @@ answer = "Yes: in the review's contract the `frame` is the first step, and this 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/protocol.md"
-question = "652 lines, past the ceiling of 500. Review it: split it only into pieces that change separately and each stay whole, or state why it stays one file."
-file = "f8a29d83f62c"
+question = "654 lines, past the ceiling of 500. Review it: split it only into pieces that change separately and each stay whole, or state why it stays one file."
+file = "0413751a10cb"
 answer = "It stays one file: it is the record a reviewer reruns, and its parts change together. The strings of `4. Formal search` are screened under `7. Stopping rule`, selected under `8. Selection` and limited under `11. Limits`, and `12. Second pass, 2026-11-03` reads the same pool. The lines past the ceiling are the string tables and the decision table of `Decisions, one row per source over 3 points`, which a reader scans rather than reads. It stays whole."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/protocol.md"
-question = "529 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "f8a29d83f62c"
+question = "530 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "0413751a10cb"
 answer = "One role: the record of how the pool was built and checked, from `1. Why grey literature` to `12. Second pass, 2026-11-03`; both passes are one record of the same pool. It stays whole."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/review.md"
-question = "770 lines, past the ceiling of 500. Review it: split it only into pieces that change separately and each stay whole, or state why it stays one file."
-file = "a46fe7e31204"
+question = "772 lines, past the ceiling of 500. Review it: split it only into pieces that change separately and each stay whole, or state why it stays one file."
+file = "e50447eab545"
 answer = "It stays one file: it reads one question at a time, from `Answer first` to `Where practice runs ahead of the evidence`, with the grey and formal findings on each question side by side, which `Where the two passes disagree` compares. The lead screen's works joined the questions they answer, such as `Checks of form in CI, and model feedback on writing`; split by pass, each question would be read in two places."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/review.md"
-question = "471 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "a46fe7e31204"
+question = "472 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "e50447eab545"
 answer = "One role: the findings of both passes, one question at a time, from `Answer first` to `Where practice runs ahead of the evidence`, grey and formal side by side. It stays whole."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/sources.md"
-question = "417 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "5b829629c72d"
+question = "418 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "5fc9ec4962e4"
 answer = "One role: this review's pool, from its `Flow` to `Result of the grading and the scoring`, one row per work, formal under `Formal sources, graded`, grey under `Grey sources, scored`, the leads set aside under `Leads screened after the merge, set aside`. It stays whole."
 
 [[answer]]
 check = "document-mode"
 path = "evidence/autoformalization/review.md"
 question = "reads about equally as reference and how-to: one mode per document?"
-file = "a46fe7e31204"
+file = "e50447eab545"
 answer = "Reference: findings looked up by question, from `Answer first` to `Where practice runs ahead of the evidence`, grey and formal side by side; it sets the reader no task."
 
 [[answer]]
@@ -312,3 +312,17 @@ path = "evidence/autoformalization/sources.md"
 question = "the name 'sources' and the opening are far apart in meaning (0.20): does the name predict the content?"
 file = "5b829629c72d"
 answer = "Yes: the sources, as it opens: `The pool of the review`, one row per work after the flow from results to sources."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/autoformalization/protocol.md"
+question = "reads about equally as how-to and explanation: one mode per document?"
+file = "0413751a10cb"
+answer = "Reference: the file follows its shape and is consulted part by part; its heading `Protocol: how the pool of both passes was built` names the one thing it holds."
+
+[[answer]]
+check = "name-content"
+path = "standard.md"
+question = "the name 'standard' and the opening are far apart in meaning (0.19): does the name predict the content?"
+file = "94c3e589d80a"
+answer = "The name predicts the content: the file opens with the heading `The blueprint standard`, which says what it holds."

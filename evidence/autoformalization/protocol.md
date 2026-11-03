@@ -3,6 +3,8 @@
 Every search, count and rule of the review, run on 2026-10-29: the grey pass, one reviewer per side, then the formal pass, one reviewer per strand, all merged.
 Terms are defined in [frame](frame.md); the pool is in [sources](sources.md). Shared rules of the family: [evidence README](https://github.com/Tewf/reader-ergonomics-topic/blob/master/evidence/README.md#method).
 
+**Shape:** [protocol](https://github.com/Tewf/reader-ergonomics-review/blob/a7f405f26f14cd188291e2a86b630121c4302a94/shapes/protocol.md)
+
 ## 1. Why grey literature
 
 Garousi 2019, Table 4, answered by each side: seven of seven questions get a yes on both.

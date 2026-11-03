@@ -2,6 +2,8 @@
 
 This file gathers the evidence against the claims of [review](review.md) and [state of the art](state-of-the-art.md), for all five questions. It holds accuracies that shrink when people re-judge them, null results on people, weak designs, and benchmarks that are themselves wrong. Terms are defined in [frame](frame.md).
 
+**Shape:** [against](https://github.com/Tewf/reader-ergonomics-review/blob/a7f405f26f14cd188291e2a86b630121c4302a94/shapes/against.md)
+
 ## Answer first
 
 - Reported translation accuracies shrink when people re-judge them, and the benchmarks that measure them are wrong in a sixth to nearly two fifths of their statements.

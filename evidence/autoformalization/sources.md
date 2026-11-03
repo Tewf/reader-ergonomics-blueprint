@@ -2,6 +2,8 @@
 
 The pool of the review, read on 2026-10-29. It gives the flow from results to sources for the grey pass and the three formal strands, then one row per work with its grade or score, the counts, and the keys.
 
+**Shape:** [sources](https://github.com/Tewf/reader-ergonomics-review/blob/a7f405f26f14cd188291e2a86b630121c4302a94/shapes/sources.md)
+
 Searches are in [protocol](protocol.md); terms in [frame](frame.md). Below 10 of 20, a grey source is an example of practice only, never support for a claim.
 
 ## Flow

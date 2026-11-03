@@ -2,6 +2,8 @@
 
 Every work this repository cites, once: Key, citation, and a stable link.
 
+**Shape:** [references](https://github.com/Tewf/reader-ergonomics-review/blob/a7f405f26f14cd188291e2a86b630121c4302a94/shapes/references.md)
+
 | Key | Citation | Link |
 |---|---|---|
 | Adamczewski 2026 | Adamczewski (2026). fc-review-results: an automated audit of formal-conjectures; README and the metadata of run c90271f0fa, 2026-09-11. GitHub repository | https://github.com/tadamcz/fc-review-results |

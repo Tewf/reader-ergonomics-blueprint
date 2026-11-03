@@ -2,6 +2,8 @@
 
 Step 4 of the review: where this repository's blueprint stands against the existing reviews and the state of the art, what the evidence allows it to claim, and what this repository would add. Each "not found" below is a statement about these searches, not about the world. Terms are defined in [frame](frame.md).
 
+**Shape:** [position](https://github.com/Tewf/reader-ergonomics-review/blob/a7f405f26f14cd188291e2a86b630121c4302a94/shapes/position.md)
+
 ## Against the existing reviews
 
 - The autoformalization surveys (Weng 2025; Li 2024b; Raiyan 2026) and position papers (Yang 2024; Min 2026) cover the machine side: methods, benchmarks, provers. They list results and pool none.
