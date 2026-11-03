@@ -43,3 +43,8 @@ optional = []
 family = ["reader-ergonomics", "reader-ergonomics-academic", "reader-ergonomics-learning",
           "reader-ergonomics-presentations", "reader-ergonomics-software-design", "reader-ergonomics-topic"]
 shared_links = []
+
+# The link check, checks/local/lean_link.py: which topics name a Lean declaration, and where the declarations are.
+[lean_link]
+topics = ["proofs/"]
+sources = ["Blueprint/", "Blueprint.lean"]
