@@ -5,7 +5,11 @@ For every natural number n there is a prime greater than n. Euclid's argument pr
 **Shape:** [topic](https://github.com/Tewf/reader-ergonomics-topic/blob/092ae2fc2e07226b695e219e3eb14b40286faa25/shapes/topic.md)
 **Lean:** `Blueprint.InfinitelyManyPrimes.exists_prime_gt`
 
+**Prose audited:** not yet
+
 **Audited:** not yet
+
+The two lines are the two columns of [0007](../../decisions/0007-the-audit-has-two-columns.md): the prose against its source, which the maintainer reads, and the Lean statement against the prose, which waits for a reader of Lean. Each claim's "In words" line is a model's reading of its Lean line, not an audit.
 
 ## Statement
 

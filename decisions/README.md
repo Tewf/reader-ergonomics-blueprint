@@ -15,6 +15,7 @@ decision in one sentence under its title, then its status, context, decision and
 | [0004 Lean on Mathlib](0004-lean-on-mathlib.md) | a Lake project at the root, on Mathlib at the tag whose toolchain it takes |
 | [0005 Three checks, each its own CI step](0005-three-checks-each-its-own-ci-step.md) | the topic check, the link check and the build, in that order |
 | [0006 A challenge file holds the audited statements](0006-a-challenge-file-holds-the-audited-statements.md) | the statements apart from the proofs, held to each proof by a text check and by Lean |
+| [0007 The audit has two columns](0007-the-audit-has-two-columns.md) | the maintainer audits the prose against the source; the Lean statement against the prose waits for a reader of Lean |
 
 ## See also
 

@@ -1,8 +1,12 @@
 # A prime factor exists
 
-Every natural number m with m at least 2 has a prime factor.
+Every natural number n with n at least 2 has a prime factor.
 
 **Lean:** `Blueprint.InfinitelyManyPrimes.exists_prime_factor`
+
+**In words:** for a natural number n with 2 ≤ n, there is a p such that p is prime and p divides n.
+
+**Prose audited:** not yet
 
 **Audited:** not yet
 
