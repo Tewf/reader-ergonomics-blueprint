@@ -3,7 +3,7 @@
 **Decision:** A claim carries two audit lines, the prose against its source and the Lean statement against the
 prose. The maintainer reads the prose and not the Lean, so the second line waits for a reader of Lean.
 
-**Status:** accepted, 2026-11-03. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md).
+**Status:** accepted, 2026-11-03. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/b9732b9814c71768f722691f3c5049ec2b8ed378/shapes/decision-record.md).
 
 ## Context
 

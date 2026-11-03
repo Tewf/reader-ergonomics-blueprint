@@ -1,6 +1,6 @@
 # Shapes
 
-A **shape** is the fixed skeleton of one kind of document: every document of that kind has the same parts in the same order. The shapes particular to a blueprint are listed here. The general ones, and the topic every folder follows, are in [reader-ergonomics](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/README.md).
+A **shape** is the fixed skeleton of one kind of document: every document of that kind has the same parts in the same order. The shapes particular to a blueprint are listed here. The general ones, and the topic every folder follows, are in [reader-ergonomics](https://github.com/Tewf/reader-ergonomics/blob/b9732b9814c71768f722691f3c5049ec2b8ed378/shapes/README.md).
 
 ## Contents
 

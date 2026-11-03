@@ -3,7 +3,7 @@
 **Decision:** each claim's Lean statement is written once more in a challenge file, apart from the proofs, and the
 person audits that file; a program and Lean then hold each proof to it.
 
-**Status:** accepted, 2026-11-03. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md).
+**Status:** accepted, 2026-11-03. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/b9732b9814c71768f722691f3c5049ec2b8ed378/shapes/decision-record.md).
 
 ## Context
 

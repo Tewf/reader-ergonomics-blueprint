@@ -1,6 +1,6 @@
 # The blueprint standard
 
-What writing a person's reasoning as a tree of checked claims adds to the standard: the statement the person audits, and the claim the person writes. It extends [reader-ergonomics](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/standard.md): read that one first. Its principles come from the [review of autoformalization](evidence/autoformalization/README.md), and none is measured as a whole loop: they are the conditions under which a topic can be the interface of a person, a model and Lean.
+What writing a person's reasoning as a tree of checked claims adds to the standard: the statement the person audits, and the claim the person writes. It extends [reader-ergonomics](https://github.com/Tewf/reader-ergonomics/blob/b9732b9814c71768f722691f3c5049ec2b8ed378/standard.md): read that one first. Its principles come from the [review of autoformalization](evidence/autoformalization/README.md), and none is measured as a whole loop: they are the conditions under which a topic can be the interface of a person, a model and Lean.
 
 ## How to use it
 
@@ -8,7 +8,7 @@ What writing a person's reasoning as a tree of checked claims adds to the standa
 2. **Write to the principles** below, and to those of reader-ergonomics and of the [topic](https://github.com/Tewf/reader-ergonomics-topic/blob/092ae2fc2e07226b695e219e3eb14b40286faa25/shapes/topic.md), which still hold.
 3. **Check:** run the standard's checks on the repository. `claim-shape` checks each claim, `lean-link` its declaration, `comparator` its statement against the challenge file, and `topic` the tree. Lean checks the proofs in CI.
 
-Grades mean what they mean in [reader-ergonomics](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/standard.md#grades): measured, supported with caveat, convention, not supported. Each principle states its grade and never claims more.
+Grades mean what they mean in [reader-ergonomics](https://github.com/Tewf/reader-ergonomics/blob/b9732b9814c71768f722691f3c5049ec2b8ed378/standard.md#grades): measured, supported with caveat, convention, not supported. Each principle states its grade and never claims more.
 
 ## Principles
 

@@ -12,7 +12,7 @@ This page in French: [README.fr.md](README.fr.md).
 > **Audit (2026-11-03):** the three claims' prose was verified against Euclid IX.20 (Joyce 1996) and its factorial variant
 > (Wikipedia 2026 Euclid) by a model on the maintainer's order, not by a person; the Lean statements wait for a reader of Lean.
 >
-> **Status (2026-11-03):** the review of autoformalization is done, grey and formal, 273 sources, and names its
+> **Status (2026-11-03), release 0.1.0:** the review of autoformalization is done, grey and formal, 273 sources, and names its
 > baseline, B1. B1 is built in miniature, except the audit: Euclid's theorem as a theorem topic and three claim
 > topics, each naming one Lean declaration ([design](design/first-build.md)), with a challenge file that holds the
 > four statements apart from the proofs ([0006](decisions/0006-a-challenge-file-holds-the-audited-statements.md)).
@@ -24,11 +24,41 @@ This page in French: [README.fr.md](README.fr.md).
 > **How it is made:** with Claude, an AI assistant by Anthropic, under the maintainer's direction, the way
 > reader-ergonomics was made. Corrections are welcome as issues.
 
+## Take it
+
+The blueprint is meant to be copied and kept as your own. Copy it from a tagged release
+([tags](https://github.com/Tewf/reader-ergonomics-blueprint/tags)), so a later change here never changes your copy.
+
+1. Copy [shapes/claim.md](shapes/claim.md), the shape, and the checks in [checks/local/](checks/local/):
+   `claim_shape.py`, `lean_link.py`, `comparator.py` and `topic.py`, into the same paths of your repository.
+2. Write each step of your reasoning as a claim topic, and name one Lean declaration on its **Lean:** line. Keep the
+   statements to audit in a challenge file, apart from the proofs, as [Blueprint/Challenge.lean](Blueprint/Challenge.lean) does.
+3. Add `checks/config.toml` with `extends = "reader-ergonomics"` and the tables of this repository's own for
+   `[topic]`, `[claim_shape]`, `[lean_link]` and `[comparator]`; set their paths to yours.
+4. Pin the standard by commit and run the checks, one command:
+
+   ```sh
+   git clone https://github.com/Tewf/reader-ergonomics ../reader-ergonomics
+   git -C ../reader-ergonomics checkout b9732b9814c71768f722691f3c5049ec2b8ed378   # v1.19.2
+   python3 ../reader-ergonomics/checks/run.py .
+   ```
+
+   Lean is built apart, in CI, with `lake build`; the checks read the declarations' names and never run Lean.
+
+A disagreement has three places to go:
+
+- your reader style, as an override with its reason, when it is about your reader;
+- an extension, when it is about a genre;
+- an issue on [this repository](https://github.com/Tewf/reader-ergonomics-blueprint/issues), when its evidence or its shape is wrong.
+
+
+The standard's section, [Take your own version](https://github.com/Tewf/reader-ergonomics/blob/b9732b9814c71768f722691f3c5049ec2b8ed378/README.md#take-your-own-version), gives the rest.
+
 ## Where it sits
 
 - **It builds on the [topic](https://github.com/Tewf/reader-ergonomics-topic/blob/092ae2fc2e07226b695e219e3eb14b40286faa25/shapes/topic.md)** (reader-ergonomics-topic v0.6.0): every node of a blueprint is a
   topic, with its title, its summary, its parts as contents and what it uses as links.
-- **It obeys [reader-ergonomics](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/standard.md)** (v1.13.0) and runs its checks in CI.
+- **It obeys [reader-ergonomics](https://github.com/Tewf/reader-ergonomics/blob/b9732b9814c71768f722691f3c5049ec2b8ed378/standard.md)** (v1.19.2) and runs its checks in CI.
 - **It links down only.** Both are pinned by commit; neither links up to this repository.
 
 ## The loop

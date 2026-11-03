@@ -2,7 +2,7 @@
 
 **Decision:** the Lean sources are a Lake project at the root, built on Mathlib at the tag whose toolchain it takes.
 
-**Status:** accepted, 2026-11-03. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md).
+**Status:** accepted, 2026-11-03. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/b9732b9814c71768f722691f3c5049ec2b8ed378/shapes/decision-record.md).
 
 ## Context
 

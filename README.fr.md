@@ -13,7 +13,7 @@ Cette page en anglais : [README.md](README.md). Les deux versions suivent le mê
 > **Audit (2026-11-03) :** la prose des trois affirmations a été vérifiée contre Euclide IX.20 (Joyce 1996) et sa variante
 > factorielle (Wikipedia 2026 Euclid) par un modèle sur ordre du mainteneur, non par une personne ; les énoncés Lean attendent un lecteur de Lean.
 >
-> **État (2026-11-03) :** la revue de l'autoformalisation est faite, grise et formelle, 273 sources, et nomme sa
+> **État (2026-11-03), version 0.1.0 :** la revue de l'autoformalisation est faite, grise et formelle, 273 sources, et nomme sa
 > référence, B1. B1 est construit en miniature, sauf le contrôle : le théorème d'Euclide en un sujet théorème et trois
 > sujets d'énoncé, chacun nommant une déclaration Lean ([conception](design/first-build.md)), avec un fichier de défi
 > qui tient les quatre énoncés à part des preuves ([0006](decisions/0006-a-challenge-file-holds-the-audited-statements.md)).
@@ -25,11 +25,44 @@ Cette page en anglais : [README.md](README.md). Les deux versions suivent le mê
 > **Comment il est fait :** avec Claude, un assistant IA d'Anthropic, sous la direction du mainteneur, comme
 > reader-ergonomics. Les corrections sont bienvenues sous forme d'issues.
 
+## L'adopter
+
+Le blueprint est fait pour être copié et gardé comme le vôtre. Copiez-le depuis une version étiquetée
+([tags](https://github.com/Tewf/reader-ergonomics-blueprint/tags)), pour qu'un changement ultérieur ici ne change
+jamais votre copie.
+
+1. Copiez [shapes/claim.md](shapes/claim.md), la forme, et les vérifications de [checks/local/](checks/local/) :
+   `claim_shape.py`, `lean_link.py`, `comparator.py` et `topic.py`, aux mêmes chemins de votre dépôt.
+2. Écrivez chaque étape de votre raisonnement comme un topic d'énoncé, et nommez une déclaration Lean sur sa ligne
+   **Lean:**. Gardez les énoncés à contrôler dans un fichier de défi, à part des preuves, comme le fait
+   [Blueprint/Challenge.lean](Blueprint/Challenge.lean).
+3. Ajoutez `checks/config.toml` avec `extends = "reader-ergonomics"` et les tables de ce dépôt pour `[topic]`,
+   `[claim_shape]`, `[lean_link]` et `[comparator]` ; réglez leurs chemins sur les vôtres.
+4. Épinglez la norme par commit et lancez les vérifications, une seule commande :
+
+   ```sh
+   git clone https://github.com/Tewf/reader-ergonomics ../reader-ergonomics
+   git -C ../reader-ergonomics checkout b9732b9814c71768f722691f3c5049ec2b8ed378   # version 1.19.2
+   python3 ../reader-ergonomics/checks/run.py chemin/vers/votre/dépôt
+   ```
+
+   Lean se construit à part, en CI, avec `lake build` ; les vérifications lisent les noms des déclarations et
+   n'exécutent jamais Lean.
+
+Un désaccord a trois destinations :
+
+- votre style de lecteur, comme dérogation motivée, s'il porte sur votre lecteur ;
+- une extension, s'il porte sur un genre ;
+- une issue sur [ce dépôt](https://github.com/Tewf/reader-ergonomics-blueprint/issues), quand ses preuves ou sa forme sont fausses.
+
+
+La section de la norme, [Take your own version](https://github.com/Tewf/reader-ergonomics/blob/b9732b9814c71768f722691f3c5049ec2b8ed378/README.md#take-your-own-version), donne le reste.
+
 ## Où il se place
 
 - **Il s'appuie sur le [topic](https://github.com/Tewf/reader-ergonomics-topic/blob/092ae2fc2e07226b695e219e3eb14b40286faa25/shapes/topic.md)** (reader-ergonomics-topic v0.6.0) : chaque nœud d'un blueprint est
   un topic, avec son titre, son résumé, ses parties comme contenu et ce qu'il utilise comme liens.
-- **Il obéit à [reader-ergonomics](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/standard.md)** (v1.13.0) et exécute ses vérifications en CI.
+- **Il obéit à [reader-ergonomics](https://github.com/Tewf/reader-ergonomics/blob/b9732b9814c71768f722691f3c5049ec2b8ed378/standard.md)** (v1.19.2) et exécute ses vérifications en CI.
 - **Il ne pointe que vers le bas.** Les deux sont épinglés par commit ; aucun ne pointe vers ce dépôt.
 
 ## La boucle

@@ -3,7 +3,7 @@
 **Decision:** the AI-augmented strand is a repository of its own, carrying its history from reader-ergonomics-topic,
 and it pins a release of the topic and of the standard by commit.
 
-**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md).
+**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/b9732b9814c71768f722691f3c5049ec2b8ed378/shapes/decision-record.md).
 
 ## Context
 

@@ -200,3 +200,52 @@ path = "README.md"
 question = "reads about equally as reference and how-to: one mode per document?"
 file = "dbaa44daa669"
 answer = "One mode, understanding why: the front page states the scope, the status and the baseline, and its `Contents` table only points to the parts; the how-to is in AGENTS.md."
+
+[[answer]]
+check = "logical-lines"
+path = "README.fr.md"
+question = "92 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "c9dd2789c1f1"
+answer = "The role is the French front page, kept in step with `README.md`; it stays whole. Its `Contenu` table and `L'adopter` block are the same parts as the English page."
+
+[[answer]]
+check = "logical-lines"
+path = "README.md"
+question = "89 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "e7c65c6b0418"
+answer = "The role is the front page: what the repository is, how to take it and what is open. It passes the one-sentence test without 'and' on its role; `Take it` and `Contents` are its parts."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/frame.md"
+question = "88 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "deac23442dc7"
+answer = "The role is to name the problem and the field's words for it before the search. It stays whole: `The problem in one sentence`, `Names` and `Questions` are the frame's parts."
+
+[[answer]]
+check = "paraphrase"
+path = "README.fr.md"
+question = "says nearly what README.md (line 40) says, similarity 0.94: one fact in two places?"
+file = "c9dd2789c1f1"
+answer = "Not duplication: the French page is the same page in French, kept in step on purpose (`Cette page en anglais`); the `L'adopter` block translates the English take-it block."
+
+[[answer]]
+check = "document-mode"
+path = "README.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "e7c65c6b0418"
+answer = "One mode: understanding why. The page states the scope and the baseline under `Scope` and `The baseline`; `Take it` is the how-to for a reader who copies the blueprint, and `Check it` points to the command."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/autoformalization/frame.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "deac23442dc7"
+answer = "One mode: understanding why. The frame states the problem and the names the field uses, under `The problem in one sentence` and `Names`."
+
+[[answer]]
+check = "name-content"
+path = "evidence/autoformalization/frame.md"
+question = "the name 'frame' and the opening are far apart in meaning (0.12): does the name predict the content?"
+file = "deac23442dc7"
+answer = "Yes: in the review's contract the `frame` is the first step, and this file opens with `The problem in one sentence` and then lists the field's `Names`."
