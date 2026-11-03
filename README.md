@@ -39,7 +39,7 @@ The blueprint is meant to be copied and kept as your own. Copy it from a tagged 
 
    ```sh
    git clone https://github.com/Tewf/reader-ergonomics ../reader-ergonomics
-   git -C ../reader-ergonomics checkout b9732b9814c71768f722691f3c5049ec2b8ed378   # v1.19.2
+   git -C ../reader-ergonomics checkout 4f99372093729dacf982e9174e94f6b8793c513d   # v1.20.0
    python3 ../reader-ergonomics/checks/run.py .
    ```
 
@@ -52,13 +52,13 @@ A disagreement has three places to go:
 - an issue on [this repository](https://github.com/Tewf/reader-ergonomics-blueprint/issues), when its evidence or its shape is wrong.
 
 
-The standard's section, [Take your own version](https://github.com/Tewf/reader-ergonomics/blob/b9732b9814c71768f722691f3c5049ec2b8ed378/README.md#take-your-own-version), gives the rest.
+The standard's section, [Take your own version](https://github.com/Tewf/reader-ergonomics/blob/4f99372093729dacf982e9174e94f6b8793c513d/README.md#take-your-own-version), gives the rest.
 
 ## Where it sits
 
 - **It builds on the [topic](https://github.com/Tewf/reader-ergonomics-topic/blob/092ae2fc2e07226b695e219e3eb14b40286faa25/shapes/topic.md)** (reader-ergonomics-topic v0.6.0): every node of a blueprint is a
   topic, with its title, its summary, its parts as contents and what it uses as links.
-- **It obeys [reader-ergonomics](https://github.com/Tewf/reader-ergonomics/blob/b9732b9814c71768f722691f3c5049ec2b8ed378/standard.md)** (v1.19.2) and runs its checks in CI.
+- **It obeys [reader-ergonomics](https://github.com/Tewf/reader-ergonomics/blob/4f99372093729dacf982e9174e94f6b8793c513d/standard.md)** (v1.20.0) and runs its checks in CI.
 - **It links down only.** Both are pinned by commit; neither links up to this repository.
 
 ## The loop

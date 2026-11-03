@@ -40,7 +40,7 @@ It follows the [topic](https://github.com/Tewf/reader-ergonomics-topic/blob/092a
 
 | Part | What it does | Evidence | Grade |
 |---|---|---|---|
-| Claim sentence | the summary that stands for the claim when folded | [topic](https://github.com/Tewf/reader-ergonomics-topic/blob/092ae2fc2e07226b695e219e3eb14b40286faa25/shapes/topic.md); [overview first](https://github.com/Tewf/reader-ergonomics/blob/b9732b9814c71768f722691f3c5049ec2b8ed378/principles/document/overview-first.md) | measured, for overview first |
+| Claim sentence | the summary that stands for the claim when folded | [topic](https://github.com/Tewf/reader-ergonomics-topic/blob/092ae2fc2e07226b695e219e3eb14b40286faa25/shapes/topic.md); [overview first](https://github.com/Tewf/reader-ergonomics/blob/4f99372093729dacf982e9174e94f6b8793c513d/principles/document/overview-first.md) | measured, for overview first |
 | Lean line | ties the claim to one declaration, which `lean-link` finds | [one claim, one declaration](../principles/statement/one-claim-one-declaration.md) | convention, adopted |
 | In words | a model's reading of the Lean statement, for a reader who does not read Lean | [the model decides nothing](../principles/statement/the-model-decides-nothing.md) | supported with caveat |
 | Prose audited, Audited | the audit in two columns: the prose against its source, the Lean against the prose | [decision 0007](../decisions/0007-the-audit-has-two-columns.md) | convention, untested |
