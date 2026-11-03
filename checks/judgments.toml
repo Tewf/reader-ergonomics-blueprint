@@ -149,7 +149,7 @@ answer = "Yes: the review's step 3, the state of the art, as it opens: `Step 3 o
 check = "document-mode"
 path = "design/first-build.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "bac9d84ac109"
+file = "b23e29be71a6"
 answer = "Yes: one mode, a proposal for a reviewer to decide, as `Decision asked` says; the `Design` section lists parts, it is not a lookup table."
 
 [[answer]]

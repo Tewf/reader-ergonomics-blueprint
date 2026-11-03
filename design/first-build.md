@@ -88,7 +88,7 @@ The records [0003](../decisions/0003-euclids-theorem-as-the-first-proof.md) to
 
 ## Feasibility and plan
 
-- Shown to work by: each claim is a one-line Mathlib lemma or close to it, and the proof was built locally.
+- Shown to work by: each claim is a one-line Mathlib lemma or close to it. The first build is checked by CI; it was not built on the machine that wrote it, whose Mathlib cache could not be fetched in time.
 - Tested by: the topic check, unit tests for the link check, and `lake build` without `sorry`.
 - Rolled out by: this design, the records, the proof as topics, the Lake project, the link check, the CI steps, in
   that order, one commit each.
