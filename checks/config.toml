@@ -48,3 +48,12 @@ shared_links = []
 [lean_link]
 topics = ["proofs/"]
 sources = ["Blueprint/", "Blueprint.lean"]
+
+# The comparator, checks/local/comparator.py: the challenge file holds each statement once more, apart from the proofs.
+[comparator]
+topics = ["proofs/"]
+proofs = ["Blueprint/InfinitelyManyPrimes.lean"]
+challenge = "Blueprint/Challenge.lean"
+agreement = "Blueprint/Agreement.lean"
+proof_prefix = "Blueprint."
+challenge_prefix = "Challenge."

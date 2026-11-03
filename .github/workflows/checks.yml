@@ -53,7 +53,7 @@ jobs:
             git clone --quiet --depth 1 "https://github.com/Tewf/$name" "$name"
           done
       - name: Check the repository, tiers program and meaning
-        # Runs the topic check and the Lean link check (checks/local/) with the standard's own.
+        # Runs the topic check, the Lean link check and the comparator (checks/local/) with the standard's own.
         run: python3 standard/checks/run.py repository --tiers program,meaning --judge flag
       - name: Test the local checks
         run: python3 -m unittest discover -s repository/checks
@@ -75,6 +75,9 @@ jobs:
         run: lake exe cache get
       - name: Build, failing on any warning, sorry included
         run: lake build
+      - name: Compare each proof with its challenge, in Lean
+        # The challenge file holds sorry on purpose, so it is built apart; Agreement.lean fails when a type or an axiom differs.
+        run: lake build BlueprintCompare
 
   weekly:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
