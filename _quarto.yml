@@ -20,6 +20,10 @@ website:
     left:
       - text: Evidence
         href: evidence/index.qmd
+      - text: Proofs
+        href: proofs/infinitely-many-primes/README.md
+      - text: Design
+        href: design/README.md
       - text: Decisions
         href: decisions/README.md
       - text: Bibliography

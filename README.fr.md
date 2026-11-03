@@ -10,9 +10,11 @@ raisonnement se transmette. Les mathématiques formelles appellent un tel graphe
 
 Cette page en anglais : [README.md](README.md). Les deux versions suivent le même état.
 
-> **État (2026-10-29) :** la revue de l'autoformalisation est faite, grise et formelle, 273 sources, et nomme sa
-> référence, B1. Rien de la boucle n'est encore construit ; la première construction est une petite preuve écrite en
-> topics. Le travail a commencé dans reader-ergonomics-topic et a migré ici avec son historique
+> **État (2026-11-03) :** la revue de l'autoformalisation est faite, grise et formelle, 273 sources, et nomme sa
+> référence, B1. La première construction est en place : le théorème d'Euclide en un sujet théorème et trois sujets
+> d'énoncé, chacun nommant une déclaration Lean ([conception](design/first-build.md)). Trois vérifications tournent
+> en CI : celle des topics, un contrôle du lien, et Lean. Le modèle n'est pas encore dans la boucle. Le travail a
+> commencé dans reader-ergonomics-topic et a migré ici avec son historique
 > ([0001](decisions/0001-a-repository-of-its-own.md)).
 >
 > **Comment il est fait :** avec Claude, un assistant IA d'Anthropic, sous la direction du mainteneur, comme
@@ -101,8 +103,9 @@ La [revue](evidence/autoformalization/) lit 80 sources grises et 182 formelles, 
 
 ## Suite
 
-1. **La première construction :** un court théorème écrit comme un arbre de topics, chaque affirmation liée à une
-   déclaration Lean, avec Lean et la vérification du topic en CI : B1 en miniature.
+1. **Finir B1 en miniature :** comparator et un fichier de défi, pour que Lean vérifie aussi que chaque preuve prouve
+   l'énoncé posé. La première construction couvre la vérification des topics, le contrôle du lien et la construction
+   Lean.
 2. **Ensuite la boucle :** la place du modèle, comme interprète et guide, mesurée contre B1.
 3. **Avant tout vérificateur autre que Lean :** une revue des assurance cases, le nom que le domaine donne au cas
    général.

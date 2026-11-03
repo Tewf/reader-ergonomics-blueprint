@@ -9,9 +9,11 @@ mathematics calls such a graph of checked claims a **blueprint**.
 
 This page in French: [README.fr.md](README.fr.md).
 
-> **Status (2026-10-29):** the review of autoformalization is done, grey and formal, 273 sources, and names its
-> baseline, B1. Nothing of the loop is built yet; the first build is one small proof written as topics. The work began
-> in reader-ergonomics-topic and moved here with its history ([0001](decisions/0001-a-repository-of-its-own.md)).
+> **Status (2026-11-03):** the review of autoformalization is done, grey and formal, 273 sources, and names its
+> baseline, B1. The first build is in: Euclid's theorem as a theorem topic and three claim topics, each naming one
+> Lean declaration ([design](design/first-build.md)). Three checks run in CI: the topic check, a link check, and
+> Lean. The model is not in the loop yet. The work began in reader-ergonomics-topic and moved here with its history
+> ([0001](decisions/0001-a-repository-of-its-own.md)).
 >
 > **How it is made:** with Claude, an AI assistant by Anthropic, under the maintainer's direction, the way
 > reader-ergonomics was made. Corrections are welcome as issues.
@@ -99,8 +101,8 @@ The [review](evidence/autoformalization/) reads 80 grey and 182 formal sources, 
 
 ## Next
 
-1. **The first build:** one short theorem written as a tree of topics, each claim tied to a Lean declaration, with Lean
-   and the topic check run in CI: B1 in miniature.
+1. **Finish B1 in miniature:** comparator and a challenge file, so that Lean also checks that each proof proves the
+   stated claim. The first build covers the topic check, the link check and the Lean build.
 2. **Then the loop:** the model's place in it, as interpreter and guide, measured against B1.
 3. **Before any checker other than Lean:** a review of assurance cases, the field's name for the general case.
 
