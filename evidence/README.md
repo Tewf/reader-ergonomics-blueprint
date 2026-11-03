@@ -13,3 +13,6 @@ follows the method the topic's reviews share, which is not repeated here ([the t
 ## See also
 
 [The front page](../README.md).
+
+The first build's prose audit (2026-11-03) rests on Euclid IX.20 in Joyce's edition (Joyce 1996) and on the factorial
+variant of the proof (Wikipedia 2026 Euclid), both listed in the [bibliography](bibliography.md).
