@@ -45,6 +45,8 @@ python3 checks/out/standard/checks/run.py . --tiers program,meaning --judge flag
 ```
 
 - Fix every error. Read every warning.
+- Run the unit tests of the local checks: `python3 -m unittest discover -s checks`.
+- With Mathlib's cache (`lake exe cache get`), `lake build` must pass with no warning: a `sorry` is one.
 - Answer the questions in `checks/out/needs-judgment.md` in `checks/judgments.toml`, each answer quoting in backticks
   a word or heading of its own file; a reason is never copied from another file's answer unread.
 - Keep [llms.txt](llms.txt), [README.md](README.md) and [README.fr.md](README.fr.md) in step.
