@@ -71,6 +71,7 @@ Every work this repository cites, once: Key, citation, and a stable link.
 | Erdős-wiki 2026 | erdosproblems contributors (2026). AI contributions to Erdős problems. Wiki page, data as of 2026-06-30 (may move) | https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems |
 | Eremondi 2019 | Eremondi, Swierstra, Hage (2019). A framework for improving error messages in dependently-typed languages. Open Computer Science 9(1), 1-32 | https://doi.org/10.1515/comp-2019-0001 |
 | Fan 2025 | Fan, Tang, Le, Shen, Tan, Zhao, Shen, Li, Gašević (2025). Beware of metacognitive laziness: effects of generative artificial intelligence on learning motivation, processes, and performance. British Journal of Educational Technology 56, 489-530 | https://doi.org/10.1111/bjet.13544 |
+| Feng 2026 | Feng, Mao, Arekar, Zhong, Huang, Si, Li (2026). Aligning faithfulness for theory-scale autoformalization: FaithAlign. Preprint | arXiv:2610.18498 |
 | Firsching 2026 | Firsching, Lezeau, Mercuri, Horváth, et al. (2026). Formal Conjectures: an open and evolving benchmark for verified discovery in mathematics. Preprint | arXiv:2605.13171 |
 | First 2023 | First, Rabe, Ringer, Brun (2023). Baldur: whole-proof generation and repair with large language models. ESEC/FSE 2023 | https://doi.org/10.1145/3611643.3616243 (arXiv:2303.04910) |
 | Fuller 2014 | Fuller, Weber, Mejía-Ramos, Rhoads, Samkoff (2014). Comprehending structured proofs. JIEEM 7(1). | https://openalex.org/W2184046398 |
@@ -139,6 +140,7 @@ Every work this repository cites, once: Key, citation, and a stable link.
 | Lessing 2025 | Lessing, Ogbonnaya (2025). Reasoning and proof in mathematics education: a systematic literature review. Discover Education 5 | https://doi.org/10.1007/s44217-025-01016-1 |
 | Li 2024b | Li, Sun, Murphy, Su, Li, Zhang, Yang, Si (2024). A survey on deep learning for theorem proving. Preprint | arXiv:2404.09939 |
 | Li 2024c | Li, Wu, Li, Wei, et al. (2024). Autoformalize mathematical statements by symbolic equivalence and semantic consistency. NeurIPS 2024 | arXiv:2410.20936 |
+| Li 2026b | Li, Ammanamanchi, Bhat, Jamdar, Lin, Biderman (2026). SemantEq: faithful bidirectional equivalence of formal statements. Preprint | arXiv:2610.32919 |
 | Liang 2024c | Liang, Zhang, Cao, Wang, Ding, Yang, Vodrahalli, He, Smith, Yin, McFarland, Zou (2024). Can large language models provide useful feedback on research papers? A large-scale empirical analysis. NEJM AI 1(8); read in the preprint, arXiv 2310.01783 (v1) | https://doi.org/10.1056/AIoa2400196 |
 | Lin 2025 | Lin, Tang, Lyu, Wu, et al. (2025). Goedel-Prover: a frontier model for open-source automated theorem proving. Preprint | arXiv:2502.07640 |
 | Lin 2025b | Lin, Tang, Lyu, Yang, Chung and others, with Jin (2025). Goedel-Prover-V2: scaling formal theorem proving with scaffolded data synthesis and self-correction. Preprint; the model card is Goedel-LM 2025 | arXiv:2508.03613 |
@@ -227,6 +229,7 @@ Every work this repository cites, once: Key, citation, and a stable link.
 | STOC 2026 | STOC 2026 organisers (2025). Experimental program: automated pre-submission feedback. Conference page (may move) | https://acm-stoc.org/stoc2026/stoc2026-LLM_feedback.html |
 | Stylianides 2024 | Stylianides, Stylianides, Moutsios-Rentzos (2024). Proof and proving in school and university mathematics education research: a systematic review. ZDM Mathematics Education 56, 47-59 (abstract read) | https://doi.org/10.1007/s11858-023-01518-y |
 | Szegedy 2020 | Szegedy (2020). A promising path towards autoformalization and general artificial intelligence. CICM 2020, Lecture Notes in Computer Science, 3-20 | https://doi.org/10.1007/978-3-030-53518-6_1 |
+| Tan 2026 | Tan, Blanchet, Syrgkanis (2026). PaperFormalizer: author-in-the-loop autoformalization of research papers in Lean. Preprint | arXiv:2610.31810 |
 | Tanswell 2015 | Tanswell (2015). A problem with the dependence of informal proofs on formal proofs. Philosophia Mathematica 23(3), 295-310. Paywalled | https://doi.org/10.1093/philmat/nkv008 |
 | Tanswell 2026 | Tanswell (2026-03-31). Vibe formalisation and slop mathematics. Talk abstract, Isaac Newton Institute | https://talks.cam.ac.uk/talk/index/245968/ |
 | Tao 2023 | Tao (2023). Formalizing the proof of PFR in Lean4 using Blueprint: a short tour. Blog post; held by mathematical-writing | https://terrytao.wordpress.com/2023/11/18/formalizing-the-proof-of-pfr-in-lean4-using-blueprint-a-short-tour/ |

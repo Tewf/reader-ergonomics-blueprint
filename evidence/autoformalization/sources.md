@@ -118,6 +118,7 @@ The figure draws the formal pass's stages, then adds the sources that joined wit
 | Denny 2021 | B | three experiments, conference | forward citations of Becker 2019 | measured; abstract (secondary) | protocol; review Q3 |
 | Eremondi 2019 | B | method, journal | recalled lead | convention; abstract | protocol; review Q3 |
 | Fan 2025 | C | randomised experiment, N = 117 | L5 | measured; abstract (secondary) | review Q5; state-of-the-art; against |
+| Feng 2026 | A | preprint, a benchmark of 460 items | screen 2026-11-03 (OpenAlex `autoformalization`, since 2026-09-30, by title) | measured, on FaithAlign's 460 items and 4,982 links with the authors' labels; abstract only (secondary) | review Q2; protocol |
 | Firsching 2026 | A | benchmark, preprint | F3, F20, lead | measured, descriptive (fixed misformalizations); sections 1 to 4, appendix A | frame; protocol; review Q2; review disagreements; state-of-the-art; against |
 | First 2023 | B | method with benchmark and ablation, conference | F20, F21, F22 | measured; introduction and evaluation (RQ2, Figure 5); Table 4 by its audit | protocol; review answer; review Q3; state-of-the-art; position; against |
 | Ganesalingam 2017 | B | system with an informal reader test, journal | A8; recalled lead | measured, informal; section 3 of the preprint | protocol; review Q3 |
@@ -160,6 +161,7 @@ The figure draws the formal pass's stages, then adds the sources that joined wit
 | Leinonen 2023 | B | expert rating, conference | F23, F24 | measured; section 4, Table 1 | protocol; review Q3; state-of-the-art; position; against |
 | Li 2024b | A, B, C | survey, preprint | A: R1, R2. B: R6. C: R4; arXiv-only A1 | review, no pooling; sections 3.1 and 5 (strand A; B searched the full text, C read the abstract) | protocol; review 0; position; against |
 | Li 2024c | A | paper, NeurIPS (2024) | F1, F2, F7 | measured on MATH and miniF2F; section 1 | review Q2 |
+| Li 2026b | A | preprint, benchmark with a method | screen 2026-11-03 (OpenAlex `autoformalization`, since 2026-09-30, by title) | measured, on ProofNetVerif's test split under adjudicated labels; abstract only (secondary) | review Q2; protocol |
 | Liang 2024c | lead screen | retrospective comparison with human reviews, and a user study, NEJM AI (2024) | met in Wu 2026, section 2.2 | measured: overlap with human reviewers' comments on 3,096 Nature-family and 1,709 ICLR papers, against the overlap between two reviewers; the user study measured, descriptive, its participants self-selected; full text read (arXiv v1) | protocol; review answer; review Q3; review disagreements; state-of-the-art; position; against |
 | Lin 2025 | A | preprint | F9, F11 | method with counts; sections 1, 3.1 | protocol; review Q2 |
 | Lin 2025b | B | method with benchmark and ablation, preprint | F27; forward citations of First 2023 | measured; abstract and section 3.5 | protocol; review answer; review Q2; review Q3; review disagreements; state-of-the-art; position |
@@ -212,6 +214,7 @@ The figure draws the formal pass's stages, then adds the sources that joined wit
 | Shen 2026 | A | preprint | forward, Poiroux 2025 | method; abstract | protocol; review Q2 |
 | Song 2024 | B | tool with replay evaluation, workshop | grey lead | measured, on a replay; abstract and section 5 | review Q3; against |
 | Szegedy 2020 | A | position paper, CICM (2020) | R1, F1 | argument; title and venue only | review Q2 |
+| Tan 2026 | lead screen | system description, preprint | screen 2026-11-03 (OpenAlex `Lean formalization natural language proof`, since 2026-09-30) | convention: a system, owner's claim, no evaluation in the abstract (secondary) | review Q1; protocol |
 | Tanswell 2015 | C | philosophy | L3 | convention, argued; abstract; paywalled | protocol; review Q5; state-of-the-art; against |
 | Taylor 2024b | B | deployment, 2,565 students, conference | F24; grey lead | measured, descriptive; abstract (secondary) | protocol; review Q3; against |
 | Thakur 2024 | B | method with benchmark, preprint | recalled lead | measured; abstract | protocol; review Q3 |

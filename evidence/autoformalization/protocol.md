@@ -538,3 +538,40 @@ All on 2026-10-29. No login, no key, no identity sent; public interfaces only.
 - Strand C: 17 works were found from memory and then verified, a bias toward known work, offset only partly by the strings.
 - In the university queue, still to be read: Knobelsdorf 2017, Tymoczko 1979 and Avigad 2019.
 - The strands saved no PDF or page; texts were read in memory. Text on pages addressed to automated readers was treated as data.
+
+## 12. Second pass, 2026-11-03
+
+Run on 2026-11-03, after the merge, on the review's three most cited keys and on its grey sources. Sections 1 to 11 are not changed; the additions are listed in [sources](sources.md) and [review](review.md).
+
+### Forward citations
+
+The three keys cited most in [review](review.md), counted with a word-boundary match over its text: Guo 2026b (10), Avigad 2026 (8) and PNT-plus 2026 (8). The next key has 7, so the three are fixed.
+
+| Key | What it is | Citing works, on 2026-11-03 | Strings and screened numbers |
+|---|---|---|---|
+| Guo 2026b | preprint, arXiv 2610.00760, posted 2026-09-30 (OpenAlex W7216044583) | none: the OpenAlex `cites:` filter returns 0; Semantic Scholar's citations endpoint returns 0 | OpenAlex title and abstract, since 2026-09-01: `LeanSide` 1 (itself); `natural-language proofs Lean co-reasoning` 1 (itself) |
+| Avigad 2026 | guest post on the Xena blog, 2026-10-16, no DOI | not indexed: a blog post has no OpenAlex or Semantic Scholar record to be cited through | Semantic Scholar title search: 802 results, the first page read, none is the post |
+| PNT-plus 2026 | project documentation, a repository file | not indexed | OpenAlex `PNT+ blueprint`, since 2026-01-01: 3 results, none about the project; not searched further |
+
+Strings run on OpenAlex's title and abstract field, each with a publication-date filter. The counts it returned:
+
+- `autoformalization`, since 2026-09-30: 25 results, all read by title.
+- `Lean formalization natural language proof`, since 2026-09-30: 14, all read by title.
+- `formal conjectures Lean AI`, since 2026-09-30: 80, the first 25 read by title.
+- `blueprint Lean`, since 2026-09-30: 20, all read by title.
+- `Lean proof assistant informal mathematics`, since 2026-09-30: 2, both read by title.
+- `Mathlib`, since 2026-09-30: 594; the first 25 were read, and they were noise.
+
+Eight recent titles were read by abstract. Two were already in the pool: LeanTrail (Venturim 2026) and Beyond LLM Judge (Mei 2026). The others were LeanPRM, Numina Fuse, Aligning Faithfulness (Feng 2026), SemantEq (Li 2026b), Structure-Aware Equivalence and PaperFormalizer (Tan 2026).
+
+- Added, because each changes or sharpens a finding.
+  SemantEq (Li 2026b) argues that logical equivalence proves too much as a faithfulness test.
+  FaithAlign (Feng 2026) bears on the measures in Q2.
+  PaperFormalizer (Tan 2026) stops and asks the author at each reading the statement allows.
+- Not added: LeanPRM, a step-label dataset for proofs, is off the translation question.
+  Numina Fuse is a system report with no evaluation in its abstract, and it repeats a practice already held.
+  Structure-Aware Equivalence is a near twin of SemantEq, and one measure is enough for the finding.
+- Result: no work found cites the three keys. The three added works come from the same question, screened by title and abstract. They are not forward citations, and the review says so.
+- Limit: Semantic Scholar refused two title searches with HTTP 429, so `LeanSide` and `PNT+` were searched in OpenAlex only. Its citation endpoint answered for Guo 2026b.
+- Not searched: Google Scholar and arXiv's own listing search.
+- Keys: `Feng 2026`, `Li 2026b` and `Tan 2026` were checked against the six family bibliographies. `Li 2026` is taken there by another work, so the new Li key took the next free letter.
