@@ -112,6 +112,7 @@ La [revue](evidence/autoformalization/) lit 80 sources grises et 182 formelles, 
 | Partie | Résumé |
 |---|---|
 | [design](design/) | les conceptions proposées avant une construction : la première est le théorème d'Euclide en sujets vérifiés par Lean |
+| [proofs](proofs/infinitely-many-primes/) | le théorème d'Euclide en un sujet théorème et trois sujets d'énoncé, chacun nommant sa déclaration Lean |
 | [evidence](evidence/) | la revue derrière le dépôt : l'autoformalisation, grise et formelle, et sa bibliographie |
 | [decisions](decisions/) | un compte rendu par choix qui façonne ce dépôt, chacun ouvert par la décision en une phrase |
 

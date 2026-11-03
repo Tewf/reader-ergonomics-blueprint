@@ -109,6 +109,7 @@ The [review](evidence/autoformalization/) reads 80 grey and 182 formal sources, 
 | Part | Summary |
 |---|---|
 | [design](design/) | the designs proposed before a build: the first build is Euclid's theorem as topics checked by Lean |
+| [proofs](proofs/infinitely-many-primes/) | Euclid's theorem as a theorem topic and three claim topics, each naming its Lean declaration |
 | [evidence](evidence/) | the review behind the repository: autoformalization, grey and formal, and its bibliography |
 | [decisions](decisions/) | one record per choice that shapes this repository, each opening with the decision in one sentence |
 

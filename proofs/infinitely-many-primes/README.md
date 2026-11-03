@@ -1,0 +1,28 @@
+# There are infinitely many primes
+
+For every natural number n there is a prime greater than n. Euclid's argument proves it in three claims.
+
+**Shape:** [topic](https://github.com/Tewf/reader-ergonomics-topic/blob/092ae2fc2e07226b695e219e3eb14b40286faa25/shapes/topic.md)
+**Lean:** `Blueprint.InfinitelyManyPrimes.exists_prime_gt`
+
+## Statement
+
+For every natural number n, there is a prime p with n < p.
+
+## Contents
+
+| Claim | Summary |
+|---|---|
+| [A prime factor exists](prime-factor-exists.md) | every natural number at least 2 has a prime factor |
+| [The successor of a factorial has a prime factor](factorial-successor-has-prime-factor.md) | n! + 1 is at least 2, so some prime p divides it |
+| [The prime factor is large](prime-factor-is-large.md) | p exceeds n, since p at most n would divide n! and so divide 1 |
+
+## Proof
+
+1. By [claim 2](factorial-successor-has-prime-factor.md), n! + 1 has a prime factor p.
+2. By [claim 3](prime-factor-is-large.md), p exceeds n.
+3. So p is a prime greater than n.
+
+## See also
+
+[Design of the first build](../../design/first-build.md); [the front page](../../README.md).
