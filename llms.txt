@@ -1,27 +1,28 @@
 # Blueprint
 
-> A person's reasoning written as a tree of topics, with a checker on each part, Lean for logic first, and a language model that interprets the verdicts and guides. Its review of autoformalization (273 sources) names the baseline, B1; its first build is Euclid's theorem as topics checked by Lean, with a challenge file and a comparator; the maintainer's audit of the statements is still to do. It builds on reader-ergonomics-topic and obeys reader-ergonomics.
+> A person's reasoning written as a tree of topics, each claim checked by Lean: shapes and rules for the claim, the statement a person audits and the guidance that returns, each with its grade of evidence, and checks to run in CI.
 
-Each page's markdown source is served at the same path with a .md extension. This index is written by hand; AGENTS.md says to keep it in step.
+Each page's markdown source is served at the same path with a .md extension.
 
-## The repository
+## Standard
 
-- [Blueprint](https://tewf.github.io/reader-ergonomics-blueprint/README.md): the loop, the roles, the scope, what the review found and the baseline
-- [Decisions](https://tewf.github.io/reader-ergonomics-blueprint/decisions/README.md): one record per choice that shapes the repository, the latest the challenge file that holds the audited statements
-
-## Proofs and designs
-
-- [Euclid's theorem](https://tewf.github.io/reader-ergonomics-blueprint/proofs/infinitely-many-primes/README.md): the first proof, a theorem topic and three claim topics, each naming a Lean declaration and carrying an audit line
-- [The first build](https://tewf.github.io/reader-ergonomics-blueprint/design/first-build.md): the design behind it
-
-## Evidence
-
-- [Evidence](https://tewf.github.io/reader-ergonomics-blueprint/evidence/README.md): the review behind the repository, and its bibliography
-- [Autoformalization](https://tewf.github.io/reader-ergonomics-blueprint/evidence/autoformalization/README.md): how practice and research join a person's reasoning, a model and Lean, and catch the wrong statement
-- [Bibliography](https://tewf.github.io/reader-ergonomics-blueprint/evidence/bibliography.md): every cited work, once
-
-## Contributing
-
+- [Standard](https://tewf.github.io/reader-ergonomics-blueprint/standard.md): the one-page card to follow, with every principle and its grade
 - [Contributing](https://tewf.github.io/reader-ergonomics-blueprint/AGENTS.md): rules for changing this repository
-- [Topic](https://tewf.github.io/reader-ergonomics-topic/shapes/topic.md): the shape every document here follows
-- [Standard](https://tewf.github.io/reader-ergonomics/standard.md): the reader-ergonomics card this repository obeys
+
+## Statement: what the person audits
+
+- [One claim, one declaration](https://tewf.github.io/reader-ergonomics-blueprint/principles/statement/one-claim-one-declaration.md): a claim names exactly one Lean declaration, that declaration exists, and no declaration serves two claims.
+- [A short statement, apart from its proof](https://tewf.github.io/reader-ergonomics-blueprint/principles/statement/short-statement-apart-from-proof.md): the Lean statement a person audits sits in a short file of its own, apart from every proof, and each proof is held to it.
+- [The model decides nothing](https://tewf.github.io/reader-ergonomics-blueprint/principles/statement/the-model-decides-nothing.md): the person audits the statement that was checked, never a repaired one, and a model's reading of a statement is labelled as a model's, apart from the person's audit.
+
+## Claim: what the person writes
+
+- [Guidance at the claim's grain](https://tewf.github.io/reader-ergonomics-blueprint/principles/claim/guidance-at-the-claims-grain.md): a verdict, an error or a hint names the person's claim, not the checker's internal step.
+- [The person splits the reasoning](https://tewf.github.io/reader-ergonomics-blueprint/principles/claim/the-person-splits-the-reasoning.md): each claim is one topic the person wrote, with one sentence, a statement and a proof; the splitting into claims is not left to a model.
+
+## Optional
+
+- [Evidence](https://tewf.github.io/reader-ergonomics-blueprint/evidence/README.md): one literature review per topic, with the evidence against
+- [Bibliography](https://tewf.github.io/reader-ergonomics-blueprint/evidence/bibliography.md): every cited work, once
+- [Shapes](https://tewf.github.io/reader-ergonomics-blueprint/shapes/README.md): skeletons for kinds of documents
+- [Decisions](https://tewf.github.io/reader-ergonomics-blueprint/decisions/README.md): the choices this repository made, one record each

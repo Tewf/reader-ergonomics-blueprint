@@ -186,3 +186,17 @@ path = "README.md"
 question = "reads about equally as reference and how-to: one mode per document?"
 file = "817e10487b86"
 answer = "One mode: understanding why. The front page states the scope and the baseline under `Scope` and `The baseline`; `Check it` is a pointer to the commands, not a second mode, and `Next` is the plan the page exists to give."
+
+[[answer]]
+check = "tree-shape"
+path = "shapes"
+question = "2 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
+file = ""
+answer = "It stays: `shapes` is the folder the extension contract names for an extension's templates; it holds the claim shape and its listing now, and gains a file with each new shape."
+
+[[answer]]
+check = "document-mode"
+path = "README.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "dbaa44daa669"
+answer = "One mode, understanding why: the front page states the scope, the status and the baseline, and its `Contents` table only points to the parts; the how-to is in AGENTS.md."

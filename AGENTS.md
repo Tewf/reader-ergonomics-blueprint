@@ -13,6 +13,14 @@ read its [standard.md](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86
 3. The scope is on the front page. A checker other than Lean waits for a review of assurance cases
    ([0002](decisions/0002-call-it-a-blueprint.md)).
 
+## Principles and shapes
+
+- The card is [standard.md](standard.md); its table between the markers is built from the principle files by the
+  standard's `standard_card.py ROOT --write`, which also writes `llms.txt`. Never edit either by hand.
+- A principle file has the lines Claim, Grade, Evidence, Check and Reader styles. It never claims a grade above the
+  review's, and its Check line names a check that exists.
+- A claim of a proof follows [shapes/claim.md](shapes/claim.md) and carries its Shape line; `claim-shape` checks it.
+
 ## Rules for claims
 
 - Every claim carries a grade: **measured**, **supported with caveat**, **convention** or **not supported**. A grade

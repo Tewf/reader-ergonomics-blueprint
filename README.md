@@ -16,7 +16,8 @@ This page in French: [README.fr.md](README.fr.md).
 > baseline, B1. B1 is built in miniature, except the audit: Euclid's theorem as a theorem topic and three claim
 > topics, each naming one Lean declaration ([design](design/first-build.md)), with a challenge file that holds the
 > four statements apart from the proofs ([0006](decisions/0006-a-challenge-file-holds-the-audited-statements.md)).
-> Four checks run in CI: the topic check, a link check, a comparator, and Lean. The maintainer has not yet compared
+> Five checks run in CI: the topic check, a claim check, a link check, a comparator, and Lean. The [card](standard.md)
+> holds five principles and one [shape](shapes/claim.md), the claim. The maintainer has not yet compared
 > the statements with their source. The model is not in the loop yet. The work began in reader-ergonomics-topic and
 > moved here with its history ([0001](decisions/0001-a-repository-of-its-own.md)).
 >
@@ -116,6 +117,9 @@ The [review](evidence/autoformalization/) reads 80 grey and 182 formal sources, 
 
 | Part | Summary |
 |---|---|
+| [standard](standard.md) | the card: five principles, two of them on the statement a person audits and two on the claim a person writes, each with its grade |
+| [principles](principles/) | one file per principle, with its claim, grade, evidence and check |
+| [shapes](shapes/) | the claim: the skeleton of one claim of a proof, with the three claims of Euclid's theorem as its examples |
 | [design](design/) | the designs proposed before a build: the first build is Euclid's theorem as topics checked by Lean |
 | [proofs](proofs/infinitely-many-primes/) | Euclid's theorem as a theorem topic and three claim topics, each naming its Lean declaration |
 | [evidence](evidence/) | the review behind the repository: autoformalization, grey and formal, and its bibliography |

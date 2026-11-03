@@ -17,7 +17,8 @@ Cette page en anglais : [README.md](README.md). Les deux versions suivent le mê
 > référence, B1. B1 est construit en miniature, sauf le contrôle : le théorème d'Euclide en un sujet théorème et trois
 > sujets d'énoncé, chacun nommant une déclaration Lean ([conception](design/first-build.md)), avec un fichier de défi
 > qui tient les quatre énoncés à part des preuves ([0006](decisions/0006-a-challenge-file-holds-the-audited-statements.md)).
-> Quatre vérifications tournent en CI : celle des topics, un contrôle du lien, un comparateur, et Lean. Le mainteneur
+> Cinq vérifications tournent en CI : celle des topics, celle de l'énoncé, un contrôle du lien, un comparateur, et Lean.
+> La [fiche](standard.md) tient cinq principes et une [forme](shapes/claim.md), l'énoncé. Le mainteneur
 > n'a pas encore comparé les énoncés à leur source. Le modèle n'est pas encore dans la boucle. Le travail a commencé
 > dans reader-ergonomics-topic et a migré ici avec son historique ([0001](decisions/0001-a-repository-of-its-own.md)).
 >
@@ -118,6 +119,9 @@ La [revue](evidence/autoformalization/) lit 80 sources grises et 182 formelles, 
 
 | Partie | Résumé |
 |---|---|
+| [standard](standard.md) | la fiche : cinq principes, deux sur l'énoncé qu'une personne contrôle et deux sur l'affirmation qu'elle écrit, chacun avec son grade |
+| [principles](principles/) | un fichier par principe, avec sa thèse, son grade, ses preuves et sa vérification |
+| [shapes](shapes/) | l'affirmation : le squelette d'une affirmation d'une preuve, avec les trois affirmations du théorème d'Euclide pour exemples |
 | [design](design/) | les conceptions proposées avant une construction : la première est le théorème d'Euclide en sujets vérifiés par Lean |
 | [proofs](proofs/infinitely-many-primes/) | le théorème d'Euclide en un sujet théorème et trois sujets d'énoncé, chacun nommant sa déclaration Lean |
 | [evidence](evidence/) | la revue derrière le dépôt : l'autoformalisation, grise et formelle, et sa bibliographie |

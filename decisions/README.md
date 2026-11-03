@@ -16,6 +16,7 @@ decision in one sentence under its title, then its status, context, decision and
 | [0005 Three checks, each its own CI step](0005-three-checks-each-its-own-ci-step.md) | the topic check, the link check and the build, in that order |
 | [0006 A challenge file holds the audited statements](0006-a-challenge-file-holds-the-audited-statements.md) | the statements apart from the proofs, held to each proof by a text check and by Lean |
 | [0007 The audit has two columns](0007-the-audit-has-two-columns.md) | the maintainer audits the prose against the source; the Lean statement against the prose waits for a reader of Lean |
+| [0008 Which findings became principles](0008-which-findings-became-principles.md) | five principles from the review's four conditions and the link check, one claim shape, the rest left findings |
 
 ## See also
 
