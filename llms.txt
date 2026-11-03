@@ -1,6 +1,6 @@
 # Blueprint
 
-> A person's reasoning written as a tree of topics, each claim checked by Lean: shapes and rules for the claim, the statement a person audits and the guidance that returns, each with its grade of evidence, and checks to run in CI.
+> A person's reasoning written as a tree of topics, each claim checked by Lean: shapes and rules for the claim, the statement a person audits and the guidance that returns, each with its grade of evidence, and checks to run in CI. Its first proof is [Euclid's theorem](https://tewf.github.io/reader-ergonomics-blueprint/proofs/infinitely-many-primes/README.md).
 
 Each page's markdown source is served at the same path with a .md extension.
 
