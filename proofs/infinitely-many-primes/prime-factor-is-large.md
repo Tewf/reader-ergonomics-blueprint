@@ -2,6 +2,7 @@
 
 A prime p that divides n! + 1 is greater than n.
 
+**Shape:** [claim](../../shapes/claim.md)
 **Lean:** `Blueprint.InfinitelyManyPrimes.prime_factor_gt`
 
 **In words:** for natural numbers n and p, if p is prime and p divides n! + 1, then n < p.

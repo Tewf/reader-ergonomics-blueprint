@@ -12,7 +12,7 @@ listing_words = 3    # PROVISIONAL: fewer words beside a link, and the listing i
 summary_labels = ["summary", "abstract", "short description", "decision"]   # the accepted names of the summary (shapes/topic.md)
 summary_within = 4   # PROVISIONAL: how many blocks of metadata may stand before a labelled summary
 typed = []           # children listed by type name alone; this repository lists every child with its summary
-shapes = { decision-record = ["decisions/0*.md"], design-document = ["design/first-build.md"], topic = ["decisions/README.md", "design/README.md", "proofs/*/README.md"] }   # files that follow a shape and must link it
+shapes = { decision-record = ["decisions/0*.md"], design-document = ["design/first-build.md"], topic = ["decisions/README.md", "design/README.md", "proofs/*/README.md"], claim = ["proofs/*/[a-z]*.md"] }   # files that follow a shape and must link it
 
 # The standard's three, and the answers file: it changes with every file it answers for, so it co-changes by construction.
 [co_change]
@@ -30,6 +30,7 @@ stylesheets = []
 [shape_conformance]
 shapes = [
   { name = "decision record", files = ["decisions/0*.md"], required = ["Context", "Decision", "Consequences", "See also"] },
+  { name = "claim", files = ["proofs/*/[a-z]*.md"], required = ["Statement", "Proof", "See also"] },
   { name = "design document", files = ["design/first-build.md"], required = ["Motivation", "Goals and non-goals", "Design", "Alternatives", "Consequences", "Feasibility and plan", "Open questions"] },
 ]
 
@@ -57,3 +58,20 @@ challenge = "Blueprint/Challenge.lean"
 agreement = "Blueprint/Agreement.lean"
 proof_prefix = "Blueprint."
 challenge_prefix = "Challenge."
+
+# The claim check, checks/local/claim_shape.py: the parts shapes/claim.md asks of each claim of a proof.
+[claim_shape]
+files = ["proofs/*/*.md"]
+exempt = ["proofs/*/README.md"]
+shape = "shapes/claim.md"
+max_words = 35   # PROVISIONAL: the longest claim sentence that still reads as one; no study sets it
+
+# The card: the principle groups, in the order standard.md shows them.
+[standard_card]
+facets = ["statement", "claim"]
+
+# Each shape links, or holds, a filled example of itself.
+[shape_example]
+files = ["shapes/*.md"]
+exempt = ["shapes/README.md"]
+example_headings = ["Worked example", "Example"]

@@ -2,6 +2,7 @@
 
 For every n, the number n! + 1 has a prime factor p.
 
+**Shape:** [claim](../../shapes/claim.md)
 **Lean:** `Blueprint.InfinitelyManyPrimes.factorial_succ_has_prime_factor`
 
 **In words:** for every natural number n, there is a p such that p is prime and p divides n! + 1.
