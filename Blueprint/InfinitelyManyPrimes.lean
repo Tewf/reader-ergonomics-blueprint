@@ -9,6 +9,8 @@ Euclid's argument in three claims, one declaration each. The topics under
 
 namespace Blueprint.InfinitelyManyPrimes
 
+open Nat   -- for the notation `n !`
+
 /-- Claim 1: every natural number at least 2 has a prime factor. -/
 theorem exists_prime_factor (n : ℕ) (h : 2 ≤ n) : ∃ p, p.Prime ∧ p ∣ n :=
   Nat.exists_prime_and_dvd (by omega)
