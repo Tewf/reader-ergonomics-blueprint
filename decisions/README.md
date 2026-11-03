@@ -14,6 +14,7 @@ decision in one sentence under its title, then its status, context, decision and
 | [0003 Euclid's theorem as the first proof](0003-euclids-theorem-as-the-first-proof.md) | three claims, one topic each, under one theorem topic |
 | [0004 Lean on Mathlib](0004-lean-on-mathlib.md) | a Lake project at the root, on Mathlib at the tag whose toolchain it takes |
 | [0005 Three checks, each its own CI step](0005-three-checks-each-its-own-ci-step.md) | the topic check, the link check and the build, in that order |
+| [0006 A challenge file holds the audited statements](0006-a-challenge-file-holds-the-audited-statements.md) | the statements apart from the proofs, held to each proof by a text check and by Lean |
 
 ## See also
 

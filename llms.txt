@@ -1,17 +1,17 @@
 # Blueprint
 
-> A person's reasoning written as a tree of topics, with a checker on each part, Lean for logic first, and a language model that interprets the verdicts and guides. Its review of autoformalization (273 sources) names the baseline, B1; its first build is Euclid's theorem as topics checked by Lean. It builds on reader-ergonomics-topic and obeys reader-ergonomics.
+> A person's reasoning written as a tree of topics, with a checker on each part, Lean for logic first, and a language model that interprets the verdicts and guides. Its review of autoformalization (273 sources) names the baseline, B1; its first build is Euclid's theorem as topics checked by Lean, with a challenge file and a comparator; the maintainer's audit of the statements is still to do. It builds on reader-ergonomics-topic and obeys reader-ergonomics.
 
 Each page's markdown source is served at the same path with a .md extension. This index is written by hand; AGENTS.md says to keep it in step.
 
 ## The repository
 
 - [Blueprint](https://tewf.github.io/reader-ergonomics-blueprint/README.md): the loop, the roles, the scope, what the review found and the baseline
-- [Decisions](https://tewf.github.io/reader-ergonomics-blueprint/decisions/README.md): one record per choice that shapes the repository
+- [Decisions](https://tewf.github.io/reader-ergonomics-blueprint/decisions/README.md): one record per choice that shapes the repository, the latest the challenge file that holds the audited statements
 
 ## Proofs and designs
 
-- [Euclid's theorem](https://tewf.github.io/reader-ergonomics-blueprint/proofs/infinitely-many-primes/README.md): the first proof, a theorem topic and three claim topics, each naming a Lean declaration
+- [Euclid's theorem](https://tewf.github.io/reader-ergonomics-blueprint/proofs/infinitely-many-primes/README.md): the first proof, a theorem topic and three claim topics, each naming a Lean declaration and carrying an audit line
 - [The first build](https://tewf.github.io/reader-ergonomics-blueprint/design/first-build.md): the design behind it
 
 ## Evidence

@@ -11,11 +11,12 @@ raisonnement se transmette. Les mathématiques formelles appellent un tel graphe
 Cette page en anglais : [README.md](README.md). Les deux versions suivent le même état.
 
 > **État (2026-11-03) :** la revue de l'autoformalisation est faite, grise et formelle, 273 sources, et nomme sa
-> référence, B1. La première construction est en place : le théorème d'Euclide en un sujet théorème et trois sujets
-> d'énoncé, chacun nommant une déclaration Lean ([conception](design/first-build.md)). Trois vérifications tournent
-> en CI : celle des topics, un contrôle du lien, et Lean. Le modèle n'est pas encore dans la boucle. Le travail a
-> commencé dans reader-ergonomics-topic et a migré ici avec son historique
-> ([0001](decisions/0001-a-repository-of-its-own.md)).
+> référence, B1. B1 est construit en miniature, sauf le contrôle : le théorème d'Euclide en un sujet théorème et trois
+> sujets d'énoncé, chacun nommant une déclaration Lean ([conception](design/first-build.md)), avec un fichier de défi
+> qui tient les quatre énoncés à part des preuves ([0006](decisions/0006-a-challenge-file-holds-the-audited-statements.md)).
+> Quatre vérifications tournent en CI : celle des topics, un contrôle du lien, un comparateur, et Lean. Le mainteneur
+> n'a pas encore comparé les énoncés à leur source. Le modèle n'est pas encore dans la boucle. Le travail a commencé
+> dans reader-ergonomics-topic et a migré ici avec son historique ([0001](decisions/0001-a-repository-of-its-own.md)).
 >
 > **Comment il est fait :** avec Claude, un assistant IA d'Anthropic, sous la direction du mainteneur, comme
 > reader-ergonomics. Les corrections sont bienvenues sous forme d'issues.
@@ -103,9 +104,9 @@ La [revue](evidence/autoformalization/) lit 80 sources grises et 182 formelles, 
 
 ## Suite
 
-1. **Finir B1 en miniature :** comparator et un fichier de défi, pour que Lean vérifie aussi que chaque preuve prouve
-   l'énoncé posé. La première construction couvre la vérification des topics, le contrôle du lien et la construction
-   Lean.
+1. **Le contrôle de B1 :** le mainteneur compare chacun des quatre énoncés du
+   [fichier de défi](Blueprint/Challenge.lean) à sa source et écrit la date sur la ligne **Audited:** du topic. Le
+   comparateur et le fichier de défi sont en place ; le contrôle est la seule part de B1 qui manque.
 2. **Ensuite la boucle :** la place du modèle, comme interprète et guide, mesurée contre B1.
 3. **Avant tout vérificateur autre que Lean :** une revue des assurance cases, le nom que le domaine donne au cas
    général.

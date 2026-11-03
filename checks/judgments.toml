@@ -179,3 +179,10 @@ path = "README.md"
 question = "reads about equally as reference and how-to: one mode per document?"
 file = "82628b1bd1cf"
 answer = "Reference: the front page, read for `The loop`, the `Scope`, `What the review found` and `The baseline`. Its one task, `Check it`, is two commands for whoever wants to run the checks."
+
+[[answer]]
+check = "document-mode"
+path = "README.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "817e10487b86"
+answer = "One mode: understanding why. The front page states the scope and the baseline under `Scope` and `The baseline`; `Check it` is a pointer to the commands, not a second mode, and `Next` is the plan the page exists to give."
