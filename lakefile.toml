@@ -12,3 +12,11 @@ rev = "v4.35.0"
 
 [[lean_lib]]
 name = "Blueprint"
+
+# The challenge file holds `sorry` on purpose, so it is built apart from the proofs and may warn.
+[[lean_lib]]
+name = "BlueprintCompare"
+roots = ["Blueprint.SameStatement", "Blueprint.Challenge", "Blueprint.Agreement"]
+
+[lean_lib.leanOptions]
+warningAsError = false
