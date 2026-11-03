@@ -5,6 +5,8 @@ For every natural number n there is a prime greater than n. Euclid's argument pr
 **Shape:** [topic](https://github.com/Tewf/reader-ergonomics-topic/blob/092ae2fc2e07226b695e219e3eb14b40286faa25/shapes/topic.md)
 **Lean:** `Blueprint.InfinitelyManyPrimes.exists_prime_gt`
 
+**Audited:** not yet
+
 ## Statement
 
 For every natural number n, there is a prime p with n < p.

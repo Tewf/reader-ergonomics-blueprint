@@ -11,6 +11,8 @@ exactly it. For each topic that `[comparator] topics` names, whose `**Lean:**` l
 - same context: the `open` commands in effect around the two declarations are the same set (exact);
 - the challenge proves nothing: its body is `sorry` or `by sorry`, alone (exact);
 - no orphan: every declaration of the challenge file is the challenge of some topic (exact);
+- audit column: a topic has one `**Audited:**` line, `not yet` or the date (YYYY-MM-DD) the maintainer compared the
+  statement with its source; the date is the maintainer's to write, and this check reads its form only (exact);
 - Lean checks too: the agreement file (`[comparator] agreement`) holds one `#same_statement proof challenge` line for
   each topic, so the Lean build compares the types and lists the axioms (exact on the line, Lean on the rest).
 
@@ -48,6 +50,8 @@ OPEN = re.compile(r"^\s*open\s+(.+?)\s*$")
 OPENERS = "([{⦃⟨"
 CLOSERS = ")]}⦄⟩"
 SORRY_BODY = re.compile(r"^(?:by\s+)?sorry$")
+AUDITED = re.compile(r"^\*\*Audited:\*\*\s*(.*?)\s*$", re.MULTILINE)
+AUDIT_VALUE = re.compile(r"^(?:not yet|\d{4}-\d{2}-\d{2})$")
 SAME_STATEMENT = re.compile(r"^\s*#same_statement\s+(\S+)\s+(\S+)\s*$", re.MULTILINE)
 
 
@@ -154,7 +158,13 @@ def check(root: Path, config: dict) -> list[Finding]:
     for path in sorted(files_in_scope(root, config, {".md"})):
         if not matches_any(path, topic_patterns):
             continue
-        named = lean_link.named_by((root / path).read_text(encoding="utf-8", errors="replace"))
+        topic_text = (root / path).read_text(encoding="utf-8", errors="replace")
+        named = lean_link.named_by(topic_text)
+        audits = AUDITED.findall(topic_text)
+        if len(audits) != 1:
+            findings.append(Finding(NAME, path, 1, f"{len(audits)} **Audited:** lines: a topic has one, `not yet` or a date"))
+        elif not AUDIT_VALUE.match(audits[0]):
+            findings.append(Finding(NAME, path, 1, f"**Audited:** holds `{audits[0]}`: write `not yet` or a date, YYYY-MM-DD"))
         if not named or named[0][1] is None or named[0][1] not in proofs:
             continue   # lean_link reports a missing line or a missing declaration
         number, name = named[0]

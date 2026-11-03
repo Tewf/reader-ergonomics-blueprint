@@ -4,6 +4,8 @@ Every natural number m with m at least 2 has a prime factor.
 
 **Lean:** `Blueprint.InfinitelyManyPrimes.exists_prime_factor`
 
+**Audited:** not yet
+
 ## Statement
 
 If 2 ≤ m, there is a prime p that divides m.

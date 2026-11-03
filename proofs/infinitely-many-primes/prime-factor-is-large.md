@@ -4,6 +4,8 @@ A prime p that divides n! + 1 is greater than n.
 
 **Lean:** `Blueprint.InfinitelyManyPrimes.prime_factor_gt`
 
+**Audited:** not yet
+
 ## Statement
 
 If p is prime and p divides n! + 1, then n < p.

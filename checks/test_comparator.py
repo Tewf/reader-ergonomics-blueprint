@@ -25,7 +25,7 @@ CONFIG = {"comparator": {"topics": ["proofs/"], "proofs": ["Lib/"], "challenge":
 PROOF = "namespace P\nopen Nat\n\n/-- Doc. -/\ntheorem one (n : ℕ) : n + 0 = n := by\n  simp\n\nend P\n"
 CHALLENGE = "namespace C\nopen Nat\n\ntheorem one (n : ℕ) : n + 0 = n := by\n  sorry\n\nend C\n"
 AGREEMENT = "import P\n-- #same_statement P.nope C.nope\n#same_statement P.one C.one\n"
-TOPIC = "# T\n\nSummary.\n\n**Lean:** `P.one`\n"
+TOPIC = "# T\n\nSummary.\n\n**Lean:** `P.one`\n\n**Audited:** not yet\n"
 
 
 class Reading(unittest.TestCase):
@@ -114,16 +114,32 @@ class Check(unittest.TestCase):
 
     def test_a_name_outside_the_prefix_fails(self) -> None:
         self.write("Lib/Q.lean", "theorem other : True := trivial\n")
-        self.write("proofs/t.md", "# T\n\n**Lean:** `other`\n")
+        self.write("proofs/t.md", "# T\n\n**Lean:** `other`\n\n**Audited:** not yet\n")
         self.assertIn("proof_prefix", self.messages()[0])
 
     def test_a_declaration_lean_link_reports_is_left_to_it(self) -> None:
-        self.write("proofs/t.md", "# T\n\n**Lean:** `P.nope`\n")
+        self.write("proofs/t.md", "# T\n\n**Lean:** `P.nope`\n\n**Audited:** not yet\n")
         self.assertEqual(self.messages(), ["C.one is the challenge of no topic"])
 
     def test_files_outside_the_topics_are_ignored(self) -> None:
         self.write("notes.md", "# N\n\n**Lean:** `P.nope`\n")
         self.assertEqual(self.messages(), [])
+
+    def test_a_date_is_an_audit(self) -> None:
+        self.write("proofs/t.md", TOPIC.replace("not yet", "2026-11-04"))
+        self.assertEqual(self.messages(), [])
+
+    def test_a_missing_audit_line_fails(self) -> None:
+        self.write("proofs/t.md", TOPIC.replace("\n**Audited:** not yet\n", ""))
+        self.assertIn("0 **Audited:** lines", self.messages()[0])
+
+    def test_two_audit_lines_fail(self) -> None:
+        self.write("proofs/t.md", TOPIC + "\n**Audited:** not yet\n")
+        self.assertIn("2 **Audited:** lines", self.messages()[0])
+
+    def test_a_malformed_audit_fails(self) -> None:
+        self.write("proofs/t.md", TOPIC.replace("not yet", "done"))
+        self.assertIn("holds `done`", self.messages()[0])
 
     def test_no_config_no_findings(self) -> None:
         self.assertEqual(comparator.check(self.root, {}), [])

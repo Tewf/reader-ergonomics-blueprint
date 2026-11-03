@@ -4,6 +4,8 @@ For every n, the number n! + 1 has a prime factor p.
 
 **Lean:** `Blueprint.InfinitelyManyPrimes.factorial_succ_has_prime_factor`
 
+**Audited:** not yet
+
 ## Statement
 
 For every natural number n, there is a prime p that divides n! + 1.
