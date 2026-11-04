@@ -11,8 +11,10 @@ digraph form_limits {
   V [label=<<b>verdict to the person</b><br/><font point-size="11" color="#55575F">C2 plan or react?   C6 trust in the green mark</font>>, fillcolor="#FBEDE4", color="#B4541A"];
   C7 [label=<<font point-size="11" color="#55575F">along the whole loop:</font><br/><font point-size="11" color="#55575F">C7 cost (length, syntax, time)</font>>, fillcolor="#FFFFFF", color="#6A6D77", style="rounded,filled,dashed"];
   W -> F -> L -> V;
-  W -> C7 [style=dashed, color="#6A6D77", arrowhead=none];
-  F -> C7 [style=dashed, color="#6A6D77", arrowhead=none];
-  L -> C7 [style=dashed, color="#6A6D77", arrowhead=none];
-  V -> C7 [style=dashed, color="#6A6D77", arrowhead=none];
+  {rank=same; F; C7}
+  F -> C7 [style=invis];
+  W -> C7 [style=dashed, color="#6A6D77", arrowhead=none, constraint=false];
+  F -> C7 [style=dashed, color="#6A6D77", arrowhead=none, constraint=false];
+  L -> C7 [style=dashed, color="#6A6D77", arrowhead=none, constraint=false];
+  V -> C7 [style=dashed, color="#6A6D77", arrowhead=none, constraint=false];
 }

@@ -239,15 +239,15 @@ answer = "One role: the record of how the pool was built and checked, from `1. W
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/review.md"
-question = "772 lines, past the ceiling of 500. Review it: split it only into pieces that change separately and each stay whole, or state why it stays one file."
-file = "e50447eab545"
+question = "774 lines, past the ceiling of 500. Review it: split it only into pieces that change separately and each stay whole, or state why it stays one file."
+file = "4d6393a97e6b"
 answer = "It stays one file: it reads one question at a time, from `Answer first` to `Where practice runs ahead of the evidence`, with the grey and formal findings on each question side by side, which `Where the two passes disagree` compares. The lead screen's works joined the questions they answer, such as `Checks of form in CI, and model feedback on writing`; split by pass, each question would be read in two places."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/review.md"
 question = "472 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "e50447eab545"
+file = "4d6393a97e6b"
 answer = "One role: the findings of both passes, one question at a time, from `Answer first` to `Where practice runs ahead of the evidence`, grey and formal side by side. It stays whole."
 
 [[answer]]
@@ -261,7 +261,7 @@ answer = "One role: this review's pool, from its `Flow` to `Result of the gradin
 check = "document-mode"
 path = "evidence/autoformalization/review.md"
 question = "reads about equally as reference and how-to: one mode per document?"
-file = "e50447eab545"
+file = "4d6393a97e6b"
 answer = "Reference: findings looked up by question, from `Answer first` to `Where practice runs ahead of the evidence`, grey and formal side by side; it sets the reader no task."
 
 [[answer]]
