@@ -4,6 +4,12 @@ Every release of this repository, and the releases of reader-ergonomics and read
 first, in the form of [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). A pin move is recorded here, not in
 decisions/.
 
+## [0.1.2] - 2026-11-07
+
+### Changed
+
+- Pinned reader-ergonomics v1.22.1 (`0206e69`), from v1.21.0 (`2e5b6f0`): front matter skipped by the sentence checks and LaTeX maths blanked, escaped-pipe wikilinks resolved, and `standard-pin` moves a pin.
+
 ## [0.1.1] - 2026-11-04
 
 ### Changed

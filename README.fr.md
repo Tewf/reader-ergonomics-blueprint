@@ -42,7 +42,7 @@ jamais votre copie.
 
    ```sh
    git clone https://github.com/Tewf/reader-ergonomics ../reader-ergonomics
-   git -C ../reader-ergonomics checkout 2e5b6f0c3e67d2dc8195a63cf882d46170e79a5a   # version 1.21.0
+   git -C ../reader-ergonomics checkout 0206e6950b4feca4194af419384c217863b7c42e   # version 1.21.0
    python3 ../reader-ergonomics/checks/run.py chemin/vers/votre/dépôt
    ```
 
@@ -56,13 +56,13 @@ Un désaccord a trois destinations :
 - une issue sur [ce dépôt](https://github.com/Tewf/reader-ergonomics-blueprint/issues), quand ses preuves ou sa forme sont fausses.
 
 
-La section de la norme, [Take your own version](https://github.com/Tewf/reader-ergonomics/blob/2e5b6f0c3e67d2dc8195a63cf882d46170e79a5a/README.md#take-your-own-version), donne le reste.
+La section de la norme, [Take your own version](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/README.md#take-your-own-version), donne le reste.
 
 ## Où il se place
 
 - **Il s'appuie sur le [topic](https://github.com/Tewf/reader-ergonomics-topic/blob/092ae2fc2e07226b695e219e3eb14b40286faa25/shapes/topic.md)** (reader-ergonomics-topic v0.6.0) : chaque nœud d'un blueprint est
   un topic, avec son titre, son résumé, ses parties comme contenu et ce qu'il utilise comme liens.
-- **Il obéit à [reader-ergonomics](https://github.com/Tewf/reader-ergonomics/blob/2e5b6f0c3e67d2dc8195a63cf882d46170e79a5a/standard.md)** (v1.21.0) et exécute ses vérifications en CI.
+- **Il obéit à [reader-ergonomics](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/standard.md)** (v1.21.0) et exécute ses vérifications en CI.
 - **Il ne pointe que vers le bas.** Les deux sont épinglés par commit ; aucun ne pointe vers ce dépôt.
 
 ## La boucle

@@ -5,8 +5,8 @@ message: >-
   assistant by Anthropic. It is not an official standard, not peer-reviewed,
   and not a new result.
 title: "reader-ergonomics-blueprint (work in progress)"
-version: 0.1.1
-date-released: 2026-11-04
+version: 0.1.2
+date-released: 2026-11-07
 abstract: >-
   A person's reasoning written as a tree of topics, with a checker on each
   part, Lean for logic first, and a language model that interprets the
