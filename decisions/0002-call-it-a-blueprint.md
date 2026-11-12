@@ -3,7 +3,7 @@
 **Decision:** the repository is called reader-ergonomics-blueprint. A **blueprint** is the field's word for a graph of
 claims each checked by a proof assistant; this repository writes one as topics.
 
-**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/shapes/decision-record.md).
+**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/shapes/decision-record.md).
 
 ## Context
 

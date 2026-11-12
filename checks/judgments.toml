@@ -331,21 +331,21 @@ answer = "Reference: the file follows its shape and is consulted part by part; i
 check = "logical-lines"
 path = "README.fr.md"
 question = "92 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "d751ca47c301"
+file = "01ca4dfb5d80"
 answer = "The role is the French front page, kept in step with `README.md`; it stays whole. Its `Contenu` table and `L'adopter` block are the same parts as the English page."
 
 [[answer]]
 check = "logical-lines"
 path = "README.md"
 question = "89 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "0986a7a48a92"
+file = "40d8d0978e80"
 answer = "The role is the front page: what the repository is, how to take it and what is open. It passes the one-sentence test without 'and' on its role; `Take it` and `Contents` are its parts."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/frame.md"
 question = "89 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "78859b58bbd9"
+file = "84342e61bd2b"
 answer = "The role is to name the problem and the field's words for it before the search. It stays whole: `The problem in one sentence`, `Names` and `Questions` are the frame's parts."
 
 [[answer]]
